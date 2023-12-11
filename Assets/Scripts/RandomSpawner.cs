@@ -43,7 +43,7 @@ public class RandomSpawner : MonoBehaviour
             }
         }
     }
-    public void CancelInvoke()
+    public void CancelInvokeL()
     {
         //CancelInvoke("RandomSpawn");
         cancelInvokeBool = true;
