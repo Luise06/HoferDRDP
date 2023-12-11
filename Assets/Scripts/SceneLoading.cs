@@ -18,7 +18,7 @@ public class SceneLoading : MonoBehaviour
     }
     public void ZumSpiel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("foodDrop");
     }
     public void Rabatte()
     {

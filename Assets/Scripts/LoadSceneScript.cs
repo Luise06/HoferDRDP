@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class LoadSceneScript : MonoBehaviour
 {
     public TextMeshProUGUI gewonnenVerlorenText;
+    public GameObject gewonnenPanel;
+    public GameObject verlorenPanel;
+
     public TextMeshProUGUI highScore;
     public TextMeshProUGUI score;
     public TextMeshProUGUI text;
@@ -23,18 +26,22 @@ public class LoadSceneScript : MonoBehaviour
     {
         if (gewonnenVerlorenText.text == "Glückwunsch!!!")
         {
-            gewonnenVerlorenText.text = StaticVariablen.gewonnen;
+            gewonnenPanel.SetActive(true);
+            verlorenPanel.SetActive(false);
+            //gewonnenVerlorenText.text = StaticVariablen.gewonnen;
             particelSystem.SetActive(true);
-            text.text = "Dein neuer Highscore ist ";
+            //text.text = "Dein neuer Highscore ist ";
             highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
 
         }
         else
         {
+            verlorenPanel.SetActive(true);
+            gewonnenPanel.SetActive(false);
             gewonnenVerlorenText.text = StaticVariablen.gewonnen;
-            int punkteGebraucht = PlayerPrefs.GetInt("HighScore") - StaticVariablen.score +1;
-            text.text = "Du hättest noch "  + punkteGebraucht + " Punkte gebraucht um den Highscore zu schlagen.";
-            highScore.text = "";
+            //int punkteGebraucht = PlayerPrefs.GetInt("HighScore") - StaticVariablen.score +1;
+            //text.text = "Du hättest noch "  + punkteGebraucht + " Punkte gebraucht um den Highscore zu schlagen.";
+            highScore.text = StaticVariablen.score.ToString();
             if (einemalAbgespielt)
             {
                 loseAudio.Play(0);

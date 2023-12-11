@@ -655,6 +655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gewonnenVerlorenText: {fileID: 1956297346}
+  gewonnenPanel: {fileID: 0}
+  verlorenPanel: {fileID: 0}
   highScore: {fileID: 2081054370}
   score: {fileID: 0}
   text: {fileID: 1268131807}
@@ -1578,7 +1580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1690863322
 RectTransform:
   m_ObjectHideFlags: 0

@@ -8,18 +8,18 @@ public class Spielende : MonoBehaviour
 
     public void Lost()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("GewonnenVerloren");
         //StaticVariablen.gewonnen = "Schade ):";
     }
     public void NeuerHighscore()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("GewonnenVerloren");
         
 
     }
 
     public void Home()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Hauptmenue");
     }
 }
