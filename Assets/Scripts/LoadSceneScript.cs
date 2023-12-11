@@ -12,7 +12,7 @@ public class LoadSceneScript : MonoBehaviour
 
     public TextMeshProUGUI highScore;
     public TextMeshProUGUI score;
-    public TextMeshProUGUI text;
+    //public TextMeshProUGUI text;
     public GameObject particelSystem;
     public AudioSource loseAudio;
     bool einemalAbgespielt = true;
@@ -24,7 +24,7 @@ public class LoadSceneScript : MonoBehaviour
 
     void Update()
     {
-        if (gewonnenVerlorenText.text == "Glückwunsch!!!")
+        if (StaticVariablen.gewonnen == "Glückwunsch!!!")
         {
             gewonnenPanel.SetActive(true);
             verlorenPanel.SetActive(false);
@@ -32,16 +32,15 @@ public class LoadSceneScript : MonoBehaviour
             particelSystem.SetActive(true);
             //text.text = "Dein neuer Highscore ist ";
             highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
-
         }
         else
         {
             verlorenPanel.SetActive(true);
             gewonnenPanel.SetActive(false);
-            gewonnenVerlorenText.text = StaticVariablen.gewonnen;
+            score.text = StaticVariablen.score.ToString();
             //int punkteGebraucht = PlayerPrefs.GetInt("HighScore") - StaticVariablen.score +1;
             //text.text = "Du hättest noch "  + punkteGebraucht + " Punkte gebraucht um den Highscore zu schlagen.";
-            highScore.text = StaticVariablen.score.ToString();
+            //highScore.text = 
             if (einemalAbgespielt)
             {
                 loseAudio.Play(0);
@@ -52,6 +51,6 @@ public class LoadSceneScript : MonoBehaviour
     }
     public void SceneLaden()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("foodDrop");
     }
 }
