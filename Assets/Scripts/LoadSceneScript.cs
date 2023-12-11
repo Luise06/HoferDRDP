@@ -20,6 +20,7 @@ public class LoadSceneScript : MonoBehaviour
     {
         //score.text = StaticVariablen.score.ToString();
         particelSystem.SetActive(false);
+        Debug.Log(PlayerPrefs.GetInt("HighScore"));
     }
 
     void Update()
