@@ -33,7 +33,7 @@ public class RandomSpawner : MonoBehaviour
             
             Debug.Log(randomSpawnTime);
             Debug.Log(spawnDelay);*/
-            gravitySpeed = gravitySpeed * 2;
+            gravitySpeed = gravitySpeed * 1.5f;
             zeitverschnaellerung = zeitverschnaellerung + 5;
             for (int i = 0; i < objPrefab.Length -1; i++)
             {

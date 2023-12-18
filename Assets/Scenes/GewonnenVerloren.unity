@@ -205,7 +205,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 796106786}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneLoading, Assembly-CSharp
         m_MethodName: Zurueck
         m_Mode: 1
@@ -682,7 +682,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 796106783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02ad675f70bf249ae40ac078fc13ed, type: 3}
+  m_Script: {fileID: 11500000, guid: c4645fbe9633ad84c9eff3bbd9080ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &796106787
@@ -1071,7 +1071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1438370588
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 796106786}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SceneLoading, Assembly-CSharp
         m_MethodName: Zurueck
         m_Mode: 1

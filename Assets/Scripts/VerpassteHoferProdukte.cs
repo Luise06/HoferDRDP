@@ -6,7 +6,7 @@ using UnityEngine;
 public class VerpassteHoferProdukte : MonoBehaviour
 {
     public int verpassteProdukte;
-    public Spielende spielendeScript;
+    public VerschiedeneScene verschiedeneSceneScript;
     public TextMeshProUGUI missedText;
     public AudioSource audioMiss;
     bool einmalAbspielen = true;
@@ -31,7 +31,7 @@ public class VerpassteHoferProdukte : MonoBehaviour
     {
         if (verpassteProdukte >= 3)
         {
-            spielendeScript.Lost();
+            verschiedeneSceneScript.Lost();
         }
 
     }

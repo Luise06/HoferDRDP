@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Hauptmenue.unity
     guid: e743aec5f07456542ba1a136373b0c16
   - enabled: 1
+    path: Assets/Scenes/Spielauswahl.unity
+    guid: 44f87277d9bf9214980c04bd21a9c79c
+  - enabled: 1
     path: Assets/Scenes/foodDrop.unity
     guid: 919d8ff719a26c74b85bcb9eb5ab80ef
   - enabled: 1
     path: Assets/Scenes/GewonnenVerloren.unity
     guid: e6fe273edd2fc8c41a17f3f0ca0bc527
-  - enabled: 1
-    path: Assets/Scenes/Spielauswahl.unity
-    guid: 44f87277d9bf9214980c04bd21a9c79c
   - enabled: 1
     path: Assets/Scenes/KassaSchrei.unity
     guid: 74203d4d0c80afe48b150bd699c0f5d7

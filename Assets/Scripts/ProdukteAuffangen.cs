@@ -8,7 +8,7 @@ public class ProdukteAuffangen : MonoBehaviour
 {
     public int currentScore;
     [SerializeField] TextMeshProUGUI scoreText;
-    public Spielende spielendeScript;
+    public VerschiedeneScene verschiedeneSceneScript;
     public AudioSource audioSource;
 
 
@@ -25,7 +25,7 @@ public class ProdukteAuffangen : MonoBehaviour
         }
         if (collision.gameObject.tag == "KeinHoferProdukt")
         {
-            spielendeScript.Lost();
+            verschiedeneSceneScript.Lost();
         }
     }
     void CheckHighScore()

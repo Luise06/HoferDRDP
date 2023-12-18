@@ -18,9 +18,7 @@ public class LoadSceneScript : MonoBehaviour
     bool einemalAbgespielt = true;
     void Start()
     {
-        //score.text = StaticVariablen.score.ToString();
         particelSystem.SetActive(false);
-        Debug.Log(PlayerPrefs.GetInt("HighScore"));
     }
 
     void Update()
@@ -29,9 +27,7 @@ public class LoadSceneScript : MonoBehaviour
         {
             gewonnenPanel.SetActive(true);
             verlorenPanel.SetActive(false);
-            //gewonnenVerlorenText.text = StaticVariablen.gewonnen;
             particelSystem.SetActive(true);
-            //text.text = "Dein neuer Highscore ist ";
             highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
         }
         else
@@ -39,9 +35,6 @@ public class LoadSceneScript : MonoBehaviour
             verlorenPanel.SetActive(true);
             gewonnenPanel.SetActive(false);
             score.text = StaticVariablen.score.ToString();
-            //int punkteGebraucht = PlayerPrefs.GetInt("HighScore") - StaticVariablen.score +1;
-            //text.text = "Du hättest noch "  + punkteGebraucht + " Punkte gebraucht um den Highscore zu schlagen.";
-            //highScore.text = 
             if (einemalAbgespielt)
             {
                 loseAudio.Play(0);
