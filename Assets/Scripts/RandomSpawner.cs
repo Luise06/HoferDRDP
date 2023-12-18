@@ -19,8 +19,6 @@ public class RandomSpawner : MonoBehaviour
         InvokeRepeating("RandomSpawn", randomSpawnTime, spawnDelay);
         for (int i = 0; i < objPrefab.Length - 1; i++)
         {
-
-            Debug.Log(gravitySpeed);
             objPrefab[i].GetComponent<Rigidbody2D>().gravityScale = 2;
         }
     }
@@ -28,51 +26,22 @@ public class RandomSpawner : MonoBehaviour
     {
         if (produkteAuffangen.currentScore >= zeitverschnaellerung)
         {
-            /*randomSpawnTime = randomSpawnTime * 2f;
-            spawnDelay = spawnDelay * 0.5f;
-            
-            Debug.Log(randomSpawnTime);
-            Debug.Log(spawnDelay);*/
-            gravitySpeed = gravitySpeed * 1.5f;
-            zeitverschnaellerung = zeitverschnaellerung + 5;
+            gravitySpeed = gravitySpeed * 1.1f;
+            zeitverschnaellerung = zeitverschnaellerung + 1;
             for (int i = 0; i < objPrefab.Length -1; i++)
             {
-                
-                Debug.Log(gravitySpeed);
+                Debug.Log("Gravity: "+ gravitySpeed);
                 objPrefab[i].GetComponent<Rigidbody2D>().gravityScale = gravitySpeed;
             }
         }
     }
-    public void CancelInvokeL()
-    {
-        //CancelInvoke("RandomSpawn");
-        cancelInvokeBool = true;
-        Time.timeScale = 0;
-        
-    }
-    public void DontCancelInvoke()
-    {
-        //InvokeRepeating("RandomSpawn", randomSpawnTime, spawnDelay);
-        cancelInvokeBool = false;
-        Time.timeScale = 1;
-        /*for (int i = 0; i < objPrefab.Length; i++)
-        {
-            objPrefab[i].GetComponent<Rigidbody2D>().gravityScale = 1;
-        }*/
-    }
+    
 
     public void RandomSpawn()
     {
         Vector3 randomSpawnPosition = new Vector3(Random.Range(-2, 3), 7, 0);
-        GameObject insTantiatObj = objPrefab[Random.Range(0, 19)];
+        GameObject insTantiatObj = objPrefab[Random.Range(0, objPrefab.Length-1)];
         Instantiate(insTantiatObj, randomSpawnPosition, Quaternion.identity);
         instanzen.Add(insTantiatObj);
-        //insTantiatObj.SetActive()
-        if (cancelInvokeBool)
-        {
-            Debug.Log(GameObject.FindGameObjectsWithTag("HoferProdukte"));
-            //insTantiatObj.SetActive(false);
-            //insTantiatObj.GetComponent<Rigidbody2D>().enable = true;
-        }
     }
 }

@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6247445782697515293, guid: 46bcad5ad853a554e9312ded3571ace7, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 6.75
       objectReference: {fileID: 0}
     - target: {fileID: 6418593751105967988, guid: 46bcad5ad853a554e9312ded3571ace7, type: 3}
       propertyPath: m_IsTrigger
