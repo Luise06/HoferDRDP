@@ -337,9 +337,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 796106784}
-        m_TargetAssemblyTypeName: LoadSceneScript, Assembly-CSharp
-        m_MethodName: SceneLaden
+      - m_Target: {fileID: 796106786}
+        m_TargetAssemblyTypeName: VerschiedeneScene, Assembly-CSharp
+        m_MethodName: FoodDrop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1296,9 +1296,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SceneLoading, Assembly-CSharp
-        m_MethodName: Zurueck
+      - m_Target: {fileID: 796106786}
+        m_TargetAssemblyTypeName: VerschiedeneScene, Assembly-CSharp
+        m_MethodName: Home
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1363,7 +1363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1690863322
 RectTransform:
   m_ObjectHideFlags: 0

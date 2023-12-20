@@ -26,7 +26,7 @@ public class RandomSpawner : MonoBehaviour
     {
         if (produkteAuffangen.currentScore >= zeitverschnaellerung)
         {
-            gravitySpeed = gravitySpeed * 1.1f;
+            gravitySpeed = gravitySpeed * 1.05f;
             zeitverschnaellerung = zeitverschnaellerung + 1;
             for (int i = 0; i < objPrefab.Length -1; i++)
             {
