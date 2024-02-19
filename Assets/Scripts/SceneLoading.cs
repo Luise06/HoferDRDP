@@ -20,6 +20,7 @@ public class SceneLoading : MonoBehaviour
     {
         SceneManager.LoadScene("foodDrop");
     }
+    
     public void Rabatte()
     {
 

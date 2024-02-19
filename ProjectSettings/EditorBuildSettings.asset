@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/foodDrop.unity
     guid: 919d8ff719a26c74b85bcb9eb5ab80ef
   - enabled: 1
+    path: Assets/Scenes/FindItem.unity
+    guid: 23a87153f95024543ab788e760d262b5
+  - enabled: 1
     path: Assets/Scenes/GewonnenVerloren.unity
     guid: e6fe273edd2fc8c41a17f3f0ca0bc527
   m_configObjects: {}

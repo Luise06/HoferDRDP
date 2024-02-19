@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: 6d22e97adb79fd6419d454bb150ddbf0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6343449582556203408
+    second: zwinkeranimation_0
+  - first:
+      213: 5412574596620254503
+    second: zwinkeranimation_1
+  - first:
+      213: 1672831167966529244
+    second: zwinkeranimation_2
+  - first:
+      213: -3488063539428066167
+    second: zwinkeranimation_3
+  - first:
+      213: -6656646489530520779
+    second: zwinkeranimation_4
+  - first:
+      213: 595436831489551833
+    second: zwinkeranimation_5
+  - first:
+      213: -6675893940800585197
+    second: zwinkeranimation_6
+  - first:
+      213: 8583633493507487279
+    second: zwinkeranimation_7
+  - first:
+      213: 8991177098102478152
+    second: zwinkeranimation_8
+  - first:
+      213: 7600366504359392806
+    second: zwinkeranimation_9
+  - first:
+      213: 7074324141457183225
+    second: zwinkeranimation_10
+  - first:
+      213: -5819022255315312925
+    second: zwinkeranimation_11
+  - first:
+      213: 5290710251385019174
+    second: zwinkeranimation_12
+  - first:
+      213: 4011770207241164637
+    second: zwinkeranimation_13
+  - first:
+      213: -1491157109333327708
+    second: zwinkeranimation_14
+  - first:
+      213: 5125210692749414237
+    second: zwinkeranimation_15
+  - first:
+      213: -7917884096645641367
+    second: zwinkeranimation_16
+  - first:
+      213: -7813798896565708673
+    second: zwinkeranimation_17
+  - first:
+      213: 1557667222210531698
+    second: zwinkeranimation_18
+  - first:
+      213: 1915083794114616685
+    second: zwinkeranimation_19
+  - first:
+      213: 1024058995769991736
+    second: zwinkeranimation_20
+  - first:
+      213: -4766090123022823358
+    second: zwinkeranimation_21
+  - first:
+      213: 3490084143903636668
+    second: zwinkeranimation_22
+  - first:
+      213: 335314915060082216
+    second: zwinkeranimation_23
+  - first:
+      213: 7694309017971317177
+    second: zwinkeranimation_24
+  - first:
+      213: 8398651528614243667
+    second: zwinkeranimation_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zwinkeranimation_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 48
+        width: 548
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0763325b63a87f7a0800000000000000
+      internalID: -6343449582556203408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_1
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 48
+        width: 548
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d7ad72be35d1b40800000000000000
+      internalID: 5412574596620254503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_2
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6c8df8517173710800000000000000
+      internalID: 1672831167966529244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_3
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cf56201b8e79fc0800000000000000
+      internalID: -3488063539428066167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_4
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 48
+        width: 550
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bae244947de93a0800000000000000
+      internalID: -6656646489530520779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_5
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 48
+        width: 550
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd6e1bb4aa634800800000000000000
+      internalID: 595436831489551833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_6
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312066cc4d57a53a0800000000000000
+      internalID: -6675893940800585197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_7
+      rect:
+        serializedVersion: 2
+        x: 3951
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26b8ae2f213f1770800000000000000
+      internalID: 8583633493507487279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_8
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8459605fee317cc70800000000000000
+      internalID: 8991177098102478152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_9
+      rect:
+        serializedVersion: 2
+        x: 5074
+        y: 48
+        width: 552
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6267e17311de97960800000000000000
+      internalID: 7600366504359392806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_10
+      rect:
+        serializedVersion: 2
+        x: 5636
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f19685435c0d2260800000000000000
+      internalID: 7074324141457183225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_11
+      rect:
+        serializedVersion: 2
+        x: 6200
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee96dbd61eae3fa0800000000000000
+      internalID: -5819022255315312925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_12
+      rect:
+        serializedVersion: 2
+        x: 6764
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b525731f06c6940800000000000000
+      internalID: 5290710251385019174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_13
+      rect:
+        serializedVersion: 2
+        x: 7327
+        y: 48
+        width: 550
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57da1b8fbbaca730800000000000000
+      internalID: 4011770207241164637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_14
+      rect:
+        serializedVersion: 2
+        x: 7891
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a083e172885e4be0800000000000000
+      internalID: -1491157109333327708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_15
+      rect:
+        serializedVersion: 2
+        x: 8455
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fcc5478f7602740800000000000000
+      internalID: 5125210692749414237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_16
+      rect:
+        serializedVersion: 2
+        x: 9019
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bc8b66d560e1290800000000000000
+      internalID: -7917884096645641367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_17
+      rect:
+        serializedVersion: 2
+        x: 9583
+        y: 48
+        width: 548
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f789cd78d4fcf8390800000000000000
+      internalID: -7813798896565708673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_18
+      rect:
+        serializedVersion: 2
+        x: 10141
+        y: 48
+        width: 548
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271d022f512fd9510800000000000000
+      internalID: 1557667222210531698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_19
+      rect:
+        serializedVersion: 2
+        x: 10704
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d1f4f609eb39a10800000000000000
+      internalID: 1915083794114616685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_20
+      rect:
+        serializedVersion: 2
+        x: 11268
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832e9ef1b30363e00800000000000000
+      internalID: 1024058995769991736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_21
+      rect:
+        serializedVersion: 2
+        x: 11832
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2401ab1f8427bddb0800000000000000
+      internalID: -4766090123022823358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_22
+      rect:
+        serializedVersion: 2
+        x: 12395
+        y: 48
+        width: 550
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc7991a9054f6030800000000000000
+      internalID: 3490084143903636668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_23
+      rect:
+        serializedVersion: 2
+        x: 12959
+        y: 48
+        width: 550
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826eb00832747a400800000000000000
+      internalID: 335314915060082216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_24
+      rect:
+        serializedVersion: 2
+        x: 13523
+        y: 48
+        width: 549
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9d340294da7ca60800000000000000
+      internalID: 7694309017971317177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zwinkeranimation_25
+      rect:
+        serializedVersion: 2
+        x: 14084
+        y: 48
+        width: 545
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35de75b31110e8470800000000000000
+      internalID: 8398651528614243667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,6 +6,16 @@ TagManager:
   tags:
   - HoferProdukt
   - KeinHoferProdukt
+  - GameMusic
+  - Cocos
+  - Disco
+  - Speed
+  - Dolphys
+  - FlyingPower
+  - Eistee
+  - Doppelkekse
+  - Milch
+  - Pizzaschiffchen
   layers:
   - Default
   - TransparentFX
