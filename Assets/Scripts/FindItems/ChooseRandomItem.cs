@@ -14,5 +14,6 @@ public class ChooseRandomItem : MonoBehaviour
         int randomItemNumber = Random.Range(0, itemSuchen.Length - 1);
         Instantiate(itemSuchen[randomItemNumber], new Vector3(0, 2.75f, 0), Quaternion.identity);
         gesuchterTagName = itemSuchen[randomItemNumber].tag;
+        Debug.Log(gesuchterTagName);
     }
 }

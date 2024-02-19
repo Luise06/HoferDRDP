@@ -15,20 +15,13 @@ public class ItemsErkennen : MonoBehaviour
             Debug.Log("richtiges Objekt");
         }
     }
-    private void Update()
+    
+    
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (Input.GetMouseButton(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.transform.tag == "Disco")
-                {
-                    GameObject temp = hit.transform.gameObject;
-
-                }
-            }
+            Debug.Log("Maus Gedrückt");
         }
     }
 }
