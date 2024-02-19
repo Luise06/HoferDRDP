@@ -16,6 +16,7 @@ public class ScaleFromMic : MonoBehaviour
     float rightAreaFloatStart;
     float rightAreaFloatEnd;
     [SerializeField] Text loudnessText;
+    [SerializeField] Text maxLoudnessText;
 
     [SerializeField] float maxLoudness;
     public float loudnessSensibility = 2f;
@@ -44,10 +45,13 @@ public class ScaleFromMic : MonoBehaviour
             loudnessList.RemoveAt(0);
         }
         loudnessText.text = loudness.ToString();
+        maxLoudnessText.text = maxLoudness.ToString();
     }
 
     public void PhraseSaid()
     {
+
+        lastSecs.Clear();
         foreach (float loudnessItem in loudnessList)
         {
             lastSecs.Add(loudnessItem);
@@ -71,4 +75,6 @@ public class ScaleFromMic : MonoBehaviour
         }
 
     }
+
+     
 }
