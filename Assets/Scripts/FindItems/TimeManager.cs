@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
@@ -25,7 +26,7 @@ public class TimeManager : MonoBehaviour
             if (currentTime <= 0)
             {
                 currentTime = 0;
-                isCounting = false;
+                //isCounting = false;
                 // Hier kannst du die Methode aufrufen, die ausgeführt werden soll, wenn der Countdown abgelaufen ist.
                 CountdownFinished();
             }
@@ -43,6 +44,7 @@ public class TimeManager : MonoBehaviour
     void CountdownFinished()
     {
         Debug.Log("Countdown abgeschlossen!");
+        SceneManager.LoadScene("GewonnenVerloren");
         // Hier kannst du weitere Aktionen ausführen, wenn der Countdown abgeschlossen ist.
     }
 }

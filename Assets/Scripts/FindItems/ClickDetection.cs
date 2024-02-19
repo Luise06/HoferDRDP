@@ -3,7 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class ClickDetection : MonoBehaviour
 {
-    public ChooseRandomItem chooseRandomItem;
+    ChooseRandomItem chooseRandomItem;
+    ScoreFindItem scoreFindItem;
+
+    private void Start()
+    {
+        chooseRandomItem = GameObject.Find("GameManager").GetComponent<ChooseRandomItem>();
+        scoreFindItem = GameObject.Find("GameManager").GetComponent<ScoreFindItem>();
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -18,7 +26,8 @@ public class ClickDetection : MonoBehaviour
                     
                     if (gameObject.tag == chooseRandomItem.gesuchterTagName)
                     {
-                        SceneManager.LoadScene(0);
+                        scoreFindItem.findItemScore++;
+                        chooseRandomItem.RandomObjektausWahl();
                     }
                     
                 }
