@@ -40,4 +40,10 @@ public class VerschiedeneScene : MonoBehaviour
     {
         SceneManager.LoadScene("Hauptmenue");
     }
+
+    public void Gutscheine()
+    {
+        SceneManager.LoadScene("Gutscheine");
+    }
+
 }
