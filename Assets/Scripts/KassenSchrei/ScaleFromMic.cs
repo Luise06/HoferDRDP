@@ -25,6 +25,8 @@ public class ScaleFromMic : MonoBehaviour
     [SerializeField] private List<float> loudnessList;
     [SerializeField] public List<float> lastSecs;
 
+    private IEnumerator coroutine;
+
     private void Start()
     {
         rightAreaFloatStart = Random.Range(0.4f, 0.85f);
@@ -40,7 +42,7 @@ public class ScaleFromMic : MonoBehaviour
         }
         volumeSlider.value = loudness;
         loudnessList.Add(loudness);
-        if (loudnessList.Count > 90)
+        if (loudnessList.Count > 130)
         {
             loudnessList.RemoveAt(0);
         }
@@ -50,7 +52,13 @@ public class ScaleFromMic : MonoBehaviour
 
     public void PhraseSaid()
     {
+        coroutine = WaitTalk(3.0f);
+        StartCoroutine(coroutine);
+    }
 
+    IEnumerator WaitTalk(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
         lastSecs.Clear();
         foreach (float loudnessItem in loudnessList)
         {
@@ -73,8 +81,5 @@ public class ScaleFromMic : MonoBehaviour
         {
             Debug.Log("Verloren");
         }
-
     }
-
-     
 }
