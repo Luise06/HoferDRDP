@@ -15,8 +15,6 @@ public class ScaleFromMic : MonoBehaviour
     [SerializeField] Slider rightArea;
     float rightAreaFloatStart;
     float rightAreaFloatEnd;
-    [SerializeField] Text loudnessText;
-    [SerializeField] Text maxLoudnessText;
 
     [SerializeField] float maxLoudness;
     public float loudnessSensibility = 2f;
@@ -26,6 +24,8 @@ public class ScaleFromMic : MonoBehaviour
     [SerializeField] public List<float> lastSecs;
 
     private IEnumerator coroutine;
+
+    [SerializeField] GameObject bgSlider;
 
     private void Start()
     {
@@ -46,8 +46,14 @@ public class ScaleFromMic : MonoBehaviour
         {
             loudnessList.RemoveAt(0);
         }
-        loudnessText.text = loudness.ToString();
-        maxLoudnessText.text = maxLoudness.ToString();
+        if (loudness > rightAreaFloatEnd)
+        {
+            bgSlider.GetComponent<Image>().color = Color.red;
+        }
+        else
+        {
+            bgSlider.GetComponent<Image>().color = new Color(63f,114f,196f,255f);
+        }
     }
 
     public void PhraseSaid()
