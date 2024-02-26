@@ -900,9 +900,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 60008104}
-        m_TargetAssemblyTypeName: SceneLoading, Assembly-CSharp
-        m_MethodName: Rabatte
+      - m_Target: {fileID: 60008105}
+        m_TargetAssemblyTypeName: VerschiedeneScene, Assembly-CSharp
+        m_MethodName: Gutscheine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
