@@ -36,19 +36,13 @@ public class LoadSceneScript : MonoBehaviour
             verlorenPanel.SetActive(false);
             particelSystem.SetActive(true);
             highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
-
-
-            hasWon = true;
-
-            if (hasWon)
-            {
-                ShowGutschein();
-            }
-
+            CheckWinCondition();
 
         }
         else
         {
+            gutscheinanzeige.SetActive(false);
+
             verlorenPanel.SetActive(true);
             gewonnenPanel.SetActive(false);
             score.text = StaticVariablen.score.ToString();
@@ -63,27 +57,22 @@ public class LoadSceneScript : MonoBehaviour
 
     public void ShowGutschein()
     {
-        // Überprüfe, ob das Gutscheinfeld bereits angezeigt wird
         if (!gutscheinanzeige.activeSelf)
         {
-            // Aktiviere das Gutscheinfeld
             gutscheinanzeige.SetActive(true);
 
-            // Überprüfe, ob der Spieler bereits einen Gutschein hat
             if (!PlayerPrefs.HasKey("Gutschein"))
             {
-                // Wähle einen zufälligen Gutschein aus der Liste aus
                 GameObject randomGutschein = gutscheine[Random.Range(0, gutscheine.Count)];
 
-                // Instanziere den ausgewählten Gutschein und platziere ihn im Gutscheinfeld
                 GameObject instantiatedGutschein = Instantiate(randomGutschein, gutscheinanzeige.transform);
 
-                // Speichere den Gutschein in den PlayerPrefs, damit er beim nächsten Mal nicht erneut angezeigt wird
                 PlayerPrefs.SetString("Gutschein", randomGutschein.name);
+                gutscheine.Remove(randomGutschein);
             }
             else
             {
-                // Wenn der Spieler bereits einen Gutschein hat, zeige ihn an
+                
                 string existingGutscheinName = PlayerPrefs.GetString("Gutschein");
                 GameObject existingGutschein = gutscheine.Find(g => g.name == existingGutscheinName);
                 if (existingGutschein != null)
@@ -96,7 +85,12 @@ public class LoadSceneScript : MonoBehaviour
 
     public void CheckWinCondition()
     {
-       
+        hasWon = true;
+
+        if (hasWon)
+        {
+            ShowGutschein();
+        }
     }
 
         public void SceneLaden()
