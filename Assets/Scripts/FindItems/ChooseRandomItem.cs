@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class ChooseRandomItem : MonoBehaviour
 {
-    [SerializeField] GameObject[] itemSuchen;
+    public GameObject[] itemSuchen;
     public string gesuchterTagName;
+    public int randomFillObjekt;
+    int randomItemNumber;
 
-    private void Start()
+    private void Awake()
     {
         RandomObjektausWahl();
     }
@@ -19,10 +21,18 @@ public class ChooseRandomItem : MonoBehaviour
         }
         Vector3 randomSpawnPosition = new Vector3(Random.Range(-2, 3), 7, 0);
         //GameObject insTantiatObj = ;
-        int randomItemNumber = Random.Range(0, itemSuchen.Length - 1);
+        randomItemNumber = Random.Range(0, itemSuchen.Length);
         //Instantiate(itemSuchen[randomItemNumber], new Vector3(0, 2.75f, 0), Quaternion.identity);
         itemSuchen[randomItemNumber].SetActive(true);
         gesuchterTagName = itemSuchen[randomItemNumber].tag;
         Debug.Log(gesuchterTagName);
+        randomFillObjekt = Random.Range(0, itemSuchen.Length);
+    }
+    private void Update()
+    {
+        if (randomFillObjekt == randomItemNumber)
+        {
+            randomFillObjekt = Random.Range(0, itemSuchen.Length);
+        }
     }
 }
