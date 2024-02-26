@@ -9,14 +9,17 @@ public class RandomPosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         int randomPosition = Random.Range(0,spawnPoints.Length);
-
         for (int i = 0; i < spawnPoints.Length; i++)
         {
+            //GameObject insTaniatObj = chooseRandomItem.itemSuchen[chooseRandomItem.randomItemNumber];
+            //Instantiate(insTantiatObj, randomSpawnPosition, Quaternion.identity);
+            Instantiate(chooseRandomItem.itemSuchen[0]);
             if (i != chooseRandomItem.randomFillObjekt)
             {
                 Debug.Log("Statement ausführen");
-                Instantiate(chooseRandomItem.itemSuchen[chooseRandomItem.randomFillObjekt], spawnPoints[i]);
+                
             }
         }
     }
