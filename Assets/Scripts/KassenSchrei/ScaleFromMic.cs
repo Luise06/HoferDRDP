@@ -15,8 +15,6 @@ public class ScaleFromMic : MonoBehaviour
     [SerializeField] Slider rightArea;
     float rightAreaFloatStart;
     float rightAreaFloatEnd;
-    [SerializeField] Text loudnessText;
-    [SerializeField] Text maxLoudnessText;
 
     [SerializeField] float maxLoudness;
     public float loudnessSensibility = 2f;
@@ -27,13 +25,19 @@ public class ScaleFromMic : MonoBehaviour
 
     private IEnumerator coroutine;
 
+    [SerializeField] GameObject bgSlider;
+
+    [SerializeField] Color32 dunkelBlau;
+    [SerializeField] Text zuLautText;
+
     private void Start()
     {
         rightAreaFloatStart = Random.Range(0.4f, 0.85f);
         rightArea.value = rightAreaFloatStart;
         rightAreaFloatEnd = rightAreaFloatStart + 0.1f;
+        dunkelBlau = new Color32(63, 114, 196, 255);
     }
-    private void FixedUpdate()
+    private void Update()
     {
         float loudness = detector.GetLoudnessFromMicrophone() *2 ;
         if (loudness < threshold)
@@ -46,8 +50,17 @@ public class ScaleFromMic : MonoBehaviour
         {
             loudnessList.RemoveAt(0);
         }
-        loudnessText.text = loudness.ToString();
-        maxLoudnessText.text = maxLoudness.ToString();
+        if (loudness > rightAreaFloatEnd)
+        {
+            bgSlider.GetComponent<Image>().color = Color.red;
+            zuLautText.gameObject.SetActive(true);
+        }
+        else
+        {
+            bgSlider.GetComponent<Image>().color = dunkelBlau;
+            zuLautText.gameObject.SetActive(false);
+        }
+
     }
 
     public void PhraseSaid()
