@@ -30,6 +30,10 @@ public class ScaleFromMic : MonoBehaviour
     [SerializeField] Color32 dunkelBlau;
     [SerializeField] Text zuLautText;
 
+    [SerializeField] GameObject sprichImage;
+
+    [SerializeField] Button activationButton;
+
     private void Start()
     {
         rightAreaFloatStart = Random.Range(0.4f, 0.85f);
@@ -65,6 +69,8 @@ public class ScaleFromMic : MonoBehaviour
 
     public void PhraseSaid()
     {
+        sprichImage.gameObject.SetActive(true);
+        activationButton.GetComponent<Button>().interactable = false;
         coroutine = WaitTalk(3.0f);
         StartCoroutine(coroutine);
     }
@@ -94,5 +100,8 @@ public class ScaleFromMic : MonoBehaviour
         {
             Debug.Log("Verloren");
         }
+        sprichImage.gameObject.SetActive(false);
+        activationButton.GetComponent<Button>().interactable = true;
+
     }
 }
