@@ -34,6 +34,9 @@ public class ScaleFromMic : MonoBehaviour
 
     [SerializeField] Button activationButton;
 
+    public bool spielGewonnen;
+    public bool spielVerloren;
+
     private void Start()
     {
         rightAreaFloatStart = Random.Range(0.4f, 0.85f);
@@ -71,7 +74,7 @@ public class ScaleFromMic : MonoBehaviour
     {
         sprichImage.gameObject.SetActive(true);
         activationButton.GetComponent<Button>().interactable = false;
-        coroutine = WaitTalk(3.0f);
+        coroutine = WaitTalk(2.0f);
         StartCoroutine(coroutine);
     }
 
