@@ -396,11 +396,11 @@ GameObject:
   - component: {fileID: 240425604}
   m_Layer: 5
   m_Name: Gutscheingelb01
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &240425601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -913,6 +913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591774504}
   - component: {fileID: 591774503}
+  - component: {fileID: 591774505}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -946,8 +947,6 @@ MonoBehaviour:
   orange01: {fileID: 1078677993}
   orange02: {fileID: 2046794431}
   returnbutton: {fileID: 884549091}
-  gutscheinPrefab: {fileID: 1796969951}
-  gutscheinContainer: {fileID: 291863684}
 --- !u!4 &591774504
 Transform:
   m_ObjectHideFlags: 0
@@ -962,6 +961,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591774505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591774502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4275252f1749c42865b2df84fb5c3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gutscheinListe:
+  - {fileID: 945570979}
+  - {fileID: 240425600}
+  - {fileID: 1702584486}
+  - {fileID: 1078677993}
+  - {fileID: 1063616586}
+  - {fileID: 1024405960}
+  - {fileID: 618931389}
+  - {fileID: 2046794431}
 --- !u!1 &591938042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &618931390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1965,11 +1985,11 @@ GameObject:
   - component: {fileID: 945570983}
   m_Layer: 5
   m_Name: Gutscheinrot01
-  m_TagString: red
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &945570980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2233,7 +2253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1024405961
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2365,7 +2385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1063616587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2497,7 +2517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1078677994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3540,7 +3560,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1702584487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4392,7 +4412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2046794432
 RectTransform:
   m_ObjectHideFlags: 0

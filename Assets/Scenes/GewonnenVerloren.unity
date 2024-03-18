@@ -297,11 +297,11 @@ GameObject:
   - component: {fileID: 266367107}
   m_Layer: 0
   m_Name: gutscheinORANGE2
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &266367107
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -747,11 +747,11 @@ GameObject:
   - component: {fileID: 687150741}
   m_Layer: 0
   m_Name: gutscheinBLAU2
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &687150741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -962,7 +962,6 @@ GameObject:
   - component: {fileID: 796106784}
   - component: {fileID: 796106786}
   - component: {fileID: 796106787}
-  - component: {fileID: 796106789}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -989,7 +988,7 @@ MonoBehaviour:
   score: {fileID: 1798837740}
   particelSystem: {fileID: 1877249048}
   loseAudio: {fileID: 796106787}
-  gutscheine:
+  gutscheinListe:
   - {fileID: 1448470396}
   - {fileID: 1660085606}
   - {fileID: 1836795437}
@@ -998,8 +997,6 @@ MonoBehaviour:
   - {fileID: 687150740}
   - {fileID: 1299263973}
   - {fileID: 266367106}
-  gewonnenGutschein: 
-  gutscheinanzeige: {fileID: 796106783}
 --- !u!4 &796106785
 Transform:
   m_ObjectHideFlags: 0
@@ -1122,18 +1119,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &796106789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796106783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c4275252f1749c42865b2df84fb5c3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &842845842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,11 +1131,11 @@ GameObject:
   - component: {fileID: 842845843}
   m_Layer: 0
   m_Name: gutscheinBLAU1
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &842845843
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1580,11 +1565,11 @@ GameObject:
   - component: {fileID: 1299263974}
   m_Layer: 0
   m_Name: gutscheinORANGE1
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1299263974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1760,11 +1745,11 @@ GameObject:
   - component: {fileID: 1448470397}
   m_Layer: 0
   m_Name: gutscheinROT1
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1448470397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1924,11 +1909,11 @@ GameObject:
   - component: {fileID: 1660085607}
   m_Layer: 0
   m_Name: gutscheinROT2
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1660085607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2458,11 +2443,11 @@ GameObject:
   - component: {fileID: 1836795438}
   m_Layer: 0
   m_Name: gutscheinGELB1
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1836795438
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2869,11 +2854,11 @@ GameObject:
   - component: {fileID: 2124133608}
   m_Layer: 0
   m_Name: gutscheinGELB2
-  m_TagString: Untagged
+  m_TagString: Gutschein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2124133608
 SpriteRenderer:
   m_ObjectHideFlags: 0
