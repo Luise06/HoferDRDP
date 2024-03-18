@@ -99,12 +99,12 @@ public class ScaleFromMic : MonoBehaviour
         if (rightAreaFloatStart > maxLoudness)
         {
             Debug.Log("Verloren");
-            spielVerloren = false;
+            spielVerloren = true;
         }
         if (rightAreaFloatEnd < maxLoudness)
         {
             Debug.Log("Verloren");
-            spielVerloren = false;
+            spielVerloren = true;
         }
         sprichImage.gameObject.SetActive(false);
         activationButton.GetComponent<Button>().interactable = true;

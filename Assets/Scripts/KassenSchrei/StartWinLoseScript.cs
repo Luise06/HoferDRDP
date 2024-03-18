@@ -29,7 +29,9 @@ public class StartWinLoseScript : MonoBehaviour
         }
         if (ScaleFromMic.spielGewonnen)
         {
-            
+            winScreen.SetActive(true);
+            bgImage.color = new Color32(190, 190, 190, 255);
+            mainCanvas.SetActive(false);
         }
     }
 
@@ -48,5 +50,15 @@ public class StartWinLoseScript : MonoBehaviour
         mainCanvas.SetActive(false);
         tutorialCanvas.SetActive(true);
         bgImage.color = new Color32(190,190,190,255);
+    }
+    public void RestartGame()
+    {
+        ScaleFromMic.spielVerloren = false;
+        ScaleFromMic.spielGewonnen = false;
+        mainCanvas.SetActive(true);
+        loseScreen.SetActive(false);
+        winScreen.SetActive(false);
+        bgImage.color = Color.white;
+
     }
 }
