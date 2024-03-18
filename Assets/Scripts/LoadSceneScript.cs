@@ -18,20 +18,20 @@ public class LoadSceneScript : MonoBehaviour
     bool einemalAbgespielt = true;
 
 
-    public List<GameObject> gutscheine;
+   /* public List<GameObject> gutscheine;
     public List<int> gewonnenGutschein;
     public GameObject gutscheinanzeige;
-    private bool hasWon = false;
+    private bool hasWon = false;*/
 
 
 
-    public static LoadSceneScript instance;
+    //public static LoadSceneScript instance;
 
 
     void Start()
     {
         particelSystem.SetActive(false);
-        gutscheinanzeige.SetActive(false);
+       // gutscheinanzeige.SetActive(false);
     }
 
     void Update()
@@ -42,12 +42,12 @@ public class LoadSceneScript : MonoBehaviour
             verlorenPanel.SetActive(false);
             particelSystem.SetActive(true);
             highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
-            CheckWinCondition();
+           // CheckWinCondition();
 
         }
         else
         {
-            gutscheinanzeige.SetActive(false);
+           // gutscheinanzeige.SetActive(false);
 
             verlorenPanel.SetActive(true);
             gewonnenPanel.SetActive(false);
@@ -61,7 +61,7 @@ public class LoadSceneScript : MonoBehaviour
         }
     }
 
-    public void ShowGutschein()
+    /*public void ShowGutschein()
     {
         if (!gutscheinanzeige.activeSelf)
         {
@@ -155,9 +155,9 @@ public class LoadSceneScript : MonoBehaviour
         {
             SpeichereGutschein();
         }
-    }
+    }*/
 
-        public void SceneLaden()
+    public void SceneLaden()
     {
         SceneManager.LoadScene("foodDrop");
     }
