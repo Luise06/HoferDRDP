@@ -17,9 +17,15 @@ public class LoadSceneScript : MonoBehaviour
     public AudioSource loseAudio;
     bool einemalAbgespielt = true;
 
+
     public List<GameObject> gutscheine;
+    public List<int> gewonnenGutschein;
     public GameObject gutscheinanzeige;
     private bool hasWon = false;
+
+
+
+    public static LoadSceneScript instance;
 
 
     void Start()
@@ -66,9 +72,10 @@ public class LoadSceneScript : MonoBehaviour
                 GameObject randomGutschein = gutscheine[Random.Range(0, gutscheine.Count)];
 
                 GameObject instantiatedGutschein = Instantiate(randomGutschein, gutscheinanzeige.transform);
-
+                
                 PlayerPrefs.SetString("Gutschein", randomGutschein.name);
                 gutscheine.Remove(randomGutschein);
+                Debug.Log("ausgesucht");
             }
             else
             {
@@ -80,7 +87,64 @@ public class LoadSceneScript : MonoBehaviour
                     Instantiate(existingGutschein, gutscheinanzeige.transform);
                 }
             }
+
+            
         }
+    }
+
+    
+   
+
+    public void SpeichereGutschein()
+    {
+        if (!PlayerPrefs.HasKey("Gutschein"))
+        {
+            
+            GameObject randomGutschein = GetRandomGutschein();
+
+            PlayerPrefs.SetString("Gutschein", randomGutschein.name);
+
+        }
+
+        Debug.Log("wird gespeichert");
+
+    }
+
+    public GameObject GetRandomGutschein()
+    {
+        if (gutscheine.Count == 0)
+        {
+           
+            return null;
+        }
+
+        int randomIndex = Random.Range(0, gutscheine.Count);
+        gewonnenGutschein.Add(randomIndex);
+        return gutscheine[randomIndex];
+
+
+
+    }
+
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
+    public void GutscheinGewonnen(GameObject gutschein)
+    {
+      
+
     }
 
     public void CheckWinCondition()
@@ -89,7 +153,7 @@ public class LoadSceneScript : MonoBehaviour
 
         if (hasWon)
         {
-            ShowGutschein();
+            SpeichereGutschein();
         }
     }
 

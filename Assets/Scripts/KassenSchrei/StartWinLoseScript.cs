@@ -59,6 +59,9 @@ public class StartWinLoseScript : MonoBehaviour
         loseScreen.SetActive(false);
         winScreen.SetActive(false);
         bgImage.color = Color.white;
-
+    }
+    public void HomeButton()
+    {
+        SceneManager.LoadScene(0);
     }
 }
