@@ -13,8 +13,8 @@ public class ScaleFromMic : MonoBehaviour
 
     [SerializeField] Slider volumeSlider;
     [SerializeField] Slider rightArea;
-    float rightAreaFloatStart;
-    float rightAreaFloatEnd;
+    [SerializeField] float rightAreaFloatStart;
+    [SerializeField] float rightAreaFloatEnd;
 
     [SerializeField] float maxLoudness;
     public float loudnessSensibility = 2f;
@@ -34,8 +34,8 @@ public class ScaleFromMic : MonoBehaviour
 
     [SerializeField] Button activationButton;
 
-    public bool spielGewonnen;
-    public bool spielVerloren;
+    static public bool spielGewonnen;
+    static public bool spielVerloren;
 
     private void Start()
     {
@@ -93,15 +93,18 @@ public class ScaleFromMic : MonoBehaviour
             if (rightAreaFloatEnd > maxLoudness)
             {
                 Debug.Log("Gewonnen!");
+                spielGewonnen = true;
             }
         }
         if (rightAreaFloatStart > maxLoudness)
         {
             Debug.Log("Verloren");
+            spielVerloren = false;
         }
         if (rightAreaFloatEnd < maxLoudness)
         {
             Debug.Log("Verloren");
+            spielVerloren = false;
         }
         sprichImage.gameObject.SetActive(false);
         activationButton.GetComponent<Button>().interactable = true;
