@@ -18,7 +18,7 @@ public class ScaleFromMic : MonoBehaviour
 
     [SerializeField] float maxLoudness;
     public float loudnessSensibility = 2f;
-    public float threshold = 0.1f;
+    public float threshold = 0.005f;
 
     [SerializeField] private List<float> loudnessList;
     [SerializeField] public List<float> lastSecs;
@@ -87,7 +87,7 @@ public class ScaleFromMic : MonoBehaviour
             lastSecs.Add(loudnessItem);
         }
         lastSecs.Sort();
-        maxLoudness = lastSecs[89];
+        maxLoudness = lastSecs[129];
         if (rightAreaFloatStart < maxLoudness)
         {
             if (rightAreaFloatEnd > maxLoudness)
