@@ -35,7 +35,7 @@ public class ClickDetection : MonoBehaviour
                     {
                         
                         scoreFindItem.findItemScore++;
-                        findScore.text = scoreFindItem.findItemScore.ToString();
+                        findScore.text = "Gefundene: " + scoreFindItem.findItemScore.ToString();
                         chooseRandomItem.RandomObjektausWahl();
                         randomPosition.DestroyGameObjekts();
                     }
