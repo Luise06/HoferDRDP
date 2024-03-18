@@ -395,12 +395,12 @@ GameObject:
   - component: {fileID: 240425602}
   - component: {fileID: 240425604}
   m_Layer: 5
-  m_Name: gelb01
+  m_Name: Gutscheingelb01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &240425601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -674,10 +674,10 @@ RectTransform:
   m_Father: {fileID: 1377549496}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -359.99927, y: 0}
-  m_SizeDelta: {x: 330.8428, y: 61.51}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -897.99927, y: 887}
+  m_SizeDelta: {x: 1406.8428, y: 1835.51}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &291863685
 MonoBehaviour:
@@ -945,7 +945,9 @@ MonoBehaviour:
   blau02: {fileID: 618931389}
   orange01: {fileID: 1078677993}
   orange02: {fileID: 2046794431}
-  returnbutton: {fileID: 0}
+  returnbutton: {fileID: 884549091}
+  gutscheinPrefab: {fileID: 1796969951}
+  gutscheinContainer: {fileID: 291863684}
 --- !u!4 &591774504
 Transform:
   m_ObjectHideFlags: 0
@@ -1237,12 +1239,12 @@ GameObject:
   - component: {fileID: 618931391}
   - component: {fileID: 618931393}
   m_Layer: 5
-  m_Name: blau02
+  m_Name: Gutscheinblau02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &618931390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1549,8 +1551,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1904397413}
   m_HandleRect: {fileID: 1904397412}
   m_Direction: 2
-  m_Value: 0.87319976
-  m_Size: 0.38461322
+  m_Value: 0.87319326
+  m_Size: 0.38464472
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1962,12 +1964,12 @@ GameObject:
   - component: {fileID: 945570981}
   - component: {fileID: 945570983}
   m_Layer: 5
-  m_Name: rot01
+  m_Name: Gutscheinrot01
   m_TagString: red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &945570980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2226,12 +2228,12 @@ GameObject:
   - component: {fileID: 1024405962}
   - component: {fileID: 1024405964}
   m_Layer: 5
-  m_Name: gelb02
+  m_Name: Gutscheingelb02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1024405961
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2358,12 +2360,12 @@ GameObject:
   - component: {fileID: 1063616588}
   - component: {fileID: 1063616590}
   m_Layer: 5
-  m_Name: rot02
+  m_Name: Gutscheinrot02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1063616587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2490,12 +2492,12 @@ GameObject:
   - component: {fileID: 1078677995}
   - component: {fileID: 1078677997}
   m_Layer: 5
-  m_Name: orange01
+  m_Name: Gutscheinorange01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1078677994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2626,7 +2628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1230551034
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3199,7 +3201,7 @@ GameObject:
   - component: {fileID: 1562261081}
   - component: {fileID: 1562261080}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: ManagerScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3533,12 +3535,12 @@ GameObject:
   - component: {fileID: 1702584488}
   - component: {fileID: 1702584490}
   m_Layer: 5
-  m_Name: blau01
+  m_Name: Gutscheinblau01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1702584487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4385,12 +4387,12 @@ GameObject:
   - component: {fileID: 2046794433}
   - component: {fileID: 2046794435}
   m_Layer: 5
-  m_Name: orange03
+  m_Name: Gutscheinorange03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2046794432
 RectTransform:
   m_ObjectHideFlags: 0

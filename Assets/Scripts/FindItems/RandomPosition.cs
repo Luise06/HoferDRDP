@@ -4,26 +4,45 @@ using UnityEngine;
 
 public class RandomPosition : MonoBehaviour
 {
-    ChooseRandomItem chooseRandomItem;
+    public ChooseRandomItem chooseRandomItem;
     [SerializeField] Transform[] spawnPoints;
-    // Start is called before the first frame update
+    int randomPosition;
+    
     void Start()
     {
+
+        FillObjektsSpawn();
         
-        int randomPosition = Random.Range(0,spawnPoints.Length);
+    }
+    public void FillObjektsSpawn()
+    {
+        randomPosition = Random.Range(0, spawnPoints.Length);
+        Instantiate(chooseRandomItem.abgewandeltesItem[chooseRandomItem.randomItemNumber], spawnPoints[randomPosition]);
         for (int i = 0; i < spawnPoints.Length; i++)
         {
-            //GameObject insTaniatObj = chooseRandomItem.itemSuchen[chooseRandomItem.randomItemNumber];
-            //Instantiate(insTantiatObj, randomSpawnPosition, Quaternion.identity);
-            Instantiate(chooseRandomItem.itemSuchen[0]);
-            if (i != chooseRandomItem.randomFillObjekt)
+            Debug.Log(randomPosition);
+            
+            if (i != randomPosition)
             {
-                Debug.Log("Statement ausführen");
-                
+                GameObject instantiateObj = chooseRandomItem.itemsSuchen[chooseRandomItem.randomItemNumber];
+                instantiateObj.SetActive(true);
+                Instantiate(instantiateObj, spawnPoints[i]);
+
             }
         }
+       
     }
-
+    public void DestroyGameObjekts()
+    {
+        
+        for (int i = 0; i < spawnPoints.Length; i++)
+        {
+            Destroy(spawnPoints[i].GetChild(1).gameObject);
+            //Debug.Log(i);
+        }
+        
+        FillObjektsSpawn();
+    }
     // Update is called once per frame
     void Update()
     {

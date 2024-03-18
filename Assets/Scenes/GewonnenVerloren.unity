@@ -900,7 +900,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 796106788}
+      - m_Target: {fileID: 796106786}
         m_TargetAssemblyTypeName: VerschiedeneScene, Assembly-CSharp
         m_MethodName: Gutscheine
         m_Mode: 1
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 796106784}
   - component: {fileID: 796106786}
   - component: {fileID: 796106787}
-  - component: {fileID: 796106788}
+  - component: {fileID: 796106789}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -998,7 +998,8 @@ MonoBehaviour:
   - {fileID: 687150740}
   - {fileID: 1299263973}
   - {fileID: 266367106}
-  gutscheinanzeige: {fileID: 0}
+  gewonnenGutschein: 
+  gutscheinanzeige: {fileID: 796106783}
 --- !u!4 &796106785
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,7 +1122,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &796106788
+--- !u!114 &796106789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1130,7 +1131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 796106783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4645fbe9633ad84c9eff3bbd9080ca0, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c4275252f1749c42865b2df84fb5c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &842845842
@@ -1311,7 +1312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7550882080870501363, guid: d125ea7d9968cdb4397b12a22161d6d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -960.6
+      value: -1078
       objectReference: {fileID: 0}
     - target: {fileID: 7550882080870501363, guid: d125ea7d9968cdb4397b12a22161d6d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2602,7 +2603,7 @@ SpriteRenderer:
   m_Size: {x: 53.91501, y: 82.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2003207404
