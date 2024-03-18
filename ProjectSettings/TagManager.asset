@@ -16,6 +16,8 @@ TagManager:
   - Doppelkekse
   - Milch
   - Pizzaschiffchen
+  - red
+  - Gutschein
   layers:
   - Default
   - TransparentFX
