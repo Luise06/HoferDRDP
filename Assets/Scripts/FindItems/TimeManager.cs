@@ -36,7 +36,7 @@ public class TimeManager : MonoBehaviour
     void UpdateCountdownText()
     {
         int seconds = Mathf.FloorToInt(currentTime % 60);
-        countdownText.text = seconds.ToString();
+        countdownText.text ="Timer: "+ seconds.ToString() +"s";
     }
 
     
