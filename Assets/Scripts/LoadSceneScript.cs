@@ -33,29 +33,20 @@ public class LoadSceneScript : MonoBehaviour
     void Start()
     {
         particelSystem.SetActive(false);
-        // gutscheinanzeige.SetActive(false);
-        // Deaktivieren Sie alle Gutscheine, bevor Sie den gewonnenen Gutschein aktivieren
-        // Deaktivieren Sie alle Gutscheine, bevor Sie den gewonnenen Gutschein aktivieren
-
-
-        // Wechseln Sie zur n‰chsten Szene
-        //SceneManager.LoadScene("Scene2");
-        // W‰hlen Sie zuf‰llig einen Gutschein aus der Liste aus
+      
         int randomIndex = Random.Range(0, gutscheinListe.Count);
         GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
 
-        // Durchlaufen Sie alle Gutscheine und deaktivieren Sie sie, auﬂer dem gewonnenen Gutschein
         foreach (GameObject gutschein in gutscheinListe)
         {
             gutschein.SetActive(gutschein == gewonnenerGutschein);
         }
 
-        // Speichern Sie den Namen des gewonnenen Gutscheins in PlayerPrefs
+       
         PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
         PlayerPrefs.Save();
 
-        // Wechseln Sie zur n‰chsten Szene
-        //SceneManager.LoadScene("Scene2");
+        
     }
 
 
