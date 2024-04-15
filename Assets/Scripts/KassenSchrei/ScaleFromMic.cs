@@ -72,6 +72,7 @@ public class ScaleFromMic : MonoBehaviour
 
     public void PhraseSaid()
     {
+        lastSecs.Clear();
         sprichImage.gameObject.SetActive(true);
         activationButton.GetComponent<Button>().interactable = false;
         coroutine = WaitTalk(2.0f);
@@ -81,7 +82,6 @@ public class ScaleFromMic : MonoBehaviour
     IEnumerator WaitTalk(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        lastSecs.Clear();
         foreach (float loudnessItem in loudnessList)
         {
             lastSecs.Add(loudnessItem);
