@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class gutscheineanzeigen : MonoBehaviour
 {
-    public List<GameObject> gutscheinListe = new List<GameObject>();
+     public List<GameObject> gutscheinListe = new List<GameObject>();
 
     void Start()
     {
@@ -25,8 +25,9 @@ public class gutscheineanzeigen : MonoBehaviour
             if (isSaved == 1)
             {
                 gutscheinListe[i].SetActive(true);
+                Debug.Log("Gutschein wird angezeigt");
             }
-        }
+        } 
     }
 
     public void Update()
