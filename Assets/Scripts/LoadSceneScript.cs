@@ -20,10 +20,10 @@ public class LoadSceneScript : MonoBehaviour
 
     public List<GameObject> gutscheinListe = new List<GameObject>();
 
-    /* public List<GameObject> gutscheine;
+     public List<GameObject> gutscheine;
      public List<int> gewonnenGutschein;
      public GameObject gutscheinanzeige;
-     private bool hasWon = false;*/
+     private bool hasWon = false;
 
 
 
@@ -33,7 +33,7 @@ public class LoadSceneScript : MonoBehaviour
     void Start()
     {
         particelSystem.SetActive(false);
-      
+
         int randomIndex = Random.Range(0, gutscheinListe.Count);
         GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
 
@@ -42,11 +42,12 @@ public class LoadSceneScript : MonoBehaviour
             gutschein.SetActive(gutschein == gewonnenerGutschein);
         }
 
-       
-        PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
+        string gutscheinName = "GutscheinNR" + randomIndex;
+        PlayerPrefs.SetInt(gutscheinName, 1);
+        Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
+        //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
         PlayerPrefs.Save();
 
-        
     }
 
 
@@ -67,12 +68,12 @@ public class LoadSceneScript : MonoBehaviour
             // CheckWinCondition();
 
 
-           
+
 
         }
         else
         {
-           // gutscheinanzeige.SetActive(false);
+            // gutscheinanzeige.SetActive(false);
 
             verlorenPanel.SetActive(true);
             gewonnenPanel.SetActive(false);
@@ -82,11 +83,11 @@ public class LoadSceneScript : MonoBehaviour
                 loseAudio.Play(0);
                 einemalAbgespielt = false;
             }
-            
+
         }
     }
 
-    /*public void ShowGutschein()
+  /*public void ShowGutschein()
     {
         if (!gutscheinanzeige.activeSelf)
         {
@@ -99,7 +100,7 @@ public class LoadSceneScript : MonoBehaviour
                 GameObject instantiatedGutschein = Instantiate(randomGutschein, gutscheinanzeige.transform);
                 
                 PlayerPrefs.SetString("Gutschein", randomGutschein.name);
-                gutscheine.Remove(randomGutschein);
+                
                 Debug.Log("ausgesucht");
             }
             else
@@ -152,25 +153,10 @@ public class LoadSceneScript : MonoBehaviour
     }
 
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 
 
-    public void GutscheinGewonnen(GameObject gutschein)
-    {
-      
-
-    }
+   
 
     public void CheckWinCondition()
     {
