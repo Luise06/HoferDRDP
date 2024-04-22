@@ -43,6 +43,7 @@ public class ScaleFromMic : MonoBehaviour
         rightArea.value = rightAreaFloatStart;
         rightAreaFloatEnd = rightAreaFloatStart + 0.1f;
         dunkelBlau = new Color32(63, 114, 196, 255);
+        
     }
     private void Update()
     {
