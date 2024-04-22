@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class ChooseRandomItem : MonoBehaviour
 {
-    public GameObject[] abgewandeltesItem;
+    public GameObject[] abgewandeltesItemArray;
+    //public int[] abgewandeltesItemInt;
     public GameObject[] itemsSuchen;
     public string gesuchterTagName;
-    //public int randomFillObjekt;
+    public int randomItemNumberArray;
     public int randomItemNumber;
+
+    /*public GameObject[] abgewandeltesItem;
+    public GameObject[] abgewandeltesItem1;
+    public GameObject[] abgewandeltesItem2;
+    public GameObject[] abgewandeltesItem3;
+    public GameObject[] abgewandeltesItem4;
+    public GameObject[] abgewandeltesItem5;*/
 
     private void Awake()
     {
@@ -16,21 +24,14 @@ public class ChooseRandomItem : MonoBehaviour
     }
     public void RandomObjektausWahl()
     {
-
-        for (int i = 0; i < abgewandeltesItem.Length; i++)
+        for (int i = 0; i < abgewandeltesItemArray.Length; i++)
         {
-            abgewandeltesItem[i].SetActive(false);
+            abgewandeltesItemArray[i].SetActive(false);
         }
-        //Vector3 randomSpawnPosition = new Vector3(Random.Range(-2, 3), 7, 0);
-        //GameObject insTantiatObj = ;
-        randomItemNumber = Random.Range(0, abgewandeltesItem.Length);
-        //Instantiate(itemSuchen[randomItemNumber], new Vector3(0, 2.75f, 0), Quaternion.identity);
-        abgewandeltesItem[randomItemNumber].SetActive(true);
-        gesuchterTagName = abgewandeltesItem[randomItemNumber].tag;
-        
-        //randomFillObjekt = Random.Range(0, itemSuchen.Length);
-        //Debug.Log(randomFillObjekt);
+        randomItemNumberArray = Random.Range(0, abgewandeltesItemArray.Length);
+        abgewandeltesItemArray[randomItemNumberArray].SetActive(true);
+        gesuchterTagName = abgewandeltesItemArray[randomItemNumberArray].tag;
+        randomItemNumber = Random.Range(0, 6);
+        //abgewandeltesItemArray[randomItemNumberArray].gameObject[randomItemNumber];
     }
-    
-    
 }

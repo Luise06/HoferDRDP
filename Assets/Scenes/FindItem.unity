@@ -3385,6 +3385,7 @@ GameObject:
   - component: {fileID: 1140785638}
   - component: {fileID: 1140785639}
   - component: {fileID: 1140785640}
+  - component: {fileID: 1140785643}
   - component: {fileID: 1140785641}
   - component: {fileID: 1140785642}
   m_Layer: 0
@@ -3420,19 +3421,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a7bdb49fcc2db4e8f3fa0cabb18bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abgewandeltesItem:
+  abgewandeltesItemArray:
+  - {fileID: 8157782421170556970, guid: 8149de4934f19014ca2538951b83c16e, type: 3}
+  - {fileID: 1154604164988612890, guid: 4a180193ed1b23b43b316db13eae9327, type: 3}
+  - {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
+  - {fileID: 3149844087669193816, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
+  - {fileID: 7989040008235241435, guid: bf10b4210f8b0314193480ce4df7ecc5, type: 3}
+  - {fileID: 3707147675669624050, guid: 41b809fd62908284290abb1ff03e2275, type: 3}
+  - {fileID: 5427921550246547519, guid: dd6dfb5431a5af345ae16787d66e4f78, type: 3}
   - {fileID: 6007419742351306383, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
   - {fileID: 2901767972922632502, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
-  - {fileID: 2965786449596079845, guid: 3aed0dc654c8eaf4fb67355c78efd8a7, type: 3}
-  - {fileID: 5986851492590606754, guid: 98b2b666f7e4c154b9bb1a0dea2539c4, type: 3}
-  - {fileID: 2737573481312628788, guid: 54dc14cea5e5c514b9a379d89df66308, type: 3}
-  - {fileID: 3149844087669193816, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
-  - {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-  - {fileID: 1154604164988612890, guid: 4a180193ed1b23b43b316db13eae9327, type: 3}
+  - {fileID: 2392983862725943664, guid: 6fd871fe72c9478498f150a30404cc55, type: 3}
+  - {fileID: 5544323250129997762, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
   - {fileID: 7929750119775791186, guid: a317eb34664f2cc40917ba3ba7c8ecce, type: 3}
-  - {fileID: 4753487433784346160, guid: 364273349b8ca634d991c9c67a54b01e, type: 3}
-  - {fileID: 7989040008235241435, guid: bf10b4210f8b0314193480ce4df7ecc5, type: 3}
-  - {fileID: 8157782421170556970, guid: 8149de4934f19014ca2538951b83c16e, type: 3}
   itemsSuchen:
   - {fileID: 8157782421170556970, guid: 8149de4934f19014ca2538951b83c16e, type: 3}
   - {fileID: 1154604164988612890, guid: 4a180193ed1b23b43b316db13eae9327, type: 3}
@@ -3447,6 +3448,7 @@ MonoBehaviour:
   - {fileID: 3149844087669193816, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
   - {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
   gesuchterTagName: 
+  randomItemNumberArray: 0
   randomItemNumber: 0
 --- !u!114 &1140785638
 MonoBehaviour:
@@ -3501,6 +3503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chooseRandomItem: {fileID: 1140785637}
+  randomArray: {fileID: 0}
   spawnPoints:
   - {fileID: 1777765864}
   - {fileID: 864840877}
@@ -3527,6 +3530,7 @@ MonoBehaviour:
   - {fileID: 605243071}
   - {fileID: 1889976120}
   - {fileID: 1746008836}
+  randomPosition: 0
 --- !u!114 &1140785642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3540,6 +3544,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseScreen: {fileID: 350601808}
+--- !u!114 &1140785643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140785635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdfd45875847b7438930352c234a880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed:
+  - {fileID: 2080051913364511046, guid: d4d3d5e1899df08489181bbb2017aad9, type: 3}
+  - {fileID: 8367081772937662162, guid: 31e6d9ef85107d043950e84fbe27ed59, type: 3}
+  - {fileID: 3800110726089679189, guid: c233b33801d316142aa9d2c5a8ff6b95, type: 3}
+  - {fileID: 2315900698503494135, guid: 5aaedaa9aa2e6bd479ecefe37a56a7e5, type: 3}
+  - {fileID: 7692309804721633138, guid: 1e9324b37f36ab547af37193bc79b2b8, type: 3}
+  - {fileID: 8940207384384148912, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
+  cocos: []
+  disco: []
+  dolphys: []
+  doppelkekse: []
+  eisteeBlau: []
+  eisteeGruen: []
+  milch: []
+  flyingPowerBlau: []
+  flyingPowerRosa: []
+  flyingPowerRot: []
+  pizzaschiffchen: []
+  randomPosition: {fileID: 0}
 --- !u!4 &1164538469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1633188415294703113, guid: 2e6f6564bf2e003419253fea6eb9029e, type: 3}
@@ -4264,7 +4299,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1331040511
@@ -5165,7 +5200,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -49.7, y: -46.2}
+  m_AnchoredPosition: {x: -49.700012, y: -46.19995}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1888081985
@@ -5980,7 +6015,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2118424352
