@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class WolkenAnimation : MonoBehaviour
 {
-    public Animation anim;
+    Animation anim;
+    GameObject animObject;
     // Start is called before the first frame update
     void Start()
     {
-        anim.Play("WolkenBewegen");
+        animObject = GameObject.Find("Move");
+        animObject.GetComponent<Animator>().Play("WolkenBewegen");
     }
 
     // Update is called once per frame

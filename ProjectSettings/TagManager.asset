@@ -18,6 +18,7 @@ TagManager:
   - Pizzaschiffchen
   - red
   - Gutschein
+  - Animator
   layers:
   - Default
   - TransparentFX
