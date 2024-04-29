@@ -5,8 +5,9 @@ using UnityEngine;
 public class RandomPosition : MonoBehaviour
 {
     public ChooseRandomItem chooseRandomItem;
-    [SerializeField] Transform[] spawnPoints;
-    int randomPosition;
+    public RandomArray randomArray;
+    public Transform[] spawnPoints;
+    public int randomPosition;
     
     void Start()
     {
@@ -17,14 +18,15 @@ public class RandomPosition : MonoBehaviour
     public void FillObjektsSpawn()
     {
         randomPosition = Random.Range(0, spawnPoints.Length);
-        Instantiate(chooseRandomItem.abgewandeltesItem[chooseRandomItem.randomItemNumber], spawnPoints[randomPosition]);
+        randomArray.RandomArrayausWahl();
+        
         for (int i = 0; i < spawnPoints.Length; i++)
         {
             Debug.Log(randomPosition);
             
             if (i != randomPosition)
             {
-                GameObject instantiateObj = chooseRandomItem.itemsSuchen[chooseRandomItem.randomItemNumber];
+                GameObject instantiateObj = chooseRandomItem.itemsSuchen[chooseRandomItem.randomItemNumberArray];
                 instantiateObj.SetActive(true);
                 Instantiate(instantiateObj, spawnPoints[i]);
 
