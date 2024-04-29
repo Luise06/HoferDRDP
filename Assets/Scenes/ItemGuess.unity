@@ -734,7 +734,7 @@ GameObject:
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -829,10 +829,16 @@ MonoBehaviour:
   - Pizzaschifferl
   - Speed
   richtigeAntwort: 
-  Button1: {fileID: 1039009657}
-  Button2: {fileID: 1656985945}
-  Button3: {fileID: 586768370}
-  Button4: {fileID: 1929320198}
+  Buttons:
+  - {fileID: 1039009657}
+  - {fileID: 1656985945}
+  - {fileID: 586768370}
+  - {fileID: 1929320198}
+  AntwortenText:
+  - {fileID: 593342111}
+  - {fileID: 63353236}
+  - {fileID: 52767811}
+  - {fileID: 919848260}
 --- !u!1 &375198879
 GameObject:
   m_ObjectHideFlags: 0
