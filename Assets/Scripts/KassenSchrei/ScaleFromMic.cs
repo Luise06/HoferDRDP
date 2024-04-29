@@ -78,6 +78,8 @@ public class ScaleFromMic : MonoBehaviour
         activationButton.GetComponent<Button>().interactable = false;
         coroutine = WaitTalk(2.0f);
         StartCoroutine(coroutine);
+        activationButton.GetComponent<Image>().enabled = false;
+
     }
 
     IEnumerator WaitTalk(float waitTime)
@@ -109,6 +111,6 @@ public class ScaleFromMic : MonoBehaviour
         }
         sprichImage.gameObject.SetActive(false);
         activationButton.GetComponent<Button>().interactable = true;
-
+        activationButton.GetComponent<Image>().enabled = false;
     }
 }
