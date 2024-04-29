@@ -273,6 +273,7 @@ MonoBehaviour:
   bgImage: {fileID: 1006810905}
   winScreen: {fileID: 2095242923}
   loseScreen: {fileID: 96466346}
+  loadSceneScript: {fileID: 0}
 --- !u!1 &67611048
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +330,7 @@ MonoBehaviour:
   bgImage: {fileID: 1006810905}
   winScreen: {fileID: 2095242923}
   loseScreen: {fileID: 96466346}
+  loadSceneScript: {fileID: 0}
 --- !u!114 &67611051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,6 +870,7 @@ MonoBehaviour:
   bgImage: {fileID: 1006810905}
   winScreen: {fileID: 2095242923}
   loseScreen: {fileID: 96466346}
+  loadSceneScript: {fileID: 0}
 --- !u!114 &323934693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1778,6 +1781,7 @@ MonoBehaviour:
   bgImage: {fileID: 1006810905}
   winScreen: {fileID: 2095242923}
   loseScreen: {fileID: 96466346}
+  loadSceneScript: {fileID: 0}
 --- !u!1 &1198980820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,6 +2519,7 @@ MonoBehaviour:
   bgImage: {fileID: 1006810905}
   winScreen: {fileID: 2095242923}
   loseScreen: {fileID: 96466346}
+  loadSceneScript: {fileID: 0}
 --- !u!114 &1569610783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2772,6 +2777,7 @@ MonoBehaviour:
   bgImage: {fileID: 1006810905}
   winScreen: {fileID: 2095242923}
   loseScreen: {fileID: 96466346}
+  loadSceneScript: {fileID: 0}
 --- !u!114 &1619169611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3178,6 +3184,7 @@ MonoBehaviour:
   bgImage: {fileID: 1006810905}
   winScreen: {fileID: 2095242923}
   loseScreen: {fileID: 96466346}
+  loadSceneScript: {fileID: 0}
 --- !u!1 &1935412018
 GameObject:
   m_ObjectHideFlags: 0

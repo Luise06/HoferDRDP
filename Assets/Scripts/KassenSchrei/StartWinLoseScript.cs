@@ -11,6 +11,7 @@ public class StartWinLoseScript : MonoBehaviour
     [SerializeField] SpriteRenderer bgImage;
     [SerializeField] GameObject winScreen;
     [SerializeField] GameObject loseScreen;
+    [SerializeField] LoadSceneScript loadSceneScript;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,20 @@ public class StartWinLoseScript : MonoBehaviour
             winScreen.SetActive(true);
             bgImage.color = new Color32(190, 190, 190, 255);
             mainCanvas.SetActive(false);
+            int randomIndex = Random.Range(0, loadSceneScript.gutscheinListe.Count);
+            
+            GameObject gewonnenerGutschein = loadSceneScript.gutscheinListe[randomIndex];
+
+            foreach (GameObject gutschein in loadSceneScript.gutscheinListe)
+            {
+                gutschein.SetActive(gutschein == gewonnenerGutschein);
+            }
+
+            string gutscheinName = "GutscheinNR" + randomIndex;
+            PlayerPrefs.SetInt(gutscheinName, 1);
+            Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
+            //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
+            PlayerPrefs.Save();
         }
     }
 
