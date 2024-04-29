@@ -54,7 +54,11 @@ PrefabInstance:
     - target: {fileID: 8940207384384148814, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5e5bdeee3c5eb3f4882014a01a851146, type: 3}
+      objectReference: {fileID: 21300000, guid: 63ec4f10273e38a41ad669c3ec144a12, type: 3}
+    - target: {fileID: 8940207384384148814, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8940207384384148912, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
       propertyPath: m_Name
       value: speedBrille
