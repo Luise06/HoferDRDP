@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 60782005c83f4874c935a51a9bb0e779, type: 3}
+    - target: {fileID: 3576235689027375573, guid: b3a07484b6faa70448bd1f7ae7958447, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3576235689027375574, guid: b3a07484b6faa70448bd1f7ae7958447, type: 3}
       propertyPath: m_Name
       value: Chips
@@ -30,6 +34,10 @@ PrefabInstance:
     - target: {fileID: 3576235689027375575, guid: b3a07484b6faa70448bd1f7ae7958447, type: 3}
       propertyPath: m_Offset.y
       value: 0.082747936
+      objectReference: {fileID: 0}
+    - target: {fileID: 3576235689027375575, guid: b3a07484b6faa70448bd1f7ae7958447, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3576235689027375575, guid: b3a07484b6faa70448bd1f7ae7958447, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

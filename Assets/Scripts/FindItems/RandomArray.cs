@@ -17,6 +17,7 @@ public class RandomArray : MonoBehaviour
     public GameObject[] flyingPowerRosa;
     public GameObject[] flyingPowerRot;
     public GameObject[] pizzaschiffchen;
+    public GameObject[] riverCola;
     int randomObjekt;
     int randomAbwandlung;
 

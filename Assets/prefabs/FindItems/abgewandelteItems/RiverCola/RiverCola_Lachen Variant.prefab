@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &23791012761987971
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1100032433698619564, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 925c6d9e52f2d1742aef58121b56f75b, type: 3}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619565, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619566, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_Name
+      value: RiverCola_Lachen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6715159334272112392, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702012400491821910, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}

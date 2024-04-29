@@ -3564,7 +3564,14 @@ MonoBehaviour:
   - {fileID: 7692309804721633138, guid: 1e9324b37f36ab547af37193bc79b2b8, type: 3}
   - {fileID: 8940207384384148912, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
   cocos: []
-  disco: []
+  disco:
+  - {fileID: 2996306327425564467, guid: abc9bbefbb2087741810745f7a28a90e, type: 3}
+  - {fileID: 904273343710806742, guid: 3ff54066b3a82dd42bf2562f895559fc, type: 3}
+  - {fileID: 189910653974903332, guid: 330863cf4a742c3479ac719811148daf, type: 3}
+  - {fileID: 8747708914088778766, guid: b1151226c33337c44b13a093222ef787, type: 3}
+  - {fileID: 1047405076643949076, guid: 2eb140df7a1376048b2cd4bd55df149e, type: 3}
+  - {fileID: 4818346027218314799, guid: 6d11d902b5aa9ce4794f9bfd5e92b273, type: 3}
+  - {fileID: 5353786092513146014, guid: 227af1a3a57cf2846b37b739a60e02c2, type: 3}
   dolphys: []
   doppelkekse:
   - {fileID: 836195812477086248, guid: 1f251c94ce1daba41a30b25d84f05b38, type: 3}
@@ -3594,6 +3601,13 @@ MonoBehaviour:
   - {fileID: 8332817093839465890, guid: 5e617a1922a827b40a548b5ef7961c15, type: 3}
   - {fileID: 3768468717824150137, guid: f837939410e135b458cd9021df9d1e83, type: 3}
   - {fileID: 1871664638161031657, guid: 2e6bfc280cb60274297b85591f0c8956, type: 3}
+  riverCola:
+  - {fileID: 1490688000299705619, guid: d31c58950177902408bf16d4ef1bb3fc, type: 3}
+  - {fileID: 1085539477541464877, guid: 7fbddeef22b713e41be65840c06f5c18, type: 3}
+  - {fileID: 4456574118742087388, guid: 8c8e8016af5d62a409bb011528398f2f, type: 3}
+  - {fileID: 6185147037993658954, guid: dadc50dc5d6e7d54783793b50b8fb316, type: 3}
+  - {fileID: 8213700345736648853, guid: a005382a9c7fc00458cd0a385c651415, type: 3}
+  - {fileID: 6574459272125525829, guid: 1d0f69630728eaf4d8b1dec0460d99cb, type: 3}
   randomPosition: {fileID: 0}
 --- !u!4 &1164538469 stripped
 Transform:
@@ -5220,7 +5234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -49.700012, y: -46.19995}
+  m_AnchoredPosition: {x: -49.69995, y: -46.19995}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1888081985
@@ -6289,6 +6303,10 @@ PrefabInstance:
     - target: {fileID: 836195812477086248, guid: 1f251c94ce1daba41a30b25d84f05b38, type: 3}
       propertyPath: m_Name
       value: DoppelkekseTraurigZwinkern
+      objectReference: {fileID: 0}
+    - target: {fileID: 836195812477086248, guid: 1f251c94ce1daba41a30b25d84f05b38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 836195812477086253, guid: 1f251c94ce1daba41a30b25d84f05b38, type: 3}
       propertyPath: m_RootOrder
