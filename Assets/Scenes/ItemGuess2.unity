@@ -1289,19 +1289,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 586768371}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 586768373}
-        m_TargetAssemblyTypeName: ButtonSkript, Assembly-CSharp
-        m_MethodName: CheckButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &586768371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,10 +1337,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 586768368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a152629bd57064391b5bdfa9e3ccdc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d91da8dcec2f6e47a1cf2cf6a1ab09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Falsch: {fileID: 1145301316}
 --- !u!1 &593342109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,19 +2019,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1039009658}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039009660}
-        m_TargetAssemblyTypeName: ButtonSkript, Assembly-CSharp
-        m_MethodName: CheckButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1039009658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2092,10 +2067,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039009655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a152629bd57064391b5bdfa9e3ccdc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d91da8dcec2f6e47a1cf2cf6a1ab09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Falsch: {fileID: 1145301316}
 --- !u!1 &1093423270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,160 +2152,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1145301316
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1145301317}
-  - component: {fileID: 1145301319}
-  - component: {fileID: 1145301318}
-  - component: {fileID: 1145301320}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1145301317
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145301316}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1454188081}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175.5, y: -374.12}
-  m_SizeDelta: {x: 729, y: 256.9}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1145301318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145301316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Falsch!
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2fb6b04c6c72b0f4f8d75fc401d4bbbb, type: 2}
-  m_sharedMaterial: {fileID: 5844978592227203238, guid: 2fb6b04c6c72b0f4f8d75fc401d4bbbb, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 216.8
-  m_fontSizeBase: 216.8
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -351.3183, y: 0, z: 3.2833555, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1145301319
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145301316}
-  m_CullTransparentMesh: 1
---- !u!95 &1145301320
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145301316}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30f6e97440c95f7429650566acf5e626, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1238982574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,7 +2433,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1454188081
 RectTransform:
@@ -2631,7 +2451,6 @@ RectTransform:
   - {fileID: 1656985944}
   - {fileID: 586768369}
   - {fileID: 1929320197}
-  - {fileID: 1145301317}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2887,19 +2706,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1656985946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1656985948}
-        m_TargetAssemblyTypeName: ButtonSkript, Assembly-CSharp
-        m_MethodName: CheckButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1656985946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,10 +2754,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1656985943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a152629bd57064391b5bdfa9e3ccdc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d91da8dcec2f6e47a1cf2cf6a1ab09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Falsch: {fileID: 1145301316}
 --- !u!1 &1745871313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,19 +3138,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1929320199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1929320201}
-        m_TargetAssemblyTypeName: ButtonSkript, Assembly-CSharp
-        m_MethodName: CheckButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1929320199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3392,10 +3186,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1929320196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a152629bd57064391b5bdfa9e3ccdc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d91da8dcec2f6e47a1cf2cf6a1ab09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Falsch: {fileID: 1145301316}
 --- !u!1 &2062265430
 GameObject:
   m_ObjectHideFlags: 0

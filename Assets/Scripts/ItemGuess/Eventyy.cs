@@ -9,7 +9,7 @@ public class Eventyy : MonoBehaviour
     public GameObject[] sprites;
     public GameObject[] shdwSprites;
     public string[] Antworten;
-    public string richtigeAntwort;
+    public static string richtigeAntwort;
     public Button[] Buttons;
     public TextMeshProUGUI[] AntwortenText;
 
@@ -67,53 +67,7 @@ public class Eventyy : MonoBehaviour
             }
         }
     }
-    public void Button1()
-    {
-        if (richtigeAntwort == AntwortenText.ToString())
-        {
-            Debug.Log("Richttiiiiiig");
-        }
-        else
-        {
-            Debug.Log("Falschehehheh");
-        }
-    }
-
-    public void Button2()
-    {
-        if (richtigeAntwort == AntwortenText.ToString())
-        {
-            Debug.Log("Richttiiiiiig");
-        }
-        else
-        {
-            Debug.Log("Falschehehheh");
-        }
-    }
-
-    public void Button3()
-    {
-        if (richtigeAntwort == AntwortenText.ToString())
-        {
-            Debug.Log("Richttiiiiiig");
-        }
-        else
-        {
-            Debug.Log("Falschehehheh");
-        }
-    }
-
-    public void Button4()
-    {
-        if (richtigeAntwort == AntwortenText.ToString())
-        {
-            Debug.Log("Richttiiiiiig");
-        }
-        else
-        {
-            Debug.Log("Falschehehheh");
-        }
-    }
+    
     // Update is called once per frame
     void Update()
     {
