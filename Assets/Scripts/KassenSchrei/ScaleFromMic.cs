@@ -99,6 +99,7 @@ public class ScaleFromMic : MonoBehaviour
                 Debug.Log("Gewonnen!");
                 StaticVariablen.hatHighscore = false;
                 StaticVariablen.gewonnen = "Glückwunsch!!!";
+                StaticVariablen.whichScene = "KassaSchrei";
                 SceneManager.LoadScene(4);
             }
         }
@@ -107,6 +108,7 @@ public class ScaleFromMic : MonoBehaviour
             Debug.Log("Verloren");
             StaticVariablen.hatHighscore = false;
             StaticVariablen.gewonnen = "verloren bruh";
+            StaticVariablen.whichScene = "KassaSchrei";
             SceneManager.LoadScene(4);
         }
         if (rightAreaFloatEnd < maxLoudness)
@@ -114,6 +116,7 @@ public class ScaleFromMic : MonoBehaviour
             Debug.Log("Verloren");
             StaticVariablen.hatHighscore = false;
             StaticVariablen.gewonnen = "verloren bruh";
+            StaticVariablen.whichScene = "KassaSchrei";
             SceneManager.LoadScene(4);
         }
         sprichImage.gameObject.SetActive(false);

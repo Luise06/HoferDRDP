@@ -11,6 +11,8 @@ public class LoadSceneScript : MonoBehaviour
     public GameObject verlorenPanel;
     public GameObject gewonnenNoHSPanel;
     public GameObject verlorenNoHSPanel;
+    [SerializeField] GameObject kassaSchreiBG;
+    [SerializeField] GameObject foodDropBG;
 
     public TextMeshProUGUI highScore;
     public TextMeshProUGUI score;
@@ -89,6 +91,16 @@ public class LoadSceneScript : MonoBehaviour
                 loseAudio.Play(0);
                 einemalAbgespielt = false;
             }
+        }
+        if (StaticVariablen.whichScene == "KassaSchrei")
+        {
+            foodDropBG.SetActive(false);
+            kassaSchreiBG.SetActive(true);
+        }
+        if (StaticVariablen.whichScene == "FoodDrop")
+        {
+            foodDropBG.SetActive(true);
+            kassaSchreiBG.SetActive(false);
         }
     }
 
