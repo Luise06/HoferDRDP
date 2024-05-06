@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6542855396978620147, guid: 2a6c944981b6d7d4fa401cc510114f4d, type: 3}
       propertyPath: m_Name
-      value: DoppelkekseTraurigZwinkern
+      value: DoppelkekseTraurigZwinkern Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6542855396978620149, guid: 2a6c944981b6d7d4fa401cc510114f4d, type: 3}
       propertyPath: m_Sprite

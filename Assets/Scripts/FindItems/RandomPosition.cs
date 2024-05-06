@@ -40,14 +40,9 @@ public class RandomPosition : MonoBehaviour
         for (int i = 0; i < spawnPoints.Length; i++)
         {
             Destroy(spawnPoints[i].GetChild(1).gameObject);
-            //Debug.Log(i);
+
         }
         
         FillObjektsSpawn();
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

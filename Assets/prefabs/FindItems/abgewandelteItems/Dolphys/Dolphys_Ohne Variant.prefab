@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3805740914431599886, guid: 784abce114cb93f488cc9641b86332e2, type: 3}
       propertyPath: m_Name
-      value: Dolphys_Ohne
+      value: Dolphys_Ohne Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 784abce114cb93f488cc9641b86332e2, type: 3}

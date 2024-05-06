@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 4cc9240040a0dd84f9437f0e57cfdedb, type: 3}
     - target: {fileID: 5289479917471293479, guid: 7818cab844ea8f8498057a5cfd468b9a, type: 3}
       propertyPath: m_Name
-      value: Dolphys_Zunge
+      value: Dolphys_Zunge Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7818cab844ea8f8498057a5cfd468b9a, type: 3}

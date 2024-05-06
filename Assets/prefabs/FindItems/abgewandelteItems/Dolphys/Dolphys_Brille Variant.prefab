@@ -85,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
       propertyPath: m_Name
-      value: Dolphys_Brille
+      value: Dolphys_Brille Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
       propertyPath: m_IsActive

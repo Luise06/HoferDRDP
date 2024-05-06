@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2616776266442441217, guid: eb75133e2afad7a469caa69428a94cd9, type: 3}
       propertyPath: m_Name
-      value: cocosSchleife
+      value: cocosSchleife Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2616776266442441468, guid: eb75133e2afad7a469caa69428a94cd9, type: 3}
       propertyPath: m_RootOrder

@@ -121,6 +121,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ab508be588e8b9448adfcfdd93b555f4, type: 3}
+    - target: {fileID: 8940207384384148814, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8940207384384148912, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
       propertyPath: m_Name
       value: cocosBrille Variant

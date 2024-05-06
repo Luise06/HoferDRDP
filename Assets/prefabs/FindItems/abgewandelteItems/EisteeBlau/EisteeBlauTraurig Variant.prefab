@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1006301335205564000, guid: b0f1a3e88d4960c4593f6069192212f1, type: 3}
       propertyPath: m_Name
-      value: EisteeBlauTraurig
+      value: EisteeBlauTraurig Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1006301335205564012, guid: b0f1a3e88d4960c4593f6069192212f1, type: 3}
       propertyPath: m_Sprite

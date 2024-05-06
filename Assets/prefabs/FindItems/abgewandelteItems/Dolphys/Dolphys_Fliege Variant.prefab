@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4329025110776115152, guid: afda4e34687cf8042880b9fdd0700c68, type: 3}
       propertyPath: m_Name
-      value: Dolphys_Fliege
+      value: Dolphys_Fliege Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4329025110776115154, guid: afda4e34687cf8042880b9fdd0700c68, type: 3}
       propertyPath: m_Sprite

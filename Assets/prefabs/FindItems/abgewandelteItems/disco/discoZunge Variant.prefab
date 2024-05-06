@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1047405076643949076, guid: 2eb140df7a1376048b2cd4bd55df149e, type: 3}
       propertyPath: m_Name
-      value: discoZunge
+      value: discoZunge Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb140df7a1376048b2cd4bd55df149e, type: 3}

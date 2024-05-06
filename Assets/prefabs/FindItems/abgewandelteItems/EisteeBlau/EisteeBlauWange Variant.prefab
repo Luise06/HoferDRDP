@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 71841004906675640, guid: 00f36bffd30e29a4d8373c713301d2d2, type: 3}
       propertyPath: m_Name
-      value: EisteeBlauWange
+      value: EisteeBlauWange Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00f36bffd30e29a4d8373c713301d2d2, type: 3}
