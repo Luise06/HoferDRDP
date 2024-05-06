@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2533159158034051509, guid: eb75133e2afad7a469caa69428a94cd9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.81
+      objectReference: {fileID: 0}
     - target: {fileID: 2616776266442441217, guid: eb75133e2afad7a469caa69428a94cd9, type: 3}
       propertyPath: m_Name
-      value: cocosFliege
+      value: cocosFliege Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2616776266442441468, guid: eb75133e2afad7a469caa69428a94cd9, type: 3}
       propertyPath: m_RootOrder

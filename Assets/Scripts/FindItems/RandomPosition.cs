@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomPosition : MonoBehaviour
 {
-    public ChooseRandomItem chooseRandomItem;
+    /*public ChooseRandomItem chooseRandomItem;
     public RandomArray randomArray;
     public Transform[] spawnPoints;
     public int randomPosition;
@@ -44,5 +44,5 @@ public class RandomPosition : MonoBehaviour
         }
         
         FillObjektsSpawn();
-    }
+    }*/
 }

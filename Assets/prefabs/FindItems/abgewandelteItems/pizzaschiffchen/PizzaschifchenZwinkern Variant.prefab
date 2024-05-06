@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 6f334fab374c04547881df06b3d1e1c9, type: 3}
     - target: {fileID: 1871664638161031657, guid: 2e6bfc280cb60274297b85591f0c8956, type: 3}
       propertyPath: m_Name
-      value: PizzaschifchenZwinkern
+      value: PizzaschifchenZwinkern Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e6bfc280cb60274297b85591f0c8956, type: 3}

@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8595360271215619934, guid: cc89064da7cda1d43a8a49c18090ff94, type: 3}
       propertyPath: m_Name
-      value: EisteeBlauZunge
+      value: EisteeBlauZunge Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc89064da7cda1d43a8a49c18090ff94, type: 3}

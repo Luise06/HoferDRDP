@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 317700315415324206, guid: 53b11bed2170b164ab67cb90f4c63f3e, type: 3}
       propertyPath: m_Name
-      value: PizzaschifchenSchock
+      value: PizzaschifchenSchock Variant
       objectReference: {fileID: 0}
     - target: {fileID: 392433205044155462, guid: 53b11bed2170b164ab67cb90f4c63f3e, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

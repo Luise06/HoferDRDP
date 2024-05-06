@@ -16,11 +16,11 @@ GameObject:
   - component: {fileID: 8809951602565355902}
   m_Layer: 0
   m_Name: FyingPowerRosa
-  m_TagString: FlyingPower
+  m_TagString: HoferProdukt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6007419742351306380
 Transform:
   m_ObjectHideFlags: 0

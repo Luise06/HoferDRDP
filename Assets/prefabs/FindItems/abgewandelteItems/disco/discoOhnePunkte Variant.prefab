@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1154604164988612890, guid: 4a180193ed1b23b43b316db13eae9327, type: 3}
       propertyPath: m_Name
-      value: discoOhnePunkte
+      value: discoOhnePunkte Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154604164988612890, guid: 4a180193ed1b23b43b316db13eae9327, type: 3}
+      propertyPath: m_TagString
+      value: KeinHoferProdukt
       objectReference: {fileID: 0}
     - target: {fileID: 1154604164988612892, guid: 4a180193ed1b23b43b316db13eae9327, type: 3}
       propertyPath: m_Sprite
