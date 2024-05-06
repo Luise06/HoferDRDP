@@ -177,4 +177,8 @@ public class LoadSceneScript : MonoBehaviour
     {
         SceneManager.LoadScene("foodDrop");
     }
+    public void KassaSchreiLaden()
+    {
+        SceneManager.LoadScene("KassaSchrei");
+    }
 }
