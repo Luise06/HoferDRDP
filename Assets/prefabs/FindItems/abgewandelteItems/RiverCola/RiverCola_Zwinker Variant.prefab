@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6574459272125525829, guid: 1d0f69630728eaf4d8b1dec0460d99cb, type: 3}
       propertyPath: m_Name
-      value: RiverCola_Zwinker
+      value: RiverCola_Zwinker Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6574459272125525830, guid: 1d0f69630728eaf4d8b1dec0460d99cb, type: 3}
       propertyPath: m_RootOrder

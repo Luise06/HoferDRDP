@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3149844087669193816, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
+      propertyPath: m_TagString
+      value: KeinHoferProdukt
+      objectReference: {fileID: 0}
     - target: {fileID: 3149844087669193821, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
       propertyPath: m_RootOrder
       value: 0

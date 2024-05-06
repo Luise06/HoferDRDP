@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 20109617880658689, guid: 20c38e29168a57d4ab67fd3127082bb5, type: 3}
       propertyPath: m_Name
-      value: Dolphys_Schleife
+      value: Dolphys_Schleife Variant
       objectReference: {fileID: 0}
     - target: {fileID: 20109617880658690, guid: 20c38e29168a57d4ab67fd3127082bb5, type: 3}
       propertyPath: m_RootOrder

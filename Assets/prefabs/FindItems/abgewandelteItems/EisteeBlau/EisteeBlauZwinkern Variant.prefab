@@ -69,11 +69,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3994541312826247930, guid: f4130a12f43ec46489caf74feda799e1, type: 3}
       propertyPath: m_Name
-      value: EisteeBlauZwinkern
+      value: EisteeBlauZwinkern Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3994541312826247930, guid: f4130a12f43ec46489caf74feda799e1, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994541312826247930, guid: f4130a12f43ec46489caf74feda799e1, type: 3}
+      propertyPath: m_TagString
+      value: KeinHoferProdukt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4130a12f43ec46489caf74feda799e1, type: 3}

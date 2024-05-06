@@ -57,15 +57,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1100032433698619566, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
       propertyPath: m_Name
-      value: RiverCola_Lachen
+      value: RiverCola_Lachen Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619566, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_TagString
+      value: KeinHoferProdukt
       objectReference: {fileID: 0}
     - target: {fileID: 6715159334272112392, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 5.2
       objectReference: {fileID: 0}
+    - target: {fileID: 6715159334272112392, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 13.47
+      objectReference: {fileID: 0}
     - target: {fileID: 8702012400491821910, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 5.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702012400491821910, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 13.47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}

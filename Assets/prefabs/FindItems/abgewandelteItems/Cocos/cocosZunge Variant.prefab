@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8211149117673339763, guid: 5325ce9b870b91c439a8b3e08d097c81, type: 3}
       propertyPath: m_Name
-      value: cocosZunge
+      value: cocosZunge Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8211149117673339789, guid: 5325ce9b870b91c439a8b3e08d097c81, type: 3}
       propertyPath: m_Sprite

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1085539477541464877, guid: 7fbddeef22b713e41be65840c06f5c18, type: 3}
       propertyPath: m_Name
-      value: RiverCola_Schleife
+      value: RiverCola_Schleife Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1085539477541464878, guid: 7fbddeef22b713e41be65840c06f5c18, type: 3}
       propertyPath: m_RootOrder

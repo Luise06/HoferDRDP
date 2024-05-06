@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 189910653974903332, guid: 330863cf4a742c3479ac719811148daf, type: 3}
       propertyPath: m_Name
-      value: discoSchock
+      value: discoSchock Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 330863cf4a742c3479ac719811148daf, type: 3}

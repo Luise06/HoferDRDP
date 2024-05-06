@@ -4,18 +4,19 @@ using UnityEngine.SceneManagement;
 
 public class ClickDetection : MonoBehaviour
 {
-    ChooseRandomItem chooseRandomItem;
-    RandomPosition randomPosition;
+    //ChooseRandomItem chooseRandomItem;
+    //RandomPosition randomPosition;
     ScoreFindItem scoreFindItem;
    TextMeshProUGUI findScore;
+    PositionRan positionRan;
 
     private void Start()
     {
-        chooseRandomItem = GameObject.Find("GameManager").GetComponent<ChooseRandomItem>();
-        randomPosition = GameObject.Find("GameManager").GetComponent<RandomPosition>();
+        //chooseRandomItem = GameObject.Find("GameManager").GetComponent<ChooseRandomItem>();
+        //randomPosition = GameObject.Find("GameManager").GetComponent<RandomPosition>();
         scoreFindItem = GameObject.Find("GameManager").GetComponent<ScoreFindItem>();
         findScore = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
-
+        positionRan = GameObject.Find("GameManager").GetComponent<PositionRan>();
     }
 
     void Update()
@@ -30,14 +31,13 @@ public class ClickDetection : MonoBehaviour
                 //Debug.Log("nicht null");
                 if (hit.collider.gameObject == gameObject)
                 {
-                    Debug.Log(chooseRandomItem.gesuchterTagName);
-                    if (gameObject.tag == chooseRandomItem.gesuchterTagName)
+                    if (gameObject.tag == "KeinHoferProdukt")
                     {
-                        
                         scoreFindItem.findItemScore++;
                         findScore.text = "Gefundene: " + scoreFindItem.findItemScore.ToString();
-                        chooseRandomItem.RandomObjektausWahl();
-                        randomPosition.DestroyGameObjekts();
+                        positionRan.DestroyInstanzen();
+                        //chooseRandomItem.RandomObjektausWahl();
+                        //randomPosition.DestroyGameObjekts();
                     }
                     
                 }

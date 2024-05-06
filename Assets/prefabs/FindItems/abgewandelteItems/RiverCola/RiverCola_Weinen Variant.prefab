@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6185147037993658954, guid: dadc50dc5d6e7d54783793b50b8fb316, type: 3}
       propertyPath: m_Name
-      value: RiverCola_Weinen
+      value: RiverCola_Weinen Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dadc50dc5d6e7d54783793b50b8fb316, type: 3}

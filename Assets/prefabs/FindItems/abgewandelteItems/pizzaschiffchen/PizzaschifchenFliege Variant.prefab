@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108425901301522683, guid: f3a7122a4a3b18949925c8a1534c3818, type: 3}
       propertyPath: m_Name
-      value: PizzaschifchenFliege
+      value: PizzaschifchenFliege Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9165453802659414793, guid: f3a7122a4a3b18949925c8a1534c3818, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

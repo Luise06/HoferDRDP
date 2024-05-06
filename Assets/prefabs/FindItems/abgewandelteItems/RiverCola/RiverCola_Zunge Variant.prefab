@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8213700345736648853, guid: a005382a9c7fc00458cd0a385c651415, type: 3}
       propertyPath: m_Name
-      value: RiverCola_Zunge
+      value: RiverCola_Zunge Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8213700345736648854, guid: a005382a9c7fc00458cd0a385c651415, type: 3}
       propertyPath: m_RootOrder

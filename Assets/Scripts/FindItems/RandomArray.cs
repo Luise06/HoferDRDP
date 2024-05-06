@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomArray : MonoBehaviour
 {
-    //public int[] randomArray;
+    /*//public int[] randomArray;
     public GameObject[] speed;
     public GameObject[] cocos;
     public GameObject[] disco;
@@ -15,7 +15,7 @@ public class RandomArray : MonoBehaviour
     /*public GameObject[] milch;
     public GameObject[] flyingPowerBlau;
     public GameObject[] flyingPowerRosa;
-    public GameObject[] flyingPowerRot;*/
+    public GameObject[] flyingPowerRot;
     public GameObject[] pizzaschiffchen;
     public GameObject[] riverCola;
     int randomObjekt;
@@ -50,7 +50,7 @@ public class RandomArray : MonoBehaviour
         {
             dolphys[randomAbwandlung].SetActive(true);
             Instantiate(dolphys[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
-        }*/
+        }
         if (randomObjekt == 4)
         {
             doppelkekse[randomAbwandlung].SetActive(true);
@@ -85,12 +85,12 @@ public class RandomArray : MonoBehaviour
         {
             flyingPowerRot[randomAbwandlung].SetActive(true);
             Instantiate(flyingPowerRot[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
-        }*/
+        }
         if (randomObjekt == 7)
         {
             pizzaschiffchen[randomAbwandlung].SetActive(true);
             Instantiate(pizzaschiffchen[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
         }
-    }
-    
+    }*/
+
 }

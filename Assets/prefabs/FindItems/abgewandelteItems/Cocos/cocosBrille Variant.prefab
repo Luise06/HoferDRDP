@@ -129,6 +129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cocosBrille Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8940207384384148912, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
+      propertyPath: m_TagString
+      value: KeinHoferProdukt
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3250548719834165134, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b566575de27fd3f4090dd80abbd90e1f, type: 3}

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4456574118742087388, guid: 8c8e8016af5d62a409bb011528398f2f, type: 3}
       propertyPath: m_Name
-      value: RiverCola_Schock
+      value: RiverCola_Schock Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4456574118742087390, guid: 8c8e8016af5d62a409bb011528398f2f, type: 3}
       propertyPath: m_Sprite

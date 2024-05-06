@@ -16,11 +16,11 @@ GameObject:
   - component: {fileID: 54952179734166676}
   m_Layer: 0
   m_Name: Cocos
-  m_TagString: Cocos
+  m_TagString: HoferProdukt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8157782421170556981
 Transform:
   m_ObjectHideFlags: 0

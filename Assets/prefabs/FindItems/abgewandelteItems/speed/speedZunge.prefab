@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7929750119775791186, guid: a317eb34664f2cc40917ba3ba7c8ecce, type: 3}
+      propertyPath: m_TagString
+      value: KeinHoferProdukt
+      objectReference: {fileID: 0}
     - target: {fileID: 7929750119775791276, guid: a317eb34664f2cc40917ba3ba7c8ecce, type: 3}
       propertyPath: m_Size.x
       value: 27.4
@@ -34,10 +38,10 @@ PrefabInstance:
     - target: {fileID: 7929750119775791276, guid: a317eb34664f2cc40917ba3ba7c8ecce, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: af0b77f2540ff4347b47c7bfc76e83cb, type: 3}
+      objectReference: {fileID: 21300000, guid: d1e5ffdb709ff564684b1fb6e4641545, type: 3}
     - target: {fileID: 7929750119775791276, guid: a317eb34664f2cc40917ba3ba7c8ecce, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7929750119775791279, guid: a317eb34664f2cc40917ba3ba7c8ecce, type: 3}
       propertyPath: m_RootOrder
