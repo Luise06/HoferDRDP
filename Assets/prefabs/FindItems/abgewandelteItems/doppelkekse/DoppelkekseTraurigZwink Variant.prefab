@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9186541095950720873, guid: 198cd6f529645044f8f527e00879baa6, type: 3}
       propertyPath: m_Name
-      value: DoppelkekseTraurigZwink
+      value: DoppelkekseTraurigZwink Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9186541095950720876, guid: 198cd6f529645044f8f527e00879baa6, type: 3}
       propertyPath: m_RootOrder

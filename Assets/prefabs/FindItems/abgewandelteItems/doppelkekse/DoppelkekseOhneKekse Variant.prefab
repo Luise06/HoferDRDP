@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3149844087669193816, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
       propertyPath: m_Name
-      value: DoppelkekseOhneKekse
+      value: DoppelkekseOhneKekse Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3149844087669193816, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
       propertyPath: m_IsActive

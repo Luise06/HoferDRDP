@@ -8,14 +8,14 @@ public class RandomArray : MonoBehaviour
     public GameObject[] speed;
     public GameObject[] cocos;
     public GameObject[] disco;
-    public GameObject[] dolphys;
+    //public GameObject[] dolphys;
     public GameObject[] doppelkekse;
     public GameObject[] eisteeBlau;
     public GameObject[] eisteeGruen;
-    public GameObject[] milch;
+    /*public GameObject[] milch;
     public GameObject[] flyingPowerBlau;
     public GameObject[] flyingPowerRosa;
-    public GameObject[] flyingPowerRot;
+    public GameObject[] flyingPowerRot;*/
     public GameObject[] pizzaschiffchen;
     public GameObject[] riverCola;
     int randomObjekt;
@@ -29,7 +29,7 @@ public class RandomArray : MonoBehaviour
     }
     public void RandomArrayausWahl()
     {
-        randomObjekt = Random.Range(0, 12);
+        randomObjekt = Random.Range(0, 7);
         randomAbwandlung = Random.Range(0, 6);
         if (randomObjekt == 0)
         {
@@ -46,11 +46,11 @@ public class RandomArray : MonoBehaviour
             disco[randomAbwandlung].SetActive(true);
             Instantiate(disco[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
         }
-        if (randomObjekt == 3)
+        /*if (randomObjekt == 3)
         {
             dolphys[randomAbwandlung].SetActive(true);
             Instantiate(dolphys[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
-        }
+        }*/
         if (randomObjekt == 4)
         {
             doppelkekse[randomAbwandlung].SetActive(true);
@@ -66,7 +66,7 @@ public class RandomArray : MonoBehaviour
             eisteeGruen[randomAbwandlung].SetActive(true);
             Instantiate(eisteeGruen[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
         }
-        if (randomObjekt == 7)
+        /*if (randomObjekt == 7)
         {
             milch[randomAbwandlung].SetActive(true);
             Instantiate(milch[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
@@ -85,8 +85,8 @@ public class RandomArray : MonoBehaviour
         {
             flyingPowerRot[randomAbwandlung].SetActive(true);
             Instantiate(flyingPowerRot[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);
-        }
-        if (randomObjekt == 11)
+        }*/
+        if (randomObjekt == 7)
         {
             pizzaschiffchen[randomAbwandlung].SetActive(true);
             Instantiate(pizzaschiffchen[randomAbwandlung], randomPosition.spawnPoints[randomPosition.randomPosition]);

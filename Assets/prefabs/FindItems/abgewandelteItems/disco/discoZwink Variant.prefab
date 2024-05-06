@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e9d2172c1b0876149999592429111b8e, type: 3}
     - target: {fileID: 4818346027218314799, guid: 6d11d902b5aa9ce4794f9bfd5e92b273, type: 3}
       propertyPath: m_Name
-      value: discoZwink
+      value: discoZwink Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d11d902b5aa9ce4794f9bfd5e92b273, type: 3}

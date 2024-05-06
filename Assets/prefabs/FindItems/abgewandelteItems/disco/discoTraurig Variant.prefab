@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8747708914088778766, guid: b1151226c33337c44b13a093222ef787, type: 3}
       propertyPath: m_Name
-      value: discoTraurig
+      value: discoTraurig Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1151226c33337c44b13a093222ef787, type: 3}

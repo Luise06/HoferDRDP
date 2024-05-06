@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8108472704982796305}
   - component: {fileID: 8108472704982796304}
   - component: {fileID: 7758683017827585233}
-  - component: {fileID: 5319778431279193233}
   - component: {fileID: 4080400382148723491}
+  - component: {fileID: 3016739722497068879}
   m_Layer: 0
   m_Name: Dolphys
   m_TagString: Dolphys
@@ -98,7 +98,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugText: {fileID: 0}
---- !u!60 &5319778431279193233
+--- !u!114 &4080400382148723491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108472704982796306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6ae9b7e7fe7284cb9a7967480044de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &3016739722497068879
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,15 +220,3 @@ PolygonCollider2D:
       - {x: 3.76, y: -6.23}
       - {x: 3.76, y: -5.7999997}
       - {x: 3.73, y: -5.73}
---- !u!114 &4080400382148723491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108472704982796306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a6ae9b7e7fe7284cb9a7967480044de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
