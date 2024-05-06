@@ -9,6 +9,8 @@ public class LoadSceneScript : MonoBehaviour
     public TextMeshProUGUI gewonnenVerlorenText;
     public GameObject gewonnenPanel;
     public GameObject verlorenPanel;
+    public GameObject gewonnenNoHSPanel;
+    public GameObject verlorenNoHSPanel;
 
     public TextMeshProUGUI highScore;
     public TextMeshProUGUI score;
@@ -50,40 +52,43 @@ public class LoadSceneScript : MonoBehaviour
 
     }
 
-
-
-
-
-
-
-
     void Update()
     {
         if (StaticVariablen.gewonnen == "Glückwunsch!!!")
         {
-            gewonnenPanel.SetActive(true);
-            verlorenPanel.SetActive(false);
-            particelSystem.SetActive(true);
-            highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
-            // CheckWinCondition();
-
-
-
-
+            if(StaticVariablen.hatHighscore == false)
+            {
+                gewonnenNoHSPanel.SetActive(true);
+                verlorenNoHSPanel.SetActive(false);
+                particelSystem.SetActive(true);
+            }
+            if (StaticVariablen.hatHighscore == true)
+            {
+                gewonnenPanel.SetActive(true);
+                verlorenPanel.SetActive(false);
+                particelSystem.SetActive(true);
+                highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
+            }
         }
         else
         {
             // gutscheinanzeige.SetActive(false);
-
-            verlorenPanel.SetActive(true);
-            gewonnenPanel.SetActive(false);
-            score.text = StaticVariablen.score.ToString();
+            if(StaticVariablen.hatHighscore == false)
+            {
+                verlorenNoHSPanel.SetActive(true);
+                gewonnenNoHSPanel.SetActive(false);
+            }
+            if(StaticVariablen.hatHighscore == true)
+            {
+                verlorenPanel.SetActive(true);
+                gewonnenPanel.SetActive(false);
+                score.text = StaticVariablen.score.ToString();
+            }
             if (einemalAbgespielt)
             {
                 loseAudio.Play(0);
                 einemalAbgespielt = false;
             }
-
         }
     }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScaleFromMic : MonoBehaviour
 {
@@ -96,18 +97,24 @@ public class ScaleFromMic : MonoBehaviour
             if (rightAreaFloatEnd > maxLoudness)
             {
                 Debug.Log("Gewonnen!");
-                spielGewonnen = true;
+                StaticVariablen.hatHighscore = false;
+                StaticVariablen.gewonnen = "Glückwunsch!!!";
+                SceneManager.LoadScene(4);
             }
         }
         if (rightAreaFloatStart > maxLoudness)
         {
             Debug.Log("Verloren");
-            spielVerloren = true;
+            StaticVariablen.hatHighscore = false;
+            StaticVariablen.gewonnen = "verloren bruh";
+            SceneManager.LoadScene(4);
         }
         if (rightAreaFloatEnd < maxLoudness)
         {
             Debug.Log("Verloren");
-            spielVerloren = true;
+            StaticVariablen.hatHighscore = false;
+            StaticVariablen.gewonnen = "verloren bruh";
+            SceneManager.LoadScene(4);
         }
         sprichImage.gameObject.SetActive(false);
         activationButton.GetComponent<Button>().interactable = true;

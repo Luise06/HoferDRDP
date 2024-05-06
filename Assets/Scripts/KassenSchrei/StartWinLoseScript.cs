@@ -9,8 +9,6 @@ public class StartWinLoseScript : MonoBehaviour
     [SerializeField] GameObject mainCanvas;
     [SerializeField] GameObject tutorialCanvas;
     [SerializeField] SpriteRenderer bgImage;
-    [SerializeField] GameObject winScreen;
-    [SerializeField] GameObject loseScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -21,32 +19,7 @@ public class StartWinLoseScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ScaleFromMic.spielVerloren)
-        {
-            loseScreen.SetActive(true);
-            bgImage.color = new Color32(190, 190, 190, 255);
-            mainCanvas.SetActive(false);
-        }
-        if (ScaleFromMic.spielGewonnen)
-        {
-            winScreen.SetActive(true);
-            bgImage.color = new Color32(190, 190, 190, 255);
-            mainCanvas.SetActive(false);
-            /*int randomIndex = Random.Range(0, LoadSceneScript.gutscheinListe.Count);
-            
-            GameObject gewonnenerGutschein = LoadSceneScript.gutscheinListe[randomIndex];
 
-            foreach (GameObject gutschein in LoadSceneScript.gutscheinListe)
-            {
-                gutschein.SetActive(gutschein == gewonnenerGutschein);
-            }
-
-            string gutscheinName = "GutscheinNR" + randomIndex;
-            PlayerPrefs.SetInt(gutscheinName, 1);
-            Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
-            //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
-            PlayerPrefs.Save();*/
-        }
     }
 
     public void PlayButton()
@@ -67,11 +40,7 @@ public class StartWinLoseScript : MonoBehaviour
     }
     public void RestartGame()
     {
-        ScaleFromMic.spielVerloren = false;
-        ScaleFromMic.spielGewonnen = false;
         mainCanvas.SetActive(true);
-        loseScreen.SetActive(false);
-        winScreen.SetActive(false);
         bgImage.color = Color.white;
     }
     public void HomeButton()
