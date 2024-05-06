@@ -32,6 +32,20 @@ public class StartWinLoseScript : MonoBehaviour
             winScreen.SetActive(true);
             bgImage.color = new Color32(190, 190, 190, 255);
             mainCanvas.SetActive(false);
+            /*int randomIndex = Random.Range(0, LoadSceneScript.gutscheinListe.Count);
+            
+            GameObject gewonnenerGutschein = LoadSceneScript.gutscheinListe[randomIndex];
+
+            foreach (GameObject gutschein in LoadSceneScript.gutscheinListe)
+            {
+                gutschein.SetActive(gutschein == gewonnenerGutschein);
+            }
+
+            string gutscheinName = "GutscheinNR" + randomIndex;
+            PlayerPrefs.SetInt(gutscheinName, 1);
+            Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
+            //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
+            PlayerPrefs.Save();*/
         }
     }
 

@@ -6,71 +6,134 @@ using TMPro;
 
 public class Eventyy : MonoBehaviour
 {
-
     public GameObject[] sprites;
     public GameObject[] shdwSprites;
     public string[] Antworten;
     public string richtigeAntwort;
-    public Button Button1;
-    public Button Button2;
-    public Button Button3;
-    public Button Button4;
+    public Button[] Buttons;
+    public TextMeshProUGUI[] AntwortenText;
+
     // Start is called before the first frame update
     void Start()
     {
         int randomIndex = Random.Range(0, shdwSprites.Length);
         shdwSprites[randomIndex].SetActive(true);
-        if (randomIndex == 0)
+
+        // Determine the correct answer based on randomIndex
+        switch (randomIndex)
         {
-            richtigeAntwort = "Disco";
+            case 0:
+                richtigeAntwort = "Disco";
+                break;
+            case 1:
+                richtigeAntwort = "Cocos";
+                break;
+            case 2:
+                richtigeAntwort = "Doppelkekse";
+                break;
+            case 3:
+                richtigeAntwort = "Eistee";
+                break;
+            case 4:
+                richtigeAntwort = "Greentea";
+                break;
+            case 5:
+                richtigeAntwort = "Flying Power";
+                break;
+            case 6:
+                richtigeAntwort = "Milch";
+                break;
+            case 7:
+                richtigeAntwort = "Pizzaschifferl";
+                break;
+            case 8:
+                richtigeAntwort = "Speed";
+                break;
         }
 
-        if (randomIndex == 1)
-        {
-            richtigeAntwort = "Cocos";
-        }
+        // Shuffle the answers to avoid duplicates
+        List<string> shuffledAnswers = new List<string>(Antworten);
+        shuffledAnswers.Shuffle();
 
-        if (randomIndex == 2)
+        // Assign shuffled answers to buttons ensuring unique placement for correct answer
+        for (int i = 0; i < Buttons.Length; i++)
         {
-            richtigeAntwort = "Doppelkekse";
+            if (i < AntwortenText.Length)
+            {
+                if (i == 0)
+                    AntwortenText[i].text = richtigeAntwort; // Place correct answer in first button text
+                else
+                    AntwortenText[i].text = shuffledAnswers[i - 1]; // Assign shuffled answers to other buttons
+            }
         }
-
-        if (randomIndex == 3)
+    }
+    public void Button1()
+    {
+        if (richtigeAntwort == AntwortenText.ToString())
         {
-            richtigeAntwort = "Eistee";
+            Debug.Log("Richttiiiiiig");
         }
-
-        if (randomIndex == 4)
+        else
         {
-            richtigeAntwort = "Greentea";
+            Debug.Log("Falschehehheh");
         }
-
-        if (randomIndex == 5)
-        {
-            richtigeAntwort = "Flying Power";
-        }
-
-        if (randomIndex == 6)
-        {
-            richtigeAntwort = "Milch";
-        }
-
-        if (randomIndex == 7)
-        {
-            richtigeAntwort = "Pizzaschiffel";
-        }
-
-        if (randomIndex == 8)
-        {
-            richtigeAntwort = "Speed";
-        }
-
-        int randomAntworten = Random.Range(0, Antworten.Length);
     }
 
+    public void Button2()
+    {
+        if (richtigeAntwort == AntwortenText.ToString())
+        {
+            Debug.Log("Richttiiiiiig");
+        }
+        else
+        {
+            Debug.Log("Falschehehheh");
+        }
+    }
+
+    public void Button3()
+    {
+        if (richtigeAntwort == AntwortenText.ToString())
+        {
+            Debug.Log("Richttiiiiiig");
+        }
+        else
+        {
+            Debug.Log("Falschehehheh");
+        }
+    }
+
+    public void Button4()
+    {
+        if (richtigeAntwort == AntwortenText.ToString())
+        {
+            Debug.Log("Richttiiiiiig");
+        }
+        else
+        {
+            Debug.Log("Falschehehheh");
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+}
+
+// Extension method to shuffle a list
+public static class ListExtensions
+{
+    public static void Shuffle<T>(this IList<T> list)
+    {
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = Random.Range(0, n + 1);
+            T value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
     }
 }
