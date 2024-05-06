@@ -41,6 +41,8 @@ public class ProdukteAuffangen : MonoBehaviour
         {
             PlayerPrefs.SetInt("HighScore", currentScore);
             StaticVariablen.gewonnen = "Glückwunsch!!!";
+            StaticVariablen.hatHighscore = true;
+            StaticVariablen.whichScene = "FoodDrop";
             //spielendeScript.NeuerHighscore();
         }
         else
