@@ -3576,7 +3576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266b8b8e3f7b5664ea346552a99ef28d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 30
+  totalTime: 60
   countdownText: {fileID: 312242222}
 --- !u!114 &1140785640
 MonoBehaviour:
