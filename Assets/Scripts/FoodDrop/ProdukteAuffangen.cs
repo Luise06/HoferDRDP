@@ -48,6 +48,8 @@ public class ProdukteAuffangen : MonoBehaviour
         else
         {
             StaticVariablen.gewonnen = "Schade ):";
+            StaticVariablen.hatHighscore = true;
+            StaticVariablen.whichScene = "FoodDrop";
         }
        
     }
