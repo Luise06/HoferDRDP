@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class gutscheineanzeigen : MonoBehaviour
 {
-     public List<GameObject> gutscheinListe = new List<GameObject>();
+     public List<Button> gutscheinListe = new List<Button>();
 
     void Start()
     {
@@ -17,6 +17,8 @@ public class gutscheineanzeigen : MonoBehaviour
         //    gutschein.SetActive(gutschein.name == gewonnenerGutscheinName);
         //}
 
+        //GetComponent<Button>().interactable = false;
+
         for (int i = 0; i < gutscheinListe.Count; i++)
         {
             string gutscheinName = "GutscheinNR" + i;
@@ -24,9 +26,16 @@ public class gutscheineanzeigen : MonoBehaviour
 
             if (isSaved == 1)
             {
-                gutscheinListe[i].SetActive(true);
+                //gutscheinListe[i].SetActive(true);
                 Debug.Log("Gutschein wird angezeigt");
+                gutscheinListe[i].interactable = true;
             }
+            else
+            {
+                gutscheinListe[i].interactable = false;
+            }
+            
+
         } 
     }
 
