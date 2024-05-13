@@ -80,7 +80,6 @@ public class ScaleFromMic : MonoBehaviour
         coroutine = WaitTalk(2.0f);
         StartCoroutine(coroutine);
         activationButton.GetComponent<Image>().enabled = false;
-
     }
 
     IEnumerator WaitTalk(float waitTime)
