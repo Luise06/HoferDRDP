@@ -14,9 +14,7 @@ public class StartWinLoseScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainCanvas.SetActive(false);
-        tutorialImage.SetActive(true);
-        tutorialImage.SetActive(true);
+        
     }
 
     // Update is called once per frame
@@ -31,6 +29,7 @@ public class StartWinLoseScript : MonoBehaviour
         tutorialCanvas.SetActive(false);
         tutorialImage.SetActive(false);
         bgImage.color = Color.white;
+        Debug.Log("playbuttonfunkt geht");
     }
     public void XButton()
     {
