@@ -85,7 +85,7 @@ public class LoadSceneScript : MonoBehaviour
             }
             gutscheinanzeige.SetActive(true);
         }
-        else 
+        else if(StaticVariablen.gewonnen == "Schade")
         {
             // gutscheinanzeige.SetActive(false);
             if(StaticVariablen.hatHighscore == false)
