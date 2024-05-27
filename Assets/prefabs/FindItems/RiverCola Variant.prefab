@@ -9,19 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 84359002388396329, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.99
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 84359002388396329, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 5.15
+      value: 3.77
       objectReference: {fileID: 0}
     - target: {fileID: 2655294100757845367, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.99
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 2655294100757845367, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 5.15
+      value: 3.77
       objectReference: {fileID: 0}
     - target: {fileID: 6007419742351306380, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_RootOrder
@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: 6007419742351306381, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: da696357259a33a4e8aac2738eeca699, type: 3}
+      objectReference: {fileID: 21300000, guid: 233e197e942245f4cb1d849f1cfac7c5, type: 3}
     - target: {fileID: 6007419742351306383, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_Name
       value: RiverCola Variant

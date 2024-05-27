@@ -54,18 +54,26 @@ PrefabInstance:
     - target: {fileID: 4095730048188004817, guid: adb012e8498971941856f0734ecd2a71, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3aefeb86ce802254d9f6d360ccf16752, type: 3}
+      objectReference: {fileID: 21300000, guid: 00da445d3b86191499c61703c7fd93bb, type: 3}
     - target: {fileID: 4095730048188004819, guid: adb012e8498971941856f0734ecd2a71, type: 3}
       propertyPath: m_Name
       value: FyingPowerRosaSchleife
       objectReference: {fileID: 0}
     - target: {fileID: 5715401356256969259, guid: adb012e8498971941856f0734ecd2a71, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.18
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715401356256969259, guid: adb012e8498971941856f0734ecd2a71, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.98
       objectReference: {fileID: 0}
     - target: {fileID: 7684236880083185269, guid: adb012e8498971941856f0734ecd2a71, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.18
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684236880083185269, guid: adb012e8498971941856f0734ecd2a71, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.98
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb012e8498971941856f0734ecd2a71, type: 3}

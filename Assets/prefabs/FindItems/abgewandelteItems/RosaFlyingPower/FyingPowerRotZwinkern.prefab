@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 411497449237886124, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 753318038445672057, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.93
+      objectReference: {fileID: 0}
     - target: {fileID: 8764818192834167681, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}
       propertyPath: m_Name
       value: FyingPowerRotZwinkern
@@ -58,6 +66,6 @@ PrefabInstance:
     - target: {fileID: 8764818192834167695, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: aa34b16757796b54bac000fecd19408e, type: 3}
+      objectReference: {fileID: 21300000, guid: a09b33d8d42b5064b8c71eebf09d068c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}

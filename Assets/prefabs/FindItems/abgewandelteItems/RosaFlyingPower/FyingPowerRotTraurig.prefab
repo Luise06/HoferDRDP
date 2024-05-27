@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 4127369982877402054, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 72baa7cdec455014aa9378f0185a701a, type: 3}
+      objectReference: {fileID: 21300000, guid: ac7c87ac2fbad1a4689cb5eaf6570ae6, type: 3}
     - target: {fileID: 4127369982877402055, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58,6 +58,22 @@ PrefabInstance:
     - target: {fileID: 4127369982877402056, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
       propertyPath: m_Name
       value: FyingPowerRotTraurig
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994580132787795173, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994580132787795173, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 5373335689552545328, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5373335689552545328, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.92
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}

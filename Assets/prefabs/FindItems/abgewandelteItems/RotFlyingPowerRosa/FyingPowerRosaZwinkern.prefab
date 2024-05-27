@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1330171906533302983, guid: 23432355871e6094b84e385592f8e8eb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330171906533302983, guid: 23432355871e6094b84e385592f8e8eb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.72
+      objectReference: {fileID: 0}
     - target: {fileID: 7346043665544321340, guid: 23432355871e6094b84e385592f8e8eb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -54,7 +62,7 @@ PrefabInstance:
     - target: {fileID: 7346043665544321341, guid: 23432355871e6094b84e385592f8e8eb, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bfce93c947a8350439c0e436840bfd6c, type: 3}
+      objectReference: {fileID: 21300000, guid: bad745019ada6f8428970275641d1f03, type: 3}
     - target: {fileID: 7346043665544321343, guid: 23432355871e6094b84e385592f8e8eb, type: 3}
       propertyPath: m_Name
       value: FyingPowerRosaZwinkern
