@@ -106,7 +106,7 @@ public class ScaleFromMic : MonoBehaviour
         {
             Debug.Log("Verloren");
             StaticVariablen.hatHighscore = false;
-            StaticVariablen.gewonnen = "verloren bruh";
+            StaticVariablen.gewonnen = "Schade";
             StaticVariablen.whichScene = "KassaSchrei";
             SceneManager.LoadScene(4);
         }
@@ -114,7 +114,7 @@ public class ScaleFromMic : MonoBehaviour
         {
             Debug.Log("Verloren");
             StaticVariablen.hatHighscore = false;
-            StaticVariablen.gewonnen = "verloren bruh";
+            StaticVariablen.gewonnen = "Schade";
             StaticVariablen.whichScene = "KassaSchrei";
             SceneManager.LoadScene(4);
         }
