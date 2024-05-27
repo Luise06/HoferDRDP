@@ -55,5 +55,10 @@ public class PauseSkript : MonoBehaviour
         HomeButton.SetActive(false);
         Spieleliste.SetActive(false);
         PauseScreen.SetActive(false);
+        Button1.enabled = true;
+        Button2.enabled = true;
+        Button3.enabled = true;
+        Button4.enabled = true;
     }
+
 }
