@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class Eventyy : MonoBehaviour
 {
     public GameObject[] sprites;
@@ -12,6 +12,8 @@ public class Eventyy : MonoBehaviour
     public static string richtigeAntwort;
     public Button[] Buttons;
     public TextMeshProUGUI[] AntwortenText;
+    public GameObject HomeButton;
+
 
     // Start is called before the first frame update
     void Start()
@@ -67,11 +69,16 @@ public class Eventyy : MonoBehaviour
             }
         }
     }
+
+    public void Homebutton()
+    {
+        SceneManager.LoadScene("Hauptmenue");
+    }
     
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
 
