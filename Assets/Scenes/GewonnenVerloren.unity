@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 222529028}
   - component: {fileID: 222529027}
   m_Layer: 5
-  m_Name: VerlorenNoHS
+  m_Name: VerlorenKassaSchrei
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1344,10 +1344,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gewonnenVerlorenText: {fileID: 0}
-  gewonnenPanel: {fileID: 1438370587}
-  verlorenPanel: {fileID: 1690863321}
-  gewonnenNoHSPanel: {fileID: 1980118176}
-  verlorenNoHSPanel: {fileID: 222529025}
+  gewonnenPanelFoodDrop: {fileID: 0}
+  verlorenPanelFoodDrop: {fileID: 0}
+  gewonnenKassaschrei: {fileID: 0}
+  verlorenKassaschrei: {fileID: 0}
   kassaSchreiBG: {fileID: 1749047235}
   foodDropBG: {fileID: 1650240796}
   highScore: {fileID: 2025747127}
@@ -1366,7 +1366,6 @@ MonoBehaviour:
   gutscheine: []
   gewonnenGutschein: 
   gutscheinanzeige: {fileID: 689209484}
-  gutscheineAnzeigen: {fileID: 0}
 --- !u!4 &796106785
 Transform:
   m_ObjectHideFlags: 0
@@ -1934,7 +1933,7 @@ GameObject:
   - component: {fileID: 1438370589}
   - component: {fileID: 1438370591}
   m_Layer: 5
-  m_Name: Gewonnen
+  m_Name: GewonnenFoodDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2410,7 +2409,7 @@ GameObject:
   - component: {fileID: 1690863323}
   - component: {fileID: 1690863325}
   m_Layer: 5
-  m_Name: VerlorenNeu
+  m_Name: VerlorenFoodDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2899,7 +2898,7 @@ GameObject:
   - component: {fileID: 1980118179}
   - component: {fileID: 1980118178}
   m_Layer: 5
-  m_Name: GewonnenNoHS
+  m_Name: GewonnenKassaSchrei
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class LoadSceneScript : MonoBehaviour
 {
     public TextMeshProUGUI gewonnenVerlorenText;
-    public GameObject gewonnenPanel;
-    public GameObject verlorenPanel;
-    public GameObject gewonnenNoHSPanel;
-    public GameObject verlorenNoHSPanel;
+    public GameObject gewonnenPanelFoodDrop;
+    public GameObject verlorenPanelFoodDrop;
+    public GameObject gewonnenKassaschrei;
+    public GameObject verlorenKassaschrei;
     [SerializeField] GameObject kassaSchreiBG;
     [SerializeField] GameObject foodDropBG;
 
@@ -46,8 +46,8 @@ public class LoadSceneScript : MonoBehaviour
         {
             if(StaticVariablen.hatHighscore == false)
             {
-                gewonnenNoHSPanel.SetActive(true);
-                verlorenNoHSPanel.SetActive(false);
+                gewonnenKassaschrei.SetActive(true);
+                verlorenKassaschrei.SetActive(false);
                 particelSystem.SetActive(true);
                 int randomIndex = Random.Range(0, gutscheinListe.Count);
                 GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
@@ -65,8 +65,8 @@ public class LoadSceneScript : MonoBehaviour
             }
             if (StaticVariablen.hatHighscore == true)
             {
-                gewonnenPanel.SetActive(true);
-                verlorenPanel.SetActive(false);
+                gewonnenPanelFoodDrop.SetActive(true);
+                verlorenPanelFoodDrop.SetActive(false);
                 particelSystem.SetActive(true);
                 highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
                 int randomIndex = Random.Range(0, gutscheinListe.Count);
@@ -85,18 +85,18 @@ public class LoadSceneScript : MonoBehaviour
             }
             gutscheinanzeige.SetActive(true);
         }
-        else
+        else 
         {
             // gutscheinanzeige.SetActive(false);
             if(StaticVariablen.hatHighscore == false)
             {
-                verlorenNoHSPanel.SetActive(true);
-                gewonnenNoHSPanel.SetActive(false);
+                verlorenKassaschrei.SetActive(true);
+                gewonnenKassaschrei.SetActive(false);
             }
             if(StaticVariablen.hatHighscore == true)
             {
-                verlorenPanel.SetActive(true);
-                gewonnenPanel.SetActive(false);
+                verlorenPanelFoodDrop.SetActive(true);
+                gewonnenPanelFoodDrop.SetActive(false);
                 score.text = StaticVariablen.score.ToString();
             }
             if (einemalAbgespielt)
