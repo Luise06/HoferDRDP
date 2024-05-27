@@ -46,4 +46,8 @@ public class VerschiedeneScene : MonoBehaviour
         SceneManager.LoadScene("Gutscheine");
     }
 
+    public void ItemGuesser()
+    {
+        SceneManager.LoadScene("ItemGuess");
+    }
 }
