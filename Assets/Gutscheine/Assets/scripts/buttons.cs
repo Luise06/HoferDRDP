@@ -15,6 +15,7 @@ public class buttons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rotscan.SetActive(false);
         blauscan.SetActive(false);
         orangescan.SetActive(false);
