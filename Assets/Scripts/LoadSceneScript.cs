@@ -36,21 +36,7 @@ public class LoadSceneScript : MonoBehaviour
 
     void Start()
     {
-        particelSystem.SetActive(false);
-
-        int randomIndex = Random.Range(0, gutscheinListe.Count);
-        GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
-
-        foreach (GameObject gutschein in gutscheinListe)
-        {
-            gutschein.SetActive(gutschein == gewonnenerGutschein);
-        }
-
-        string gutscheinName = "GutscheinNR" + randomIndex;
-        PlayerPrefs.SetInt(gutscheinName, 1);
-        Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
-        //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
-        PlayerPrefs.Save();
+        
 
     }
 
@@ -63,6 +49,19 @@ public class LoadSceneScript : MonoBehaviour
                 gewonnenNoHSPanel.SetActive(true);
                 verlorenNoHSPanel.SetActive(false);
                 particelSystem.SetActive(true);
+                int randomIndex = Random.Range(0, gutscheinListe.Count);
+                GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
+
+                foreach (GameObject gutschein in gutscheinListe)
+                {
+                    gutschein.SetActive(gutschein == gewonnenerGutschein);
+                }
+
+                string gutscheinName = "GutscheinNR" + randomIndex;
+                PlayerPrefs.SetInt(gutscheinName, 1);
+                Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
+                //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
+                PlayerPrefs.Save();
             }
             if (StaticVariablen.hatHighscore == true)
             {
@@ -70,7 +69,21 @@ public class LoadSceneScript : MonoBehaviour
                 verlorenPanel.SetActive(false);
                 particelSystem.SetActive(true);
                 highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
+                int randomIndex = Random.Range(0, gutscheinListe.Count);
+                GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
+
+                foreach (GameObject gutschein in gutscheinListe)
+                {
+                    gutschein.SetActive(gutschein == gewonnenerGutschein);
+                }
+
+                string gutscheinName = "GutscheinNR" + randomIndex;
+                PlayerPrefs.SetInt(gutscheinName, 1);
+                Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
+                //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
+                PlayerPrefs.Save();
             }
+            gutscheinanzeige.SetActive(true);
         }
         else
         {
@@ -102,6 +115,7 @@ public class LoadSceneScript : MonoBehaviour
             foodDropBG.SetActive(true);
             kassaSchreiBG.SetActive(false);
         }
+        gutscheinanzeige.SetActive(false);
     }
 
   /*public void ShowGutschein()

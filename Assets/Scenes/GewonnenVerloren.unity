@@ -1365,7 +1365,8 @@ MonoBehaviour:
   - {fileID: 266367106}
   gutscheine: []
   gewonnenGutschein: 
-  gutscheinanzeige: {fileID: 0}
+  gutscheinanzeige: {fileID: 689209484}
+  gutscheineAnzeigen: {fileID: 0}
 --- !u!4 &796106785
 Transform:
   m_ObjectHideFlags: 0
@@ -2116,7 +2117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1650240797
 SpriteRenderer:
   m_ObjectHideFlags: 0
