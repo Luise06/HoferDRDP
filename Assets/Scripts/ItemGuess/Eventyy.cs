@@ -13,6 +13,7 @@ public class Eventyy : MonoBehaviour
     public Button[] Buttons;
     public TextMeshProUGUI[] AntwortenText;
     public GameObject HomeButton;
+    public static int Score;
 
 
     // Start is called before the first frame update
@@ -74,11 +75,13 @@ public class Eventyy : MonoBehaviour
     {
         SceneManager.LoadScene("Hauptmenue");
     }
+
+
     
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
 
