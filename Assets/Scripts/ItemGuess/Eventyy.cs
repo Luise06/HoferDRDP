@@ -13,6 +13,8 @@ public class Eventyy : MonoBehaviour
     public Button[] Buttons;
     public TextMeshProUGUI[] AntwortenText;
     public GameObject HomeButton;
+    public static int Score;
+    public TextMeshProUGUI scoreText;
 
 
     // Start is called before the first frame update
@@ -20,6 +22,10 @@ public class Eventyy : MonoBehaviour
     {
         int randomIndex = Random.Range(0, shdwSprites.Length);
         shdwSprites[randomIndex].SetActive(true);
+        string scoreString = Eventyy.Score.ToString();
+
+        // Aktualisiere das Text-Element mit dem neuen string
+        scoreText.text = "Score: " + scoreString;
 
         // Determine the correct answer based on randomIndex
         switch (randomIndex)
@@ -74,11 +80,13 @@ public class Eventyy : MonoBehaviour
     {
         SceneManager.LoadScene("Hauptmenue");
     }
+
+
     
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
 
