@@ -567,7 +567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &222529026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1344,10 +1344,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gewonnenVerlorenText: {fileID: 0}
-  gewonnenPanelFoodDrop: {fileID: 0}
-  verlorenPanelFoodDrop: {fileID: 0}
-  gewonnenKassaschrei: {fileID: 0}
-  verlorenKassaschrei: {fileID: 0}
+  gewonnenPanelFoodDrop: {fileID: 1438370587}
+  verlorenPanelFoodDrop: {fileID: 1690863321}
+  gewonnenKassaschrei: {fileID: 1980118176}
+  verlorenKassaschrei: {fileID: 222529025}
   kassaSchreiBG: {fileID: 1749047235}
   foodDropBG: {fileID: 1650240796}
   highScore: {fileID: 2025747127}

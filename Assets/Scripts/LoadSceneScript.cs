@@ -36,8 +36,10 @@ public class LoadSceneScript : MonoBehaviour
 
     void Start()
     {
-        
-
+        gewonnenPanelFoodDrop.SetActive(false);
+        verlorenPanelFoodDrop.SetActive(false);
+        gewonnenKassaschrei.SetActive(false);
+        verlorenKassaschrei.SetActive(false);
     }
 
     void Update()
@@ -116,6 +118,7 @@ public class LoadSceneScript : MonoBehaviour
             kassaSchreiBG.SetActive(false);
         }
         gutscheinanzeige.SetActive(false);
+        particelSystem.SetActive(false);
     }
 
   /*public void ShowGutschein()
