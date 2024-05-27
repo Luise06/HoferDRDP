@@ -413,6 +413,7 @@ MonoBehaviour:
   pauseScreen: {fileID: 1505483326}
   korbRB: {fileID: 1909261488}
   tutorialObjekt: {fileID: 1630244980}
+  postProccessing: {fileID: 1267864792}
 --- !u!114 &357201105
 MonoBehaviour:
   m_ObjectHideFlags: 0

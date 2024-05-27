@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class PauseFoodDrop : MonoBehaviour
 {
@@ -10,19 +11,20 @@ public class PauseFoodDrop : MonoBehaviour
     bool pauseScreenEin;
     public Rigidbody2D korbRB;
     [SerializeField] GameObject tutorialObjekt;
+    [SerializeField] PostProcessVolume postProccessing;
 
     private void Start()
     {
         if (StaticVariables.schonMalGespielt)
         {
             Time.timeScale = 1;
+            postProccessing.enabled = false;
         }
         else
         {
             Time.timeScale = 0;
             tutorialObjekt.SetActive(true);
         }
-        
     }
     public void PauseCanvas()
     {
@@ -34,7 +36,7 @@ public class PauseFoodDrop : MonoBehaviour
     }
     public void CloseTutorial()
     {
-        
+        postProccessing.enabled = false;
         Time.timeScale = 1;
         tutorialObjekt.SetActive(false);
         StaticVariables.schonMalGespielt = true;
@@ -43,7 +45,6 @@ public class PauseFoodDrop : MonoBehaviour
             tutorialObjekt.SetActive(false);
         }
     }
-    
     public void Weiter()
     {
         pauseScreen.SetActive(false);
@@ -52,6 +53,5 @@ public class PauseFoodDrop : MonoBehaviour
             randomSpawner.enabled = true;
         Time.timeScale = 1;
             //korbRB.transform.position = new Vector2(0, -4);
-          
     }
 }
