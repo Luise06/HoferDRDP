@@ -19,6 +19,7 @@ public class LoadSceneScript : MonoBehaviour
     //public TextMeshProUGUI text;
     public GameObject particelSystem;
     public AudioSource loseAudio;
+    [SerializeField] AudioSource winAudio;
     bool einemalAbgespielt = true;
 
 
@@ -86,6 +87,11 @@ public class LoadSceneScript : MonoBehaviour
                 PlayerPrefs.Save();
             }
             gutscheinanzeige.SetActive(true);
+            if (einemalAbgespielt)
+            {
+                winAudio.Play(0);
+                einemalAbgespielt = false;
+            }
         }
         else if(StaticVariablen.gewonnen == "Schade")
         {
@@ -205,9 +211,11 @@ public class LoadSceneScript : MonoBehaviour
     public void SceneLaden()
     {
         SceneManager.LoadScene("foodDrop");
+        einemalAbgespielt = true;
     }
     public void KassaSchreiLaden()
     {
         SceneManager.LoadScene("KassaSchrei");
+        einemalAbgespielt = true;
     }
 }
