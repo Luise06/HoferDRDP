@@ -3405,8 +3405,6 @@ GameObject:
   - component: {fileID: 1140785638}
   - component: {fileID: 1140785637}
   - component: {fileID: 1140785639}
-  - component: {fileID: 1140785640}
-  - component: {fileID: 1140785641}
   - component: {fileID: 1140785642}
   m_Layer: 0
   m_Name: GameManager
@@ -3599,31 +3597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalTime: 60
   countdownText: {fileID: 312242222}
---- !u!114 &1140785640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140785635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 933ce5cc6bab65c4181c00e05287c63e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  findItemScore: 0
---- !u!114 &1140785641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140785635}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6494a6dacf10121418c1f65ddd1df6ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  clickDetection: {fileID: 0}
 --- !u!114 &1140785642
 MonoBehaviour:
   m_ObjectHideFlags: 0
