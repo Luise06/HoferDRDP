@@ -15,7 +15,7 @@ public class VerpassteHoferProdukte : MonoBehaviour
         if (collision.gameObject.tag == "HoferProdukt")
         {
             verpassteProdukte++;
-            missedText.text = "Missed: " + verpassteProdukte;
+            missedText.text = verpassteProdukte.ToString();
             Destroy(collision);
             audioMiss.Play(0);
             /*if (einmalAbspielen)

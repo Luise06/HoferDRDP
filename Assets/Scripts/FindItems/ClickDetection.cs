@@ -34,7 +34,7 @@ public class ClickDetection : MonoBehaviour
                     if (gameObject.tag == "KeinHoferProdukt")
                     {
                         scoreFindItem.findItemScore++;
-                        findScore.text = "Gefundene: " + scoreFindItem.findItemScore.ToString();
+                        findScore.text =  scoreFindItem.findItemScore.ToString();
                         positionRan.DestroyInstanzen();
                         //chooseRandomItem.RandomObjektausWahl();
                         //randomPosition.DestroyGameObjekts();

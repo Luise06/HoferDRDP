@@ -48,10 +48,9 @@ public class PauseFoodDrop : MonoBehaviour
     public void Weiter()
     {
         pauseScreen.SetActive(false);
-            pauseScreenEin = false;
-            dragFingerMove.enabled = true;
-            randomSpawner.enabled = true;
+        pauseScreenEin = false;
+        dragFingerMove.enabled = true;
+        randomSpawner.enabled = true;
         Time.timeScale = 1;
-            //korbRB.transform.position = new Vector2(0, -4);
     }
 }
