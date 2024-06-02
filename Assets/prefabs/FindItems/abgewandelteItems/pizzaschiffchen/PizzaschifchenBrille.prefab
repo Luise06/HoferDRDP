@@ -15,17 +15,21 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 4.82
       objectReference: {fileID: 0}
+    - target: {fileID: 4062805890192724348, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062805890192724348, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062805890192724348, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.82
+      objectReference: {fileID: 0}
     - target: {fileID: 5544323250129997762, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
       propertyPath: m_Name
       value: PizzaschifchenBrille
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544323250129997762, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544323250129997762, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
-      propertyPath: m_TagString
-      value: KeinHoferProdukt
       objectReference: {fileID: 0}
     - target: {fileID: 5544323250129997772, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
       propertyPath: m_Sprite
@@ -34,14 +38,6 @@ PrefabInstance:
     - target: {fileID: 5544323250129997775, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544323250129997775, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5544323250129997775, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: 5544323250129997775, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83,13 +79,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5614833928785739178, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 5614833928785739178, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8694227828785775240, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}

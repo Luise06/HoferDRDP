@@ -60,6 +60,10 @@ PrefabInstance:
       value: RiverCola_Lachen Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1100032433698619566, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100032433698619566, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
       propertyPath: m_TagString
       value: KeinHoferProdukt
       objectReference: {fileID: 0}

@@ -12,6 +12,10 @@ PrefabInstance:
       value: FyingPowerRotBrille
       objectReference: {fileID: 0}
     - target: {fileID: 2901767972922632502, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901767972922632502, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
       propertyPath: m_TagString
       value: KeinHoferProdukt
       objectReference: {fileID: 0}
@@ -22,6 +26,14 @@ PrefabInstance:
     - target: {fileID: 2901767972922632505, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901767972922632505, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2901767972922632505, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 2901767972922632505, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
       propertyPath: m_LocalPosition.x

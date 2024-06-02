@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3994541312826247929}
   - component: {fileID: 3994541312826247928}
   - component: {fileID: 3994541312826247931}
+  - component: {fileID: 4053550395376228623}
   m_Layer: 0
   m_Name: EisteeGruenBrille
   m_TagString: KeinHoferProdukt
@@ -117,7 +118,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3994541312826247930}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -177,3 +178,72 @@ PolygonCollider2D:
       - {x: 3.25, y: -6.79}
       - {x: 3.35, y: -6.68}
       - {x: 3.3999999, y: -6.5299997}
+--- !u!60 &4053550395376228623
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994541312826247930}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.6, y: 13.7}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.3, y: 3.79}
+      - {x: 3.23, y: 4.0299997}
+      - {x: 3.1399999, y: 4.19}
+      - {x: 3.04, y: 4.35}
+      - {x: 2.79, y: 4.5899997}
+      - {x: 2.6499999, y: 4.67}
+      - {x: 2.59, y: 4.7}
+      - {x: 2.62, y: 5.22}
+      - {x: 2.62, y: 5.33}
+      - {x: 2.58, y: 5.39}
+      - {x: 2.58, y: 6.18}
+      - {x: 2.62, y: 6.25}
+      - {x: 2.6299999, y: 6.35}
+      - {x: 2.53, y: 6.49}
+      - {x: 2.27, y: 6.6099997}
+      - {x: 2.07, y: 6.66}
+      - {x: 1.76, y: 6.74}
+      - {x: 1.26, y: 6.81}
+      - {x: 1.06, y: 6.83}
+      - {x: 0.62, y: 6.85}
+      - {x: -0.72999996, y: 6.85}
+      - {x: -1.22, y: 6.8199997}
+      - {x: -1.75, y: 6.75}
+      - {x: -2.1299999, y: 6.68}
+      - {x: -2.5, y: 6.5499997}
+      - {x: -2.6599998, y: 6.3999996}
+      - {x: -2.6699998, y: 6.35}
+      - {x: -2.6699998, y: 6.25}
+      - {x: -2.6399999, y: 6.2}
+      - {x: -2.6399999, y: 5.38}
+      - {x: -2.69, y: 5.3399997}
+      - {x: -2.6599998, y: 5.16}
+      - {x: -2.6499999, y: 4.66}
+      - {x: -2.8799999, y: 4.52}
+      - {x: -3.1299999, y: 4.23}
+      - {x: -3.3, y: 3.83}
+      - {x: -3.3, y: -6.6}
+      - {x: -3.23, y: -6.72}
+      - {x: -3.1, y: -6.8199997}
+      - {x: -3.03, y: -6.85}
+      - {x: 3.03, y: -6.85}
+      - {x: 3.1, y: -6.83}
+      - {x: 3.27, y: -6.69}
+      - {x: 3.3, y: -6.5699997}

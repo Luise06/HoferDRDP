@@ -71,13 +71,25 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 233e197e942245f4cb1d849f1cfac7c5, type: 3}
+    - target: {fileID: 6007419742351306381, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007419742351306381, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6007419742351306381, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6007419742351306383, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_Name
       value: RiverCola Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6007419742351306383, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}

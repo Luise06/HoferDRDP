@@ -12,6 +12,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9087488774890992924, guid: ed4abfca208bc0145a34f7c94bf2007c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087488774890992924, guid: ed4abfca208bc0145a34f7c94bf2007c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087488774890992924, guid: ed4abfca208bc0145a34f7c94bf2007c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -58,6 +66,10 @@ PrefabInstance:
     - target: {fileID: 9087488774890992929, guid: ed4abfca208bc0145a34f7c94bf2007c, type: 3}
       propertyPath: m_Name
       value: FyingPowerBlauSchleife
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087488774890992929, guid: ed4abfca208bc0145a34f7c94bf2007c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4abfca208bc0145a34f7c94bf2007c, type: 3}
