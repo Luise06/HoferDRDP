@@ -3406,6 +3406,7 @@ GameObject:
   - component: {fileID: 1140785637}
   - component: {fileID: 1140785639}
   - component: {fileID: 1140785642}
+  - component: {fileID: 1140785640}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3473,11 +3474,11 @@ MonoBehaviour:
   - {fileID: 3149844087669193816, guid: c456931ce3052514b94fbecc948f49d7, type: 3}
   - {fileID: 7989040008235241435, guid: bf10b4210f8b0314193480ce4df7ecc5, type: 3}
   - {fileID: 3707147675669624050, guid: 41b809fd62908284290abb1ff03e2275, type: 3}
-  - {fileID: 5544323250129997762, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
   - {fileID: 2392983862725943664, guid: 6fd871fe72c9478498f150a30404cc55, type: 3}
   - {fileID: 5427921550246547519, guid: dd6dfb5431a5af345ae16787d66e4f78, type: 3}
   - {fileID: 6007419742351306383, guid: 1e72d4378d0afa541ab7e0c94af883e2, type: 3}
   - {fileID: 2901767972922632502, guid: b0f4c6cf2a3c7164c959e24f9d4f353d, type: 3}
+  - {fileID: 5544323250129997762, guid: 70fb28be807a6b44fbc3b23f62c86185, type: 3}
   - {fileID: 1100032433698619566, guid: 19c4ee8b4dc5c3b40baeefe9e2a8cd39, type: 3}
   speed:
   - {fileID: 2080051913364511046, guid: d4d3d5e1899df08489181bbb2017aad9, type: 3}
@@ -3557,12 +3558,12 @@ MonoBehaviour:
   - {fileID: 4127369982877402056, guid: 73f958a05976b5242ad7316e60e18c0b, type: 3}
   - {fileID: 8764818192834167681, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}
   pizzaschiffchen:
-  - {fileID: 1871664638161031657, guid: 2e6bfc280cb60274297b85591f0c8956, type: 3}
   - {fileID: 2108425901301522683, guid: f3a7122a4a3b18949925c8a1534c3818, type: 3}
   - {fileID: 5036109337671306206, guid: e1f76405fdcb2d1428b0b06b1fefd79f, type: 3}
   - {fileID: 317700315415324206, guid: 53b11bed2170b164ab67cb90f4c63f3e, type: 3}
   - {fileID: 8332817093839465890, guid: 5e617a1922a827b40a548b5ef7961c15, type: 3}
   - {fileID: 3768468717824150137, guid: f837939410e135b458cd9021df9d1e83, type: 3}
+  - {fileID: 1871664638161031657, guid: 2e6bfc280cb60274297b85591f0c8956, type: 3}
   riverCola:
   - {fileID: 1490688000299705619, guid: d31c58950177902408bf16d4ef1bb3fc, type: 3}
   - {fileID: 1085539477541464877, guid: 7fbddeef22b713e41be65840c06f5c18, type: 3}
@@ -3597,7 +3598,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalTime: 60
   countdownText: {fileID: 312242222}
-  clickDetection: {fileID: 0}
+  scorefindItem: {fileID: 1140785640}
+--- !u!114 &1140785640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140785635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933ce5cc6bab65c4181c00e05287c63e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  findItemScore: 0
 --- !u!114 &1140785642
 MonoBehaviour:
   m_ObjectHideFlags: 0

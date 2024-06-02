@@ -8,7 +8,7 @@ public class TimeManager : MonoBehaviour
     public float totalTime = 30f; // Gesamtzeit des Countdowns
     private float currentTime; // Aktuelle verbleibende Zeit
     public TextMeshProUGUI countdownText; // Referenz auf das Textobjekt, das den Countdown anzeigt
-    public ClickDetection clickDetection;
+    public ScoreFindIt scorefindItem;
 
     //private bool isCounting = false; // Überprüft, ob der Countdown gerade läuft
 
@@ -29,12 +29,13 @@ public class TimeManager : MonoBehaviour
                 currentTime = 0;
             //isCounting = false;
             // Hier kannst du die Methode aufrufen, die ausgeführt werden soll, wenn der Countdown abgelaufen ist.
-            if (clickDetection.findItemScore > 5)
+            if (scorefindItem.findItemScore > 5)
             {
                     StaticVariablen.hatHighscore = false;
                 StaticVariablen.gewonnen = "Gewonnen";
                 StaticVariablen.whichScene = "FindItem";
-                }
+                SceneManager.LoadScene("GewonnenVerloren");
+            }
             else
             {
                 CountdownFinished();
@@ -55,7 +56,9 @@ public class TimeManager : MonoBehaviour
     void CountdownFinished()
     {
         StaticVariablen.gewonnen = "Verloren...";
+        StaticVariablen.whichScene = "FindItem";
         SceneManager.LoadScene("GewonnenVerloren");
+        
         // Hier kannst du weitere Aktionen ausführen, wenn der Countdown abgeschlossen ist.
     }
 }

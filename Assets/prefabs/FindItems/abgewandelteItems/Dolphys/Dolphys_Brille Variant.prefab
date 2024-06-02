@@ -7,41 +7,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3016739722497068879, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 3.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 3016739722497068879, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 5.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 5319778431279193233, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 3.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 5319778431279193233, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 5.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108472704982796304, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7969aa2e7881970499dc2240b7a00062, type: 3}
     - target: {fileID: 8108472704982796305, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108472704982796305, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108472704982796305, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108472704982796305, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.3405
       objectReference: {fileID: 0}
     - target: {fileID: 8108472704982796305, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
       propertyPath: m_LocalPosition.x
@@ -86,14 +54,6 @@ PrefabInstance:
     - target: {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
       propertyPath: m_Name
       value: Dolphys_Brille Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108472704982796306, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}
-      propertyPath: m_TagString
-      value: KeinHoferProdukt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b178fcdaa61669429b6f53b871a5818, type: 3}

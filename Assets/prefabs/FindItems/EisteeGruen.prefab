@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6543469199156815990}
   - component: {fileID: 8922227042903944901}
   - component: {fileID: 4983137774090644135}
+  - component: {fileID: 677650225003488462}
   m_Layer: 0
   m_Name: EisteeGruen
   m_TagString: HoferProdukt
@@ -117,7 +118,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3707147675669624050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -177,3 +178,43 @@ PolygonCollider2D:
       - {x: 3.25, y: -6.79}
       - {x: 3.35, y: -6.68}
       - {x: 3.3999999, y: -6.5299997}
+--- !u!60 &677650225003488462
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707147675669624050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.62, y: 3.35}
+    newSize: {x: 1.62, y: 3.35}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.63, y: 1.665}
+      - {x: 0.48, y: 1.655}
+      - {x: 0.34, y: 1.675}
+      - {x: -0.48999998, y: 1.675}
+      - {x: -0.71999997, y: 1.5649999}
+      - {x: -0.7, y: 1.115}
+      - {x: -0.78, y: 1.025}
+      - {x: -0.79999995, y: 0.97499996}
+      - {x: -0.81, y: 0.945}
+      - {x: -0.81, y: -1.635}
+      - {x: -0.78999996, y: -1.675}
+      - {x: 0.78, y: -1.675}
+      - {x: 0.81, y: -1.625}
+      - {x: 0.81, y: 1.015}
+      - {x: 0.71, y: 1.3149999}

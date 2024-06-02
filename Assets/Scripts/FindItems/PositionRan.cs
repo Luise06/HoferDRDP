@@ -35,7 +35,7 @@ public class PositionRan : MonoBehaviour
     public void RandomPos()
     {
         richtigePos = Random.Range(0, transformList.Count);
-        randomObjekt = Random.Range(9,12);
+        randomObjekt = Random.Range(0,12);
         randomAbwandlung = Random.Range(0, 6);
         
         

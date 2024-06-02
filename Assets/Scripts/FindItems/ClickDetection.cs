@@ -6,7 +6,7 @@ public class ClickDetection : MonoBehaviour
 {
     //ChooseRandomItem chooseRandomItem;
     //RandomPosition randomPosition;
-    ScoreFindItem scoreFindItem;
+    ScoreFindIt scoreFindItem;
    TextMeshProUGUI findScore;
     PositionRan positionRan;
 
@@ -14,7 +14,7 @@ public class ClickDetection : MonoBehaviour
     {
         //chooseRandomItem = GameObject.Find("GameManager").GetComponent<ChooseRandomItem>();
         //randomPosition = GameObject.Find("GameManager").GetComponent<RandomPosition>();
-        scoreFindItem = GameObject.Find("GameManager").GetComponent<ScoreFindItem>();
+        scoreFindItem = GameObject.Find("GameManager").GetComponent<ScoreFindIt>();
         findScore = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
         positionRan = GameObject.Find("GameManager").GetComponent<PositionRan>();
     }

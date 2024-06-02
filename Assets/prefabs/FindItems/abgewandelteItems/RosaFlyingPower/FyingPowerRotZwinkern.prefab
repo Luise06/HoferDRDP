@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3.93
       objectReference: {fileID: 0}
+    - target: {fileID: 5120136132567264910, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.93
+      objectReference: {fileID: 0}
     - target: {fileID: 8764818192834167681, guid: a1fdc0bbfd0b1314c8401475b998b100, type: 3}
       propertyPath: m_Name
       value: FyingPowerRotZwinkern

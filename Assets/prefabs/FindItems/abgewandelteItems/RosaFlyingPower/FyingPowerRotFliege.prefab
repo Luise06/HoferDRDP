@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3928779460936299622, guid: 1cf6791aa96d5a642a27656467c85265, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3928779460936299622, guid: 1cf6791aa96d5a642a27656467c85265, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.36
       objectReference: {fileID: 0}
@@ -74,6 +78,14 @@ PrefabInstance:
     - target: {fileID: 4995447927108579742, guid: 1cf6791aa96d5a642a27656467c85265, type: 3}
       propertyPath: m_Name
       value: FyingPowerRotFliege
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935113581194108049, guid: 1cf6791aa96d5a642a27656467c85265, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8935113581194108049, guid: 1cf6791aa96d5a642a27656467c85265, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cf6791aa96d5a642a27656467c85265, type: 3}
