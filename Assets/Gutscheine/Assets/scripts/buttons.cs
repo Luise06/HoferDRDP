@@ -59,14 +59,18 @@ public class buttons : MonoBehaviour
     {
         if (rotscan)
         {
-            
+            string gutscheinName = "GutscheinNR" + 0;
+            string gutscheinName02 = "GutscheinNR" + 1;
+            int isSaved = PlayerPrefs.GetInt(gutscheinName);
 
             rotscan.SetActive(false);
             hideContent.SetActive(true);
-            //rot01.interactable = false;
-            // rot02.interactable = false;
-            
+            rot01.interactable = false;
+            rot02.interactable = false;
 
+            PlayerPrefs.SetInt(gutscheinName, 0);
+            PlayerPrefs.SetInt(gutscheinName02, 0);
+            PlayerPrefs.Save();
         }
 
         if (blauscan)
@@ -80,6 +84,7 @@ public class buttons : MonoBehaviour
             blauscan.SetActive(false);
             hideContent.SetActive(true);
             blau01.interactable = false;
+            blau02.interactable = false;
 
             PlayerPrefs.SetInt(gutscheinName, 0);
             PlayerPrefs.SetInt(gutscheinName02, 0);
@@ -89,14 +94,34 @@ public class buttons : MonoBehaviour
 
         if (gelbscan)
         {
+            string gutscheinName = "GutscheinNR" + 2;
+            string gutscheinName02 = "GutscheinNR" + 3;
+            int isSaved = PlayerPrefs.GetInt(gutscheinName);
+
             gelbscan.SetActive(false);
             hideContent.SetActive(true);
+            gelb01.interactable = false;
+            gelb02.interactable = false;
+
+            PlayerPrefs.SetInt(gutscheinName, 0);
+            PlayerPrefs.SetInt(gutscheinName02, 0);
+            PlayerPrefs.Save();
         }
 
         if (orangescan)
         {
+            string gutscheinName = "GutscheinNR" + 6;
+            string gutscheinName02 = "GutscheinNR" + 7;
+            int isSaved = PlayerPrefs.GetInt(gutscheinName);
+
             orangescan.SetActive(false);
             hideContent.SetActive(true);
+            orange01.interactable = false;
+            orange02.interactable = false;
+
+            PlayerPrefs.SetInt(gutscheinName, 0);
+            PlayerPrefs.SetInt(gutscheinName02, 0);
+            PlayerPrefs.Save();
         }
     }
 
