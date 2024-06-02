@@ -8,8 +8,10 @@ public class buttons : MonoBehaviour
 
     public GameObject hideContent;
     public GameObject rotscan, gelbscan, blauscan, orangescan;
-    public GameObject rot01, rot02, gelb01, gelb02, blau01, blau02, orange01, orange02;
+    public Button rot01, rot02, gelb01, gelb02, blau01, blau02, orange01, orange02;
     public GameObject returnbutton;
+
+    public gutscheineanzeigen anzeigen;
 
 
     // Start is called before the first frame update
@@ -33,8 +35,9 @@ public class buttons : MonoBehaviour
         if (rotscan)
         {
             rotscan.SetActive(false);
-           
             hideContent.SetActive(true);
+            rot01.interactable = false;
+            rot02.interactable = false;
         }
 
         if (blauscan)

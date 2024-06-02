@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class gutscheineanzeigen : MonoBehaviour
 {
      public List<Button> gutscheinListe = new List<Button>();
+    public buttons buttons;
 
     void Start()
     {
@@ -33,8 +34,11 @@ public class gutscheineanzeigen : MonoBehaviour
             else
             {
                 gutscheinListe[i].interactable = false;
+
             }
-            
+
+           
+           
 
         } 
     }
@@ -45,6 +49,12 @@ public class gutscheineanzeigen : MonoBehaviour
         {
             ResetPlayerPrefs();
         }
+
+       
+
+
+
+
     }
 
     public void ResetPlayerPrefs()
