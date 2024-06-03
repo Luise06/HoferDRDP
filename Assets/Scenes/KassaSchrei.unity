@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.3, y: -532.7}
-  m_SizeDelta: {x: 1315.7, y: 320.9}
+  m_AnchoredPosition: {x: 74.45, y: -810.14374}
+  m_SizeDelta: {x: 1315.7, y: 410.6251}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37014954
 MonoBehaviour:
@@ -271,7 +271,7 @@ MonoBehaviour:
   mainCanvas: {fileID: 1514493926}
   tutorialCanvas: {fileID: 527521461}
   bgImage: {fileID: 1006810905}
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 755070638}
 --- !u!1 &138831295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2202,8 +2202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480.5, y: 804}
-  m_SizeDelta: {x: 277, y: 333.5}
+  m_AnchoredPosition: {x: -600, y: 1088}
+  m_SizeDelta: {x: 387.3005, y: 333.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901855252
 MonoBehaviour:
@@ -2314,7 +2314,7 @@ MonoBehaviour:
   mainCanvas: {fileID: 1514493926}
   tutorialCanvas: {fileID: 527521461}
   bgImage: {fileID: 1006810905}
-  tutorialImage: {fileID: 0}
+  tutorialImage: {fileID: 755070638}
 --- !u!1 &1935412018
 GameObject:
   m_ObjectHideFlags: 0
