@@ -25,24 +25,34 @@ public class GameManagment : MonoBehaviour
 
     public void GameOver()
     {
+        StaticVariablen.gewonnen = "Schade";
+        StaticVariablen.hatHighscore = false;
+        StaticVariablen.whichScene = "DrinkMerger";
+
         Debug.Log("Spiel verloren!");
         // Zeige den Game Over-Bildschirm an
         if (gameOverUI != null)
         {
             gameOverUI.SetActive(true);
         }
+        SceneManager.LoadScene(4);
         // Optional: Szene neu laden
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void GameWon()
     {
+        StaticVariablen.gewonnen = "Glückwunsch!!!";
+        StaticVariablen.hatHighscore = false;
+        StaticVariablen.whichScene = "DrinkMerger";
+
         Debug.Log("Spiel gewonnen!");
         // Zeige den Game Won-Bildschirm an
         if (gameWonUI != null)
         {
             gameWonUI.SetActive(true);
         }
+        SceneManager.LoadScene(4);
         // Optional: Szene neu laden
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
