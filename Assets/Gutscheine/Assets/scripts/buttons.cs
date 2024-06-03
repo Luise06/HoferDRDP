@@ -14,7 +14,7 @@ public class buttons : MonoBehaviour
     public Button rot01, rot02, gelb01, gelb02, blau01, blau02, orange01, orange02;
     public GameObject returnbutton;
 
-    public gutscheineanzeigen anzeigen;
+    //public gutscheineanzeigen anzeigen;
 
 
     // Start is called before the first frame update

@@ -569,7 +569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &352276158
 RectTransform:
   m_ObjectHideFlags: 0
@@ -843,7 +843,6 @@ GameObject:
   m_Component:
   - component: {fileID: 591774504}
   - component: {fileID: 591774503}
-  - component: {fileID: 591774505}
   m_Layer: 0
   m_Name: manager
   m_TagString: Untagged
@@ -886,7 +885,6 @@ MonoBehaviour:
   orange01: {fileID: 471906647}
   orange02: {fileID: 786270578}
   returnbutton: {fileID: 884549091}
-  anzeigen: {fileID: 0}
 --- !u!4 &591774504
 Transform:
   m_ObjectHideFlags: 0
@@ -901,19 +899,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &591774505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591774502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81a792d97f6064f438affcc1e5cf17f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gutscheineButtons: []
 --- !u!1 &591938042
 GameObject:
   m_ObjectHideFlags: 0
