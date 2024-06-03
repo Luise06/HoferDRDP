@@ -207,7 +207,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 591774503}
         m_TargetAssemblyTypeName: buttons, Assembly-CSharp
-        m_MethodName: OnClickOrange
+        m_MethodName: OnClickBlau
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -702,7 +702,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 591774503}
         m_TargetAssemblyTypeName: buttons, Assembly-CSharp
-        m_MethodName: OnCLickGelb
+        m_MethodName: OnClickOrange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -863,20 +863,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef0fd1ddc479e9544a4582480ae6845f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gutscheinListe:
+  - {fileID: 1018392368}
+  - {fileID: 1404080530}
+  - {fileID: 841981646}
+  - {fileID: 905907881}
+  - {fileID: 1110261507}
+  - {fileID: 82705932}
+  - {fileID: 471906647}
+  - {fileID: 786270578}
   hideContent: {fileID: 1796969951}
   rotscan: {fileID: 596674326}
   gelbscan: {fileID: 1676948129}
   blauscan: {fileID: 591938042}
   orangescan: {fileID: 954707932}
-  rot01: {fileID: 1018392366}
-  rot02: {fileID: 1404080528}
-  gelb01: {fileID: 841981644}
-  gelb02: {fileID: 905907879}
-  blau01: {fileID: 1110261505}
-  blau02: {fileID: 82705930}
-  orange01: {fileID: 471906645}
-  orange02: {fileID: 786270577}
+  rot01: {fileID: 1018392368}
+  rot02: {fileID: 1404080530}
+  gelb01: {fileID: 841981646}
+  gelb02: {fileID: 905907881}
+  blau01: {fileID: 1110261507}
+  blau02: {fileID: 82705932}
+  orange01: {fileID: 471906647}
+  orange02: {fileID: 786270578}
   returnbutton: {fileID: 884549091}
+  anzeigen: {fileID: 0}
 --- !u!4 &591774504
 Transform:
   m_ObjectHideFlags: 0
@@ -900,18 +910,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 591774502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c4275252f1749c42865b2df84fb5c3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 81a792d97f6064f438affcc1e5cf17f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gutscheinListe:
-  - {fileID: 1018392368}
-  - {fileID: 841981646}
-  - {fileID: 1110261507}
-  - {fileID: 471906647}
-  - {fileID: 1404080530}
-  - {fileID: 905907881}
-  - {fileID: 82705932}
-  - {fileID: 786270578}
+  gutscheineButtons: []
 --- !u!1 &591938042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,7 +1766,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 591774503}
         m_TargetAssemblyTypeName: buttons, Assembly-CSharp
-        m_MethodName: OnClickRot
+        m_MethodName: OnCLickGelb
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2068,7 +2070,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 591774503}
         m_TargetAssemblyTypeName: buttons, Assembly-CSharp
-        m_MethodName: OnClickBlau
+        m_MethodName: OnCLickGelb
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2596,7 +2598,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 591774503}
         m_TargetAssemblyTypeName: buttons, Assembly-CSharp
-        m_MethodName: OnCLickGelb
+        m_MethodName: OnClickBlau
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
