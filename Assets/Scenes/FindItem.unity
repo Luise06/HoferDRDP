@@ -2864,6 +2864,7 @@ MonoBehaviour:
   countdownText: {fileID: 312242222}
   scorefindItem: {fileID: 1140785640}
   pause: 1
+  anim: {fileID: 312242224}
 --- !u!114 &1140785640
 MonoBehaviour:
   m_ObjectHideFlags: 0

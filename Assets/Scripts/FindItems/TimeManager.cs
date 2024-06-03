@@ -10,6 +10,7 @@ public class TimeManager : MonoBehaviour
     public TextMeshProUGUI countdownText; // Referenz auf das Textobjekt, das den Countdown anzeigt
     public ScoreFindIt scorefindItem;
     public bool pause = true;
+    public Animator anim;
     
 
     //private bool isCounting = false; // Überprüft, ob der Countdown gerade läuft
@@ -18,6 +19,7 @@ public class TimeManager : MonoBehaviour
     {
         currentTime = totalTime;
         UpdateCountdownText();
+        anim.speed = 0;
 
     }
     public void TutorialSchliesen()
@@ -29,6 +31,7 @@ public class TimeManager : MonoBehaviour
     {
         if (!pause)
         {
+            anim.speed = 1;
             currentTime -= Time.deltaTime;
             UpdateCountdownText();
             if (currentTime <= 0)

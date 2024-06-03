@@ -7,7 +7,7 @@ public class ClickDetection : MonoBehaviour
     //ChooseRandomItem chooseRandomItem;
     //RandomPosition randomPosition;
     ScoreFindIt scoreFindItem;
-   TextMeshProUGUI findScore;
+    TextMeshProUGUI findScore;
     PositionRan positionRan;
     int minusPunkte = 5;
     TextMeshProUGUI minusScore;
