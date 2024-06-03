@@ -16,6 +16,12 @@ public class ButtonSkript : MonoBehaviour
     public AudioClip Falschee;
     public AudioSource AudioSourceRichtig;
     public AudioSource AudioSourceFalsch;
+    public GameObject Disco;
+    public GameObject Doppelkekse;
+    public GameObject Eistee;
+    public GameObject FlyingPower;
+    public GameObject Milch;
+    public GameObject Pizzaschifferl;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +40,36 @@ public class ButtonSkript : MonoBehaviour
 
         if (Eventyy.richtigeAntwort == textInButton)
         {
+            if (Eventyy.richtigeAntwort == "Disco")
+            {
+                Disco.SetActive(true);
+            }
+
+            if (Eventyy.richtigeAntwort == "Doppelkekse")
+            {
+                Doppelkekse.SetActive(true);
+            }
+
+            if (Eventyy.richtigeAntwort == "Eistee")
+            {
+                Eistee.SetActive(true);
+            }
+
+            if (Eventyy.richtigeAntwort == "Flying Power")
+            {
+                FlyingPower.SetActive(true);
+            }
+
+            if (Eventyy.richtigeAntwort == "Milch")
+            {
+                Milch.SetActive(true);
+            }
+
+            if (Eventyy.richtigeAntwort == "Pizzaschifferl")
+            {
+                Pizzaschifferl.SetActive(true);
+            }
+
             AudioSourceRichtig.PlayOneShot(Richtig);
             Eventyy.Score++;
             transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = Color.green;

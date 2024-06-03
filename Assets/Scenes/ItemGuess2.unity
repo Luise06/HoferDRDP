@@ -543,7 +543,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 6e270b258ff48694093348e9a88d285b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -583,7 +583,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15e9b8c95e174b942af267a38df6bef7, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -834,7 +834,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 1e4137e085c85f34786d6b2adcf992ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1140,35 +1140,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 686221343}
   - {fileID: 276504659}
   - {fileID: 1093423270}
   - {fileID: 2062265430}
-  - {fileID: 69528221}
   - {fileID: 669661980}
   - {fileID: 1238982574}
   - {fileID: 1891719030}
-  - {fileID: 922396204}
   shdwSprites:
   - {fileID: 484633625}
-  - {fileID: 1478749496}
   - {fileID: 1759245035}
-  - {fileID: 476679090}
   - {fileID: 40872189}
   - {fileID: 223848186}
   - {fileID: 498030407}
   - {fileID: 1353985281}
-  - {fileID: 1578944067}
   Antworten:
   - Disco
-  - Cocos
   - Doppelkekse
   - Eistee
-  - Greentea
   - Flying Power
   - Milch
   - Pizzaschifferl
-  - Speed
   Buttons:
   - {fileID: 1039009657}
   - {fileID: 1656985945}
@@ -1911,10 +1902,16 @@ MonoBehaviour:
   Button2: {fileID: 1656985945}
   Button3: {fileID: 586768370}
   Button4: {fileID: 1929320198}
-  Richtig: {fileID: 0}
-  Falschee: {fileID: 0}
-  AudioSourceRichtig: {fileID: 0}
-  AudioSourceFalsch: {fileID: 0}
+  Richtig: {fileID: 8300000, guid: 3f50318b800e08c438a9c36dd58ad77d, type: 3}
+  Falschee: {fileID: 8300000, guid: 15e9b8c95e174b942af267a38df6bef7, type: 3}
+  AudioSourceRichtig: {fileID: 1415109902}
+  AudioSourceFalsch: {fileID: 159705913}
+  Disco: {fileID: 276504659}
+  Doppelkekse: {fileID: 1093423270}
+  Eistee: {fileID: 2062265430}
+  FlyingPower: {fileID: 669661980}
+  Milch: {fileID: 1238982574}
+  Pizzaschifferl: {fileID: 1891719030}
 --- !u!1 &586952356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,7 +2248,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 9d391709f9b5dba4bb03d0b7c2060e74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2333,7 +2330,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 4493290d2af534045a8f2e56814d7508, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2668,7 +2665,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 7ff825757cb680b4db24f13d1cd9f962, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2849,6 +2846,12 @@ MonoBehaviour:
   Falschee: {fileID: 8300000, guid: 15e9b8c95e174b942af267a38df6bef7, type: 3}
   AudioSourceRichtig: {fileID: 1415109902}
   AudioSourceFalsch: {fileID: 159705913}
+  Disco: {fileID: 276504659}
+  Doppelkekse: {fileID: 1093423270}
+  Eistee: {fileID: 2062265430}
+  FlyingPower: {fileID: 669661980}
+  Milch: {fileID: 1238982574}
+  Pizzaschifferl: {fileID: 1891719030}
 --- !u!1 &1093423270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,7 +2922,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: a86c6694a7cde664793a818052c94e46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3155,7 +3158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 454b06f6c2ef6394d9ce688daeab0ef3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3973,10 +3976,16 @@ MonoBehaviour:
   Button2: {fileID: 1656985945}
   Button3: {fileID: 586768370}
   Button4: {fileID: 1929320198}
-  Richtig: {fileID: 0}
-  Falschee: {fileID: 0}
-  AudioSourceRichtig: {fileID: 0}
-  AudioSourceFalsch: {fileID: 0}
+  Richtig: {fileID: 8300000, guid: 3f50318b800e08c438a9c36dd58ad77d, type: 3}
+  Falschee: {fileID: 8300000, guid: 15e9b8c95e174b942af267a38df6bef7, type: 3}
+  AudioSourceRichtig: {fileID: 1415109902}
+  AudioSourceFalsch: {fileID: 159705913}
+  Disco: {fileID: 276504659}
+  Doppelkekse: {fileID: 1093423270}
+  Eistee: {fileID: 2062265430}
+  FlyingPower: {fileID: 669661980}
+  Milch: {fileID: 1238982574}
+  Pizzaschifferl: {fileID: 1891719030}
 --- !u!1 &1745871313
 GameObject:
   m_ObjectHideFlags: 0
@@ -4397,7 +4406,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: e810cc188a41ff94da32815fe333abaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4560,10 +4569,16 @@ MonoBehaviour:
   Button2: {fileID: 1656985945}
   Button3: {fileID: 586768370}
   Button4: {fileID: 1929320198}
-  Richtig: {fileID: 0}
-  Falschee: {fileID: 0}
-  AudioSourceRichtig: {fileID: 0}
-  AudioSourceFalsch: {fileID: 0}
+  Richtig: {fileID: 8300000, guid: 3f50318b800e08c438a9c36dd58ad77d, type: 3}
+  Falschee: {fileID: 8300000, guid: 15e9b8c95e174b942af267a38df6bef7, type: 3}
+  AudioSourceRichtig: {fileID: 1415109902}
+  AudioSourceFalsch: {fileID: 159705913}
+  Disco: {fileID: 276504659}
+  Doppelkekse: {fileID: 1093423270}
+  Eistee: {fileID: 2062265430}
+  FlyingPower: {fileID: 669661980}
+  Milch: {fileID: 1238982574}
+  Pizzaschifferl: {fileID: 1891719030}
 --- !u!1 &2062265430
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,7 +4649,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: b8bc1ad82e1114b4ebf16d91a02cdead, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4680,7 +4695,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -405, y: 900.15}
+  m_AnchoredPosition: {x: -351, y: 900.15}
   m_SizeDelta: {x: 315.12, y: 62.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111357991
