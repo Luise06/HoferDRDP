@@ -63,10 +63,10 @@ public class buttons : MonoBehaviour
         {
              string gutscheinName00 = "GutscheinNR" + 0;
              string gutscheinName01 = "GutscheinNR" + 1;
-             int isSaved = PlayerPrefs.GetInt(gutscheinName00);
-             int isSaved01 = PlayerPrefs.GetInt(gutscheinName01);
+             /*int isSaved = PlayerPrefs.GetInt(gutscheinName00);
+             int isSaved01 = PlayerPrefs.GetInt(gutscheinName01);*/
 
-            rotscan.SetActive(false);
+             rotscan.SetActive(false);
              hideContent.SetActive(true);
              rot01.interactable = false;
              rot02.interactable = false;
@@ -76,7 +76,7 @@ public class buttons : MonoBehaviour
              PlayerPrefs.SetInt(gutscheinName01, 0);
              
 
-            PlayerPrefs.Save();
+             PlayerPrefs.Save();
             
         }
 
@@ -84,8 +84,7 @@ public class buttons : MonoBehaviour
         {
             string gutscheinName04 = "GutscheinNR" + 4;
             string gutscheinName05 = "GutscheinNR" + 5;
-            int isSaved04 = PlayerPrefs.GetInt(gutscheinName04);
-            int isSaved05 = PlayerPrefs.GetInt(gutscheinName05);
+           
 
 
 
@@ -104,8 +103,7 @@ public class buttons : MonoBehaviour
         {
             string gutscheinName02 = "GutscheinNR" + 2;
             string gutscheinName03 = "GutscheinNR" + 3;
-            int isSaved02 = PlayerPrefs.GetInt(gutscheinName02);
-            int isSaved03 = PlayerPrefs.GetInt(gutscheinName03);
+            
 
             gelbscan.SetActive(false);
             hideContent.SetActive(true);
@@ -121,8 +119,7 @@ public class buttons : MonoBehaviour
         {
             string gutscheinName06 = "GutscheinNR" + 6;
             string gutscheinName07 = "GutscheinNR" + 7;
-            int isSaved06 = PlayerPrefs.GetInt(gutscheinName06);
-            int isSaved07 = PlayerPrefs.GetInt(gutscheinName07);
+            
 
             orangescan.SetActive(false);
             hideContent.SetActive(true);
