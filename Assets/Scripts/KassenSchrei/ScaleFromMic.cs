@@ -18,8 +18,8 @@ public class ScaleFromMic : MonoBehaviour
     [SerializeField] float rightAreaFloatEnd;
 
     [SerializeField] float maxLoudness;
-    public float loudnessSensibility = 2f;
-    public float threshold = 0.005f;
+    public float loudnessSensibility = 8f;
+    public float threshold = 0.0005f;
 
     [SerializeField] private List<float> loudnessList;
     [SerializeField] public List<float> lastSecs;
@@ -48,7 +48,7 @@ public class ScaleFromMic : MonoBehaviour
     }
     private void Update()
     {
-        float loudness = detector.GetLoudnessFromMicrophone() *2 ;
+        float loudness = detector.GetLoudnessFromMicrophone() *4 ;
         if (loudness < threshold)
         {
             loudness = 0;
