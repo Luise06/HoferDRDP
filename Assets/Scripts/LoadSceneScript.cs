@@ -11,8 +11,12 @@ public class LoadSceneScript : MonoBehaviour
     public GameObject verlorenPanelFoodDrop;
     public GameObject gewonnenKassaschrei;
     public GameObject verlorenKassaschrei;
+    public GameObject gewonnenFindItem;
+    public GameObject verlorenFindItem;
+
     [SerializeField] GameObject kassaSchreiBG;
     [SerializeField] GameObject foodDropBG;
+    [SerializeField] GameObject findItemBG;
 
     public TextMeshProUGUI highScore;
     public TextMeshProUGUI score;
@@ -49,8 +53,16 @@ public class LoadSceneScript : MonoBehaviour
         {
             if(StaticVariablen.hatHighscore == false)
             {
-                gewonnenKassaschrei.SetActive(true);
-                verlorenKassaschrei.SetActive(false);
+                if(StaticVariablen.whichScene == "KassaSchrei")
+                {
+                    gewonnenKassaschrei.SetActive(true);
+                    verlorenKassaschrei.SetActive(false);
+                }
+                if(StaticVariablen.whichScene == "FindItem")
+                {
+                    gewonnenFindItem.SetActive(true);
+                    verlorenFindItem.SetActive(false);
+                }
                 particelSystem.SetActive(true);
                 int randomIndex = Random.Range(0, gutscheinListe.Count);
                 GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
@@ -98,8 +110,16 @@ public class LoadSceneScript : MonoBehaviour
             // gutscheinanzeige.SetActive(false);
             if(StaticVariablen.hatHighscore == false)
             {
-                verlorenKassaschrei.SetActive(true);
-                gewonnenKassaschrei.SetActive(false);
+                if (StaticVariablen.whichScene == "KassaSchrei")
+                {
+                    verlorenKassaschrei.SetActive(true);
+                    gewonnenKassaschrei.SetActive(false);
+                }
+                if (StaticVariablen.whichScene == "FindItem")
+                {
+                    verlorenFindItem.SetActive(true);
+                    gewonnenFindItem.SetActive(false);
+                }
             }
             if(StaticVariablen.hatHighscore == true)
             {
@@ -117,10 +137,18 @@ public class LoadSceneScript : MonoBehaviour
         {
             foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(true);
+            findItemBG.SetActive(false);
         }
         if (StaticVariablen.whichScene == "FoodDrop")
         {
             foodDropBG.SetActive(true);
+            kassaSchreiBG.SetActive(false);
+            findItemBG.SetActive(false);
+        }
+        if (StaticVariablen.whichScene == "FindItem")
+        {
+            findItemBG.SetActive(true);
+            foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(false);
         }
         gutscheinanzeige.SetActive(false);
