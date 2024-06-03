@@ -61,20 +61,20 @@ public class buttons : MonoBehaviour
     {
         if (rotscan)
         {
-            string gutscheinName00 = "GutscheinNR" + 0;
-            string gutscheinName01 = "GutscheinNR" + 1;
-            int isSaved = PlayerPrefs.GetInt(gutscheinName00);
-            int isSaved01 = PlayerPrefs.GetInt(gutscheinName01);
+             string gutscheinName00 = "GutscheinNR" + 0;
+             string gutscheinName01 = "GutscheinNR" + 1;
+             int isSaved = PlayerPrefs.GetInt(gutscheinName00);
+             int isSaved01 = PlayerPrefs.GetInt(gutscheinName01);
 
             rotscan.SetActive(false);
-            hideContent.SetActive(true);
-            rot01.interactable = false;
-            rot02.interactable = false;
+             hideContent.SetActive(true);
+             rot01.interactable = false;
+             rot02.interactable = false;
 
 
-            /*PlayerPrefs.SetInt(gutscheinName00, 0);
-            PlayerPrefs.SetInt(gutscheinName01, 0);
-            */
+             PlayerPrefs.SetInt(gutscheinName00, 0);
+             PlayerPrefs.SetInt(gutscheinName01, 0);
+             
 
             PlayerPrefs.Save();
             
@@ -94,7 +94,8 @@ public class buttons : MonoBehaviour
             blau01.interactable = false;
             blau02.interactable = false;
 
-            
+            PlayerPrefs.SetInt(gutscheinName04, 0);
+            PlayerPrefs.SetInt(gutscheinName05, 0);
             PlayerPrefs.Save();
 
         }
@@ -111,7 +112,8 @@ public class buttons : MonoBehaviour
             gelb01.interactable = false;
             gelb02.interactable = false;
 
-            
+            PlayerPrefs.SetInt(gutscheinName02, 0);
+            PlayerPrefs.SetInt(gutscheinName03, 0);
             PlayerPrefs.Save();
         }
 
@@ -127,7 +129,8 @@ public class buttons : MonoBehaviour
             orange01.interactable = false;
             orange02.interactable = false;
 
-            
+            PlayerPrefs.SetInt(gutscheinName06, 0);
+            PlayerPrefs.SetInt(gutscheinName07, 0);
             PlayerPrefs.Save();
         }
     }
