@@ -9,7 +9,6 @@ public class PositionRan : MonoBehaviour
 
 
     public GameObject[] richtigeObjects;
-    //public int[] randomArray;
     public GameObject[] speed;
     public GameObject[] cocos;
     public GameObject[] disco;
@@ -21,8 +20,8 @@ public class PositionRan : MonoBehaviour
     public GameObject[] flyingPowerBlau;
     public GameObject[] flyingPowerRosa;
     public GameObject[] flyingPowerRot;
-    public GameObject[] pizzaschiffchen;
     public GameObject[] riverCola;
+    public GameObject[] pizzaschiffchen;
     int randomObjekt;
     int randomAbwandlung;
 
@@ -35,7 +34,7 @@ public class PositionRan : MonoBehaviour
     public void RandomPos()
     {
         richtigePos = Random.Range(0, transformList.Count);
-        randomObjekt = Random.Range(0,12);
+        randomObjekt = Random.Range(0,11);
         randomAbwandlung = Random.Range(0, 6);
         
         
@@ -113,9 +112,8 @@ public class PositionRan : MonoBehaviour
     {
         for (int i = 0; i < transformList.Count; i++)
         {
-            Destroy(transformList[i].GetChild(1).gameObject);
+            Destroy(transformList[i].GetChild(0).gameObject);
         }
-        
         RandomPos();
     }
 }
