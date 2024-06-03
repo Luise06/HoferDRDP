@@ -35,6 +35,7 @@ public class GameManagment : MonoBehaviour
         {
             gameOverUI.SetActive(true);
         }
+        SceneManager.LoadScene(4);
         // Optional: Szene neu laden
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -51,6 +52,7 @@ public class GameManagment : MonoBehaviour
         {
             gameWonUI.SetActive(true);
         }
+        SceneManager.LoadScene(4);
         // Optional: Szene neu laden
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

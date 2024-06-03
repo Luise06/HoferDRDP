@@ -61,6 +61,7 @@ public class LoadSceneScript : MonoBehaviour
 
         gewonnenDrinkMerger.SetActive(false);
         verlorenDrinkMerger.SetActive(false);
+        gutscheinanzeige.SetActive(false);
 
         int randomIndex = Random.Range(0, gutscheinListe.Count);
         GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
