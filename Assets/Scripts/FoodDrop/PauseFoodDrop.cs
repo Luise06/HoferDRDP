@@ -15,16 +15,10 @@ public class PauseFoodDrop : MonoBehaviour
 
     private void Start()
     {
-        if (StaticVariables.schonMalGespielt)
-        {
-            Time.timeScale = 1;
-            //postProccessing.enabled = false;
-        }
-        else
-        {
-            Time.timeScale = 0;
-            tutorialObjekt.SetActive(true);
-        }
+        
+        Time.timeScale = 0;
+        tutorialObjekt.SetActive(true);
+        
     }
     public void PauseCanvas()
     {
@@ -39,11 +33,11 @@ public class PauseFoodDrop : MonoBehaviour
         //postProccessing.enabled = false;
         Time.timeScale = 1;
         tutorialObjekt.SetActive(false);
-        StaticVariables.schonMalGespielt = true;
+        /*StaticVariables.schonMalGespielt = true;
         if (StaticVariables.schonMalGespielt)
         {
             tutorialObjekt.SetActive(false);
-        }
+        }*/
     }
     public void Weiter()
     {

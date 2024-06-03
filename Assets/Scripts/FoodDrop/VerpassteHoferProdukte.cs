@@ -9,7 +9,7 @@ public class VerpassteHoferProdukte : MonoBehaviour
     public VerschiedeneScene verschiedeneSceneScript;
     public TextMeshProUGUI missedText;
     public AudioSource audioMiss;
-    bool einmalAbspielen = true;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "HoferProdukt")
