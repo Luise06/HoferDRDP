@@ -32,7 +32,7 @@ public class TimeManager : MonoBehaviour
             if (scorefindItem.findItemScore > 5)
             {
                     StaticVariablen.hatHighscore = false;
-                StaticVariablen.gewonnen = "Gewonnen";
+                StaticVariablen.gewonnen = "Glückwunsch!!!";
                 StaticVariablen.whichScene = "FindItem";
                 SceneManager.LoadScene("GewonnenVerloren");
             }
@@ -55,7 +55,8 @@ public class TimeManager : MonoBehaviour
 
     void CountdownFinished()
     {
-        StaticVariablen.gewonnen = "Verloren...";
+        StaticVariablen.hatHighscore = false;
+        StaticVariablen.gewonnen = "Schade";
         StaticVariablen.whichScene = "FindItem";
         SceneManager.LoadScene("GewonnenVerloren");
         
