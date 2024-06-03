@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ItemGuess2.unity
     guid: e58d31b411901b94e8ae2a16f6c381d2
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: c9b4226c2e3c22146837868535fc39cb
   m_configObjects: {}

@@ -20,7 +20,7 @@ public class VerschiedeneScene : MonoBehaviour
     
     public void Watermelon()
     {
-        
+        SceneManager.LoadScene("SampleScene");
     }
     public void Lost()
     {
