@@ -20,7 +20,7 @@ public class VerschiedeneScene : MonoBehaviour
     
     public void Watermelon()
     {
-        SceneManager.LoadScene("DrinkMerge");
+        SceneManager.LoadScene(10);
     }
     public void Lost()
     {
