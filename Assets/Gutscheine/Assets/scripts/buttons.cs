@@ -37,6 +37,7 @@ public class buttons : MonoBehaviour
             else
             {
                 gutscheinListe[i].interactable = false;
+                
 
             }
 
@@ -74,9 +75,9 @@ public class buttons : MonoBehaviour
 
              PlayerPrefs.SetInt(gutscheinName00, 0);
              PlayerPrefs.SetInt(gutscheinName01, 0);
-             
 
-             PlayerPrefs.Save();
+            Debug.Log("Gutschein wird angezeigt");
+            PlayerPrefs.Save();
             
         }
 
@@ -113,6 +114,7 @@ public class buttons : MonoBehaviour
             PlayerPrefs.SetInt(gutscheinName02, 0);
             PlayerPrefs.SetInt(gutscheinName03, 0);
             PlayerPrefs.Save();
+
         }
 
         if (orangescan)
@@ -129,6 +131,7 @@ public class buttons : MonoBehaviour
             PlayerPrefs.SetInt(gutscheinName06, 0);
             PlayerPrefs.SetInt(gutscheinName07, 0);
             PlayerPrefs.Save();
+
         }
     }
 
