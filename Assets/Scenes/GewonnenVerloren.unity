@@ -534,7 +534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &148289496
 Transform:
   m_ObjectHideFlags: 0
@@ -2768,6 +2768,7 @@ MonoBehaviour:
   gutscheine: []
   gewonnenGutschein: 
   gutscheinanzeige: {fileID: 689209484}
+  gutscheineAnzeigeFeld: {fileID: 148289495}
 --- !u!4 &796106785
 Transform:
   m_ObjectHideFlags: 0

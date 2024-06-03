@@ -38,6 +38,9 @@ public class LoadSceneScript : MonoBehaviour
      public List<GameObject> gutscheine;
      public List<int> gewonnenGutschein;
      public GameObject gutscheinanzeige;
+    public GameObject gutscheineAnzeigeFeld;
+    GameObject gewonnenerGutschein;
+    int randomIndexInternational;
      private bool hasWon = false;
 
 
@@ -64,18 +67,19 @@ public class LoadSceneScript : MonoBehaviour
         gutscheinanzeige.SetActive(false);
 
         int randomIndex = Random.Range(0, gutscheinListe.Count);
-        GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
+        gewonnenerGutschein = gutscheinListe[randomIndex];
+        randomIndexInternational = randomIndex;
 
-        foreach (GameObject gutschein in gutscheinListe)
+        /*foreach (GameObject gutschein in gutscheinListe)
         {
             gutschein.SetActive(gutschein == gewonnenerGutschein);
-        }
+        }*/
 
-        string gutscheinName = "GutscheinNR" + randomIndex;
+        /*string gutscheinName = "GutscheinNR" + randomIndex;
         PlayerPrefs.SetInt(gutscheinName, 1);
         Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
         //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
-        PlayerPrefs.Save();
+        PlayerPrefs.Save();*/
     }
 
     void Update()
@@ -113,7 +117,17 @@ public class LoadSceneScript : MonoBehaviour
                 particelSystem.SetActive(true);
                 highScore.text = PlayerPrefs.GetInt("HighScore").ToString();
             }
+            foreach (GameObject gutschein in gutscheinListe)
+            {
+                gutschein.SetActive(gutschein == gewonnenerGutschein);
+            }
             gutscheinanzeige.SetActive(true);
+            gutscheineAnzeigeFeld.SetActive(true);
+            string gutscheinName = "GutscheinNR" + randomIndexInternational;
+            PlayerPrefs.SetInt(gutscheinName, 1);
+            Debug.Log(gutscheinName + " wurde in den PlayerPrefs angelegt!");
+            //PlayerPrefs.SetString("GewonnenerGutschein", gewonnenerGutschein.name);
+            PlayerPrefs.Save();
             if (einemalAbgespielt)
             {
                 winAudio.Play(0);
@@ -158,6 +172,7 @@ public class LoadSceneScript : MonoBehaviour
             }
             particelSystem.SetActive(false);
             gutscheinanzeige.SetActive(false);
+            gutscheineAnzeigeFeld.SetActive(false);
         }
         if (StaticVariablen.whichScene == "KassaSchrei")
         {
