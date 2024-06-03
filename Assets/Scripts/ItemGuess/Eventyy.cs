@@ -34,28 +34,19 @@ public class Eventyy : MonoBehaviour
                 richtigeAntwort = "Disco";
                 break;
             case 1:
-                richtigeAntwort = "Cocos";
-                break;
-            case 2:
                 richtigeAntwort = "Doppelkekse";
                 break;
-            case 3:
+            case 2:
                 richtigeAntwort = "Eistee";
                 break;
-            case 4:
-                richtigeAntwort = "Greentea";
-                break;
-            case 5:
+            case 3:
                 richtigeAntwort = "Flying Power";
                 break;
-            case 6:
+            case 4:
                 richtigeAntwort = "Milch";
                 break;
-            case 7:
+            case 5:
                 richtigeAntwort = "Pizzaschifferl";
-                break;
-            case 8:
-                richtigeAntwort = "Speed";
                 break;
         }
 
