@@ -156,6 +156,8 @@ public class LoadSceneScript : MonoBehaviour
                 loseAudio.Play(0);
                 einemalAbgespielt = false;
             }
+            particelSystem.SetActive(false);
+            gutscheinanzeige.SetActive(false);
         }
         if (StaticVariablen.whichScene == "KassaSchrei")
         {
@@ -197,8 +199,8 @@ public class LoadSceneScript : MonoBehaviour
             foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(false);
         }
-        gutscheinanzeige.SetActive(false);
-        particelSystem.SetActive(false);
+        
+        
     }
 
   /*public void ShowGutschein()
