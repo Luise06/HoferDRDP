@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI; // Falls du UI-Elemente verwenden möchtest
 
 public class TimerScript : MonoBehaviour
@@ -8,10 +9,13 @@ public class TimerScript : MonoBehaviour
     public Text timeText; // UI-Text zur Anzeige der Zeit (optional)
     [SerializeField] GameObject gameManager;
 
+    public GameObject spieleAuswahl;
+
     void Start()
     {
         // Timer starten
-        timerIsRunning = true;
+        timerIsRunning = false;
+        spieleAuswahl.SetActive(true);
     }
 
     void Update()
@@ -45,6 +49,18 @@ public class TimerScript : MonoBehaviour
             timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
     }
+
+    public void SpielenStart()
+    {
+        spieleAuswahl.SetActive(false);
+        timerIsRunning = true;
+    }
+
+    public void Return()
+    {
+        SceneManager.LoadScene("Spielauswahl");
+    }
+
 }
 
 
