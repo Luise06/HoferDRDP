@@ -48,7 +48,7 @@ public class ScaleFromMic : MonoBehaviour
     }
     private void Update()
     {
-        float loudness = detector.GetLoudnessFromMicrophone() *10 ;
+        float loudness = detector.GetLoudnessFromMicrophone() *3 ;
         if (loudness < threshold)
         {
             loudness = 0;
