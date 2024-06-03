@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 37014955}
   - component: {fileID: 37014954}
   - component: {fileID: 37014957}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: playButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 476010527}
   - component: {fileID: 476010529}
   - component: {fileID: 476010528}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: WInVid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,18 +925,18 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1901855251}
-  - {fileID: 37014953}
   - {fileID: 755070639}
+  - {fileID: 37014953}
+  - {fileID: 1901855251}
   - {fileID: 476010527}
   - {fileID: 633553062}
   m_Father: {fileID: 374046052}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 3414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &633553061
 GameObject:
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 633553062}
   - component: {fileID: 633553064}
   - component: {fileID: 633553063}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: LoseVid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 527521462}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2194,17 +2194,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901855250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 554.3217}
-  m_LocalScale: {x: 0.28, y: 0.28, z: 0.28}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 527521462}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: 1088}
-  m_SizeDelta: {x: 387.3005, y: 333.5}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610.0002, y: 1104.3773}
+  m_SizeDelta: {x: 337.5, y: 378.5}
+  m_Pivot: {x: 0.49999994, y: 0.6}
 --- !u!114 &1901855252
 MonoBehaviour:
   m_ObjectHideFlags: 0
