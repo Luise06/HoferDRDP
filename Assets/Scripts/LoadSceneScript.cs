@@ -15,11 +15,14 @@ public class LoadSceneScript : MonoBehaviour
     public GameObject verlorenFindItem;
     public GameObject gewonnenItemGuesser;
     public GameObject verlorenItemGuesser;
+    public GameObject gewonnenDrinkMerger;
+    public GameObject verlorenDrinkMerger;
 
     [SerializeField] GameObject kassaSchreiBG;
     [SerializeField] GameObject foodDropBG;
     [SerializeField] GameObject findItemBG;
-    [SerializeField] GameObject ItemGuesserBG;
+    [SerializeField] GameObject itemGuesserBG;
+    [SerializeField] GameObject drinkMergerBG;
 
     public TextMeshProUGUI highScore;
     public TextMeshProUGUI score;
@@ -55,6 +58,9 @@ public class LoadSceneScript : MonoBehaviour
 
         gewonnenItemGuesser.SetActive(false);
         verlorenItemGuesser.SetActive(false);
+
+        gewonnenDrinkMerger.SetActive(false);
+        verlorenDrinkMerger.SetActive(false);
 
         int randomIndex = Random.Range(0, gutscheinListe.Count);
         GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
@@ -92,6 +98,11 @@ public class LoadSceneScript : MonoBehaviour
                     gewonnenItemGuesser.SetActive(true);
                     verlorenItemGuesser.SetActive(false);
                 }
+                if(StaticVariablen.whichScene == "DrinkMerger")
+                {
+                    gewonnenDrinkMerger.SetActive(true);
+                    verlorenDrinkMerger.SetActive(false);
+                }
                 particelSystem.SetActive(true);
             }
             if (StaticVariablen.hatHighscore == true)
@@ -127,6 +138,11 @@ public class LoadSceneScript : MonoBehaviour
                     verlorenItemGuesser.SetActive(true);
                     gewonnenItemGuesser.SetActive(false);
                 }
+                if(StaticVariablen.whichScene == "DrinkMerger")
+                {
+                    verlorenDrinkMerger.SetActive(true);
+                    gewonnenDrinkMerger.SetActive(false);
+                }
             }
             if(StaticVariablen.hatHighscore == true)
             {
@@ -145,25 +161,37 @@ public class LoadSceneScript : MonoBehaviour
             foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(true);
             findItemBG.SetActive(false);
-            ItemGuesserBG.SetActive(false);
+            itemGuesserBG.SetActive(false);
+            drinkMergerBG.SetActive(false);
         }
         if (StaticVariablen.whichScene == "FoodDrop")
         {
             foodDropBG.SetActive(true);
             kassaSchreiBG.SetActive(false);
             findItemBG.SetActive(false);
-            ItemGuesserBG.SetActive(false);
+            itemGuesserBG.SetActive(false);
+            drinkMergerBG.SetActive(false);
         }
         if (StaticVariablen.whichScene == "FindItem")
         {
             findItemBG.SetActive(true);
             foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(false);
-            ItemGuesserBG.SetActive(false);
+            itemGuesserBG.SetActive(false);
+            drinkMergerBG.SetActive(false);
         }
         if(StaticVariablen.whichScene == "ItemGuesser")
         {
-            ItemGuesserBG.SetActive(true);
+            itemGuesserBG.SetActive(true);
+            findItemBG.SetActive(false);
+            foodDropBG.SetActive(false);
+            kassaSchreiBG.SetActive(false);
+            drinkMergerBG.SetActive(false);
+        }
+        if (StaticVariablen.whichScene == "DrinkMerger")
+        {
+            drinkMergerBG.SetActive(true);
+            itemGuesserBG.SetActive(false);
             findItemBG.SetActive(false);
             foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(false);
