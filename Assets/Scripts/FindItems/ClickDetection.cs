@@ -9,12 +9,15 @@ public class ClickDetection : MonoBehaviour
     ScoreFindIt scoreFindItem;
    TextMeshProUGUI findScore;
     PositionRan positionRan;
+    int minusPunkte = 5;
+    TextMeshProUGUI minusScore;
 
     private void Start()
     {
         //chooseRandomItem = GameObject.Find("GameManager").GetComponent<ChooseRandomItem>();
         //randomPosition = GameObject.Find("GameManager").GetComponent<RandomPosition>();
         scoreFindItem = GameObject.Find("GameManager").GetComponent<ScoreFindIt>();
+        minusScore = GameObject.Find("MinusText").GetComponent<TextMeshProUGUI>();
         findScore = GameObject.Find("ScoreText").GetComponent<TextMeshProUGUI>();
         positionRan = GameObject.Find("GameManager").GetComponent<PositionRan>();
     }
@@ -39,9 +42,21 @@ public class ClickDetection : MonoBehaviour
                         //chooseRandomItem.RandomObjektausWahl();
                         //randomPosition.DestroyGameObjekts();
                     }
+                    else
+                    {
+                        minusPunkte--;
+                        minusScore.text = minusPunkte.ToString();
+                    }
                     
                 }
             }
+        }
+        if (minusPunkte <= 0)
+        {
+            StaticVariablen.hatHighscore = false;
+            StaticVariablen.gewonnen = "Schade";
+            StaticVariablen.whichScene = "FindItem";
+            SceneManager.LoadScene("GewonnenVerloren");
         }
     }
 }

@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class tutorialfinditem : MonoBehaviour
 {
     public GameObject tutorial;
+    public TimeManager timeManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0f;
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
@@ -27,7 +28,8 @@ public class tutorialfinditem : MonoBehaviour
     public void Spielen()
     {
         tutorial.SetActive(false);
-        Time.timeScale = 1f;
+        timeManager.TutorialSchliesen();
+        Time.timeScale = 1;
 
     }
 

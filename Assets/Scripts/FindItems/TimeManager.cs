@@ -9,6 +9,8 @@ public class TimeManager : MonoBehaviour
     private float currentTime; // Aktuelle verbleibende Zeit
     public TextMeshProUGUI countdownText; // Referenz auf das Textobjekt, das den Countdown anzeigt
     public ScoreFindIt scorefindItem;
+    public bool pause = true;
+    
 
     //private bool isCounting = false; // Überprüft, ob der Countdown gerade läuft
 
@@ -16,32 +18,39 @@ public class TimeManager : MonoBehaviour
     {
         currentTime = totalTime;
         UpdateCountdownText();
-        
-    }
 
-    void Update()
+    }
+    public void TutorialSchliesen()
     {
         
+        pause = false;
+    }
+    void Update()
+    {
+        if (!pause)
+        {
             currentTime -= Time.deltaTime;
             UpdateCountdownText();
             if (currentTime <= 0)
             {
                 currentTime = 0;
-            //isCounting = false;
-            // Hier kannst du die Methode aufrufen, die ausgeführt werden soll, wenn der Countdown abgelaufen ist.
-            if (scorefindItem.findItemScore > 5)
-            {
+                //isCounting = false;
+                // Hier kannst du die Methode aufrufen, die ausgeführt werden soll, wenn der Countdown abgelaufen ist.
+                if (scorefindItem.findItemScore > 5)
+                {
                     StaticVariablen.hatHighscore = false;
-                StaticVariablen.gewonnen = "Glückwunsch!!!";
-                StaticVariablen.whichScene = "FindItem";
-                SceneManager.LoadScene("GewonnenVerloren");
+                    StaticVariablen.gewonnen = "Glückwunsch!!!";
+                    StaticVariablen.whichScene = "FindItem";
+                    SceneManager.LoadScene("GewonnenVerloren");
+                }
+                else
+                {
+                    CountdownFinished();
+                }
+
             }
-            else
-            {
-                CountdownFinished();
-            }
-                
-            }
+        }
+            
         
     }
 

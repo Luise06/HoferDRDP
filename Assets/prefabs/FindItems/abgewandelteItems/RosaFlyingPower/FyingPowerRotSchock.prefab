@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1604544465555787468, guid: e34b2900faa539a40880d2df1e76c1db, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604544465555787468, guid: e34b2900faa539a40880d2df1e76c1db, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.88
+      objectReference: {fileID: 0}
     - target: {fileID: 2947887064413561795, guid: e34b2900faa539a40880d2df1e76c1db, type: 3}
       propertyPath: m_Name
       value: FyingPowerRotSchock
