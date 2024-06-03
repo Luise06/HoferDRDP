@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 94660076938299214, guid: 810055f8eaaeda94f962c5a3b08261fd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 94660076938299214, guid: 810055f8eaaeda94f962c5a3b08261fd, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.92
+      objectReference: {fileID: 0}
     - target: {fileID: 4610788596482501185, guid: 810055f8eaaeda94f962c5a3b08261fd, type: 3}
       propertyPath: m_Name
       value: FyingPowerRotSchleife

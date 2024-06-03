@@ -7,6 +7,7 @@ public class PauseFindItems : MonoBehaviour
 {
     bool pauseButtongedruckt;
     public GameObject pauseScreen;
+    public TimeManager timeManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class PauseFindItems : MonoBehaviour
         pauseButtongedruckt = true;
         pauseScreen.SetActive(true);
         Time.timeScale = 0;
+        timeManager.pause = true;
     }
     public void HomeButton()
     {
@@ -37,5 +39,6 @@ public class PauseFindItems : MonoBehaviour
         pauseButtongedruckt = false;
         pauseScreen.SetActive(false);
         Time.timeScale = 1;
+        timeManager.pause = false;
     }
 }

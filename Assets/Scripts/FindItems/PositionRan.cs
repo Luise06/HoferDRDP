@@ -35,6 +35,7 @@ public class PositionRan : MonoBehaviour
     {
         richtigePos = Random.Range(0, transformList.Count);
         randomObjekt = Random.Range(0,11);
+        Debug.Log(randomObjekt);
         randomAbwandlung = Random.Range(0, 6);
         
         
@@ -93,7 +94,7 @@ public class PositionRan : MonoBehaviour
             flyingPowerRot[randomAbwandlung].SetActive(true);
             Instantiate(flyingPowerRot[randomAbwandlung], transformList[richtigePos]);
         }
-        if (randomObjekt == 7)
+        if (randomObjekt == 11)
         {
             pizzaschiffchen[randomAbwandlung].SetActive(true);
             Instantiate(pizzaschiffchen[randomAbwandlung], transformList[richtigePos]);
