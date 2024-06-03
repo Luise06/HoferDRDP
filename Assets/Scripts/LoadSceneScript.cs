@@ -13,10 +13,13 @@ public class LoadSceneScript : MonoBehaviour
     public GameObject verlorenKassaschrei;
     public GameObject gewonnenFindItem;
     public GameObject verlorenFindItem;
+    public GameObject gewonnenItemGuesser;
+    public GameObject verlorenItemGuesser;
 
     [SerializeField] GameObject kassaSchreiBG;
     [SerializeField] GameObject foodDropBG;
     [SerializeField] GameObject findItemBG;
+    [SerializeField] GameObject ItemGuesserBG;
 
     public TextMeshProUGUI highScore;
     public TextMeshProUGUI score;
@@ -43,10 +46,16 @@ public class LoadSceneScript : MonoBehaviour
     {
         gewonnenPanelFoodDrop.SetActive(false);
         verlorenPanelFoodDrop.SetActive(false);
+
         gewonnenKassaschrei.SetActive(false);
         verlorenKassaschrei.SetActive(false);
+
         verlorenFindItem.SetActive(false);
         gewonnenFindItem.SetActive(false);
+
+        gewonnenItemGuesser.SetActive(false);
+        verlorenItemGuesser.SetActive(false);
+
         int randomIndex = Random.Range(0, gutscheinListe.Count);
         GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
 
@@ -78,6 +87,11 @@ public class LoadSceneScript : MonoBehaviour
                     gewonnenFindItem.SetActive(true);
                     verlorenFindItem.SetActive(false);
                 }
+                if(StaticVariablen.whichScene == "ItemGuesser")
+                {
+                    gewonnenItemGuesser.SetActive(true);
+                    verlorenItemGuesser.SetActive(false);
+                }
                 particelSystem.SetActive(true);
             }
             if (StaticVariablen.hatHighscore == true)
@@ -108,6 +122,11 @@ public class LoadSceneScript : MonoBehaviour
                     verlorenFindItem.SetActive(true);
                     gewonnenFindItem.SetActive(false);
                 }
+                if(StaticVariablen.whichScene == "ItemGuesser")
+                {
+                    verlorenItemGuesser.SetActive(true);
+                    gewonnenItemGuesser.SetActive(false);
+                }
             }
             if(StaticVariablen.hatHighscore == true)
             {
@@ -126,16 +145,26 @@ public class LoadSceneScript : MonoBehaviour
             foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(true);
             findItemBG.SetActive(false);
+            ItemGuesserBG.SetActive(false);
         }
         if (StaticVariablen.whichScene == "FoodDrop")
         {
             foodDropBG.SetActive(true);
             kassaSchreiBG.SetActive(false);
             findItemBG.SetActive(false);
+            ItemGuesserBG.SetActive(false);
         }
         if (StaticVariablen.whichScene == "FindItem")
         {
             findItemBG.SetActive(true);
+            foodDropBG.SetActive(false);
+            kassaSchreiBG.SetActive(false);
+            ItemGuesserBG.SetActive(false);
+        }
+        if(StaticVariablen.whichScene == "ItemGuesser")
+        {
+            ItemGuesserBG.SetActive(true);
+            findItemBG.SetActive(false);
             foodDropBG.SetActive(false);
             kassaSchreiBG.SetActive(false);
         }
