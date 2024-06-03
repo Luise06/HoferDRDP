@@ -10,7 +10,7 @@ public class tutorialfinditem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
@@ -27,6 +27,7 @@ public class tutorialfinditem : MonoBehaviour
     public void Spielen()
     {
         tutorial.SetActive(false);
+        Time.timeScale = 1f;
 
     }
 
