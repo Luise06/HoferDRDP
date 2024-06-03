@@ -5,22 +5,19 @@ using UnityEngine.UI;
 
 public class buttons : MonoBehaviour
 {
-
     public List<Button> gutscheinListe = new List<Button>();
-    
 
     public GameObject hideContent;
     public GameObject rotscan, gelbscan, blauscan, orangescan;
+    public GameObject rotscan02, gelbscan02, blauscan02, orangescan02;
     public Button rot01, rot02, gelb01, gelb02, blau01, blau02, orange01, orange02;
     public GameObject returnbutton;
 
-    //public gutscheineanzeigen anzeigen;
+    private Button activeButton;
+    private GameObject activeScan;
 
-
-    // Start is called before the first frame update
     void Start()
     {
-
         for (int i = 0; i < gutscheinListe.Count; i++)
         {
             string gutscheinName = "GutscheinNR" + i;
@@ -28,157 +25,98 @@ public class buttons : MonoBehaviour
 
             if (isSaved == 1)
             {
-                //gutscheinListe[i].SetActive(true);
                 Debug.Log("Gutschein wird angezeigt");
                 gutscheinListe[i].interactable = true;
-
-               
             }
             else
             {
                 gutscheinListe[i].interactable = false;
-                
-
             }
-
-
-
-
         }
 
         rotscan.SetActive(false);
+        rotscan02.SetActive(false);
         blauscan.SetActive(false);
+        blauscan02.SetActive(false);
         orangescan.SetActive(false);
+        orangescan02.SetActive(false);
         gelbscan.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
+        gelbscan02.SetActive(false);
     }
 
     public void ScanButton()
     {
-        if (rotscan)
+        if (activeScan != null && activeButton != null)
         {
-             string gutscheinName00 = "GutscheinNR" + 0;
-             string gutscheinName01 = "GutscheinNR" + 1;
-             /*int isSaved = PlayerPrefs.GetInt(gutscheinName00);
-             int isSaved01 = PlayerPrefs.GetInt(gutscheinName01);*/
-
-             rotscan.SetActive(false);
-             hideContent.SetActive(true);
-             rot01.interactable = false;
-             rot02.interactable = false;
-
-
-             PlayerPrefs.SetInt(gutscheinName00, 0);
-             PlayerPrefs.SetInt(gutscheinName01, 0);
-
-            Debug.Log("Gutschein wird angezeigt");
-            PlayerPrefs.Save();
-            
-        }
-
-        if (blauscan)
-        {
-            string gutscheinName04 = "GutscheinNR" + 4;
-            string gutscheinName05 = "GutscheinNR" + 5;
-           
-
-
-
-            blauscan.SetActive(false);
+            activeScan.SetActive(false);
             hideContent.SetActive(true);
-            blau01.interactable = false;
-            blau02.interactable = false;
 
-            PlayerPrefs.SetInt(gutscheinName04, 0);
-            PlayerPrefs.SetInt(gutscheinName05, 0);
+            activeButton.interactable = false;
+            int btnIndex = gutscheinListe.IndexOf(activeButton);
+            if (btnIndex >= 0)
+            {
+                string gutscheinName = "GutscheinNR" + btnIndex;
+                PlayerPrefs.SetInt(gutscheinName, 0);
+            }
+
             PlayerPrefs.Save();
 
-        }
-
-        if (gelbscan)
-        {
-            string gutscheinName02 = "GutscheinNR" + 2;
-            string gutscheinName03 = "GutscheinNR" + 3;
-            
-
-            gelbscan.SetActive(false);
-            hideContent.SetActive(true);
-            gelb01.interactable = false;
-            gelb02.interactable = false;
-
-            PlayerPrefs.SetInt(gutscheinName02, 0);
-            PlayerPrefs.SetInt(gutscheinName03, 0);
-            PlayerPrefs.Save();
-
-        }
-
-        if (orangescan)
-        {
-            string gutscheinName06 = "GutscheinNR" + 6;
-            string gutscheinName07 = "GutscheinNR" + 7;
-            
-
-            orangescan.SetActive(false);
-            hideContent.SetActive(true);
-            orange01.interactable = false;
-            orange02.interactable = false;
-
-            PlayerPrefs.SetInt(gutscheinName06, 0);
-            PlayerPrefs.SetInt(gutscheinName07, 0);
-            PlayerPrefs.Save();
-
+            activeButton = null;
+            activeScan = null;
         }
     }
 
-    public  void OnClickBlau() 
+    public void OnClickBlau01()
     {
-        
-     
-
-  
-            rotscan.SetActive(false);
-            orangescan.SetActive(false);
-            gelbscan.SetActive(false);
-            blauscan.SetActive(true);
-     
-            hideContent.SetActive(false);
-        
-       
-        
+        ActivateScan(blauscan, blau01);
     }
-    public void OnClickRot()
+
+    public void OnClickBlau02()
     {
-        rotscan.SetActive(true);
-        orangescan.SetActive(false);
-        gelbscan.SetActive(false);
-        blauscan.SetActive(false);
-        Debug.Log("clicked");
+        ActivateScan(blauscan02, blau02);
+    }
+
+    public void OnClickRot01()
+    {
+        ActivateScan(rotscan, rot01);
+    }
+
+    public void OnClickRot02()
+    {
+        ActivateScan(rotscan02, rot02);
+    }
+
+    public void OnClickOrange01()
+    {
+        ActivateScan(orangescan, orange01);
+    }
+
+    public void OnClickOrange02()
+    {
+        ActivateScan(orangescan02, orange02);
+    }
+
+    public void OnClickGelb01()
+    {
+        ActivateScan(gelbscan, gelb01);
+    }
+
+    public void OnClickGelb02()
+    {
+        ActivateScan(gelbscan02, gelb02);
+    }
+
+    private void ActivateScan(GameObject scanObject, Button button)
+    {
+        if (activeScan != null)
+        {
+            activeScan.SetActive(false);
+        }
+
+        activeScan = scanObject;
+        activeButton = button;
+
+        activeScan.SetActive(true);
         hideContent.SetActive(false);
     }
-
-    public void OnClickOrange() 
-    {
-        orangescan.SetActive(true);
-        gelbscan.SetActive(false);
-        blauscan.SetActive(false);
-        rotscan.SetActive(false);
-
-        hideContent.SetActive(false);
-    }
-
-   public void OnCLickGelb() 
-    {
-        gelbscan.SetActive(true);
-        rotscan.SetActive(false);
-        blauscan.SetActive(false);
-        orangescan.SetActive(false);
-        //Debug.Log("clicked");
-        hideContent.SetActive(false);
-    }
-
 }
