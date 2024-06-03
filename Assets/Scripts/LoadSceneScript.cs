@@ -45,6 +45,8 @@ public class LoadSceneScript : MonoBehaviour
         verlorenPanelFoodDrop.SetActive(false);
         gewonnenKassaschrei.SetActive(false);
         verlorenKassaschrei.SetActive(false);
+        verlorenFindItem.SetActive(false);
+        gewonnenFindItem.SetActive(false);
         int randomIndex = Random.Range(0, gutscheinListe.Count);
         GameObject gewonnenerGutschein = gutscheinListe[randomIndex];
 
@@ -94,7 +96,6 @@ public class LoadSceneScript : MonoBehaviour
         }
         else if(StaticVariablen.gewonnen == "Schade")
         {
-            // gutscheinanzeige.SetActive(false);
             if(StaticVariablen.hatHighscore == false)
             {
                 if (StaticVariablen.whichScene == "KassaSchrei")

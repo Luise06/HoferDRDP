@@ -11,14 +11,14 @@ public class PauseFoodDrop : MonoBehaviour
     bool pauseScreenEin;
     public Rigidbody2D korbRB;
     [SerializeField] GameObject tutorialObjekt;
-    [SerializeField] PostProcessVolume postProccessing;
+    //[SerializeField] PostProcessVolume postProccessing;
 
     private void Start()
     {
         if (StaticVariables.schonMalGespielt)
         {
             Time.timeScale = 1;
-            postProccessing.enabled = false;
+            //postProccessing.enabled = false;
         }
         else
         {
@@ -36,7 +36,7 @@ public class PauseFoodDrop : MonoBehaviour
     }
     public void CloseTutorial()
     {
-        postProccessing.enabled = false;
+        //postProccessing.enabled = false;
         Time.timeScale = 1;
         tutorialObjekt.SetActive(false);
         StaticVariables.schonMalGespielt = true;
