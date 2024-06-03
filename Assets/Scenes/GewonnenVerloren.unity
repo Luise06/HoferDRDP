@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 1125658392}
   - component: {fileID: 1125658391}
   m_Layer: 0
-  m_Name: FindItemBG (1)
+  m_Name: ItemGuesser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
