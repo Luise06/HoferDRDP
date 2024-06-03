@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ButtonSkript : MonoBehaviour
+public class ButtonSkriptLevel2 : MonoBehaviour
 {
     public GameObject Falsch;
     public Button Button1;
@@ -19,13 +19,13 @@ public class ButtonSkript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void CheckButton()
@@ -41,13 +41,11 @@ public class ButtonSkript : MonoBehaviour
             IEnumerator ChangeSceneAfterDelay(float delay)
             {
                 yield return new WaitForSeconds(delay);
-                SceneManager.LoadScene("ItemGuess2");
+                SceneManager.LoadScene("ItemGuess3");
             }
-            
         }
         else
         {
-            AudioSourceFalsch.PlayOneShot(Falschee);
             Debug.Log("Falschehehheh");
             Falsch.SetActive(true);
             Button1.enabled = false;
@@ -59,7 +57,7 @@ public class ButtonSkript : MonoBehaviour
             IEnumerator ChangeSceneAfterDelay(float delay)
             {
                 yield return new WaitForSeconds(delay);
-                SceneManager.LoadScene("ItemGuess2");
+                SceneManager.LoadScene("ItemGuess3");
             }
         }
     }
