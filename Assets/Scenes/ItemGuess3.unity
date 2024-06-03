@@ -555,133 +555,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &159705912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 159705914}
-  - component: {fileID: 159705913}
-  m_Layer: 0
-  m_Name: AudioSourceFalsch
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &159705913
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159705912}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 15e9b8c95e174b942af267a38df6bef7, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &159705914
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159705912}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01999998, y: -0.11121286, z: -574.9344}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223848186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +945,7 @@ GameObject:
   - component: {fileID: 361560540}
   - component: {fileID: 361560539}
   - component: {fileID: 361560542}
+  - component: {fileID: 361560543}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1181,6 +1055,18 @@ MonoBehaviour:
   - {fileID: 919848260}
   HomeButton: {fileID: 0}
   scoreText: {fileID: 2111357991}
+--- !u!114 &361560543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361560538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34af45e44dc099842a61ebad600edb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &375198879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,8 +1731,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 586768373}
-        m_TargetAssemblyTypeName: ButtonSkriptLevel2, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonSkriptLevel3, Assembly-CSharp
         m_MethodName: CheckButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2088282571}
+        m_TargetAssemblyTypeName: SiegNiederlage, Assembly-CSharp
+        m_MethodName: GewonnnenOderVerloren
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1903,7 +1801,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 586768368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c0be5e95507de4a88ffcd834ddb7e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 668c9bf5420e3c24db694e43f8d88f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Falsch: {fileID: 1145301316}
@@ -1911,10 +1809,6 @@ MonoBehaviour:
   Button2: {fileID: 1656985945}
   Button3: {fileID: 586768370}
   Button4: {fileID: 1929320198}
-  Richtig: {fileID: 0}
-  Falschee: {fileID: 0}
-  AudioSourceRichtig: {fileID: 0}
-  AudioSourceFalsch: {fileID: 0}
 --- !u!1 &586952356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,8 +2673,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1039009660}
-        m_TargetAssemblyTypeName: ButtonSkriptLevel2, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonSkriptLevel3, Assembly-CSharp
         m_MethodName: CheckButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2088282571}
+        m_TargetAssemblyTypeName: SiegNiederlage, Assembly-CSharp
+        m_MethodName: GewonnnenOderVerloren
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2837,7 +2743,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039009655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c0be5e95507de4a88ffcd834ddb7e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 668c9bf5420e3c24db694e43f8d88f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Falsch: {fileID: 1145301316}
@@ -2845,10 +2751,6 @@ MonoBehaviour:
   Button2: {fileID: 1656985945}
   Button3: {fileID: 586768370}
   Button4: {fileID: 1929320198}
-  Richtig: {fileID: 8300000, guid: 3f50318b800e08c438a9c36dd58ad77d, type: 3}
-  Falschee: {fileID: 8300000, guid: 15e9b8c95e174b942af267a38df6bef7, type: 3}
-  AudioSourceRichtig: {fileID: 1415109902}
-  AudioSourceFalsch: {fileID: 159705913}
 --- !u!1 &1093423270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,133 +3322,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402708467}
   m_CullTransparentMesh: 1
---- !u!1 &1415109901
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1415109903}
-  - component: {fileID: 1415109902}
-  m_Layer: 0
-  m_Name: AudioSourceRichtig
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1415109902
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415109901}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3f50318b800e08c438a9c36dd58ad77d, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1415109903
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415109901}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.11121286, z: -574.9344}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1454188077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,8 +3682,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1656985948}
-        m_TargetAssemblyTypeName: ButtonSkriptLevel2, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonSkriptLevel3, Assembly-CSharp
         m_MethodName: CheckButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2088282571}
+        m_TargetAssemblyTypeName: SiegNiederlage, Assembly-CSharp
+        m_MethodName: GewonnnenOderVerloren
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3965,7 +3752,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1656985943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c0be5e95507de4a88ffcd834ddb7e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 668c9bf5420e3c24db694e43f8d88f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Falsch: {fileID: 1145301316}
@@ -3973,10 +3760,6 @@ MonoBehaviour:
   Button2: {fileID: 1656985945}
   Button3: {fileID: 586768370}
   Button4: {fileID: 1929320198}
-  Richtig: {fileID: 0}
-  Falschee: {fileID: 0}
-  AudioSourceRichtig: {fileID: 0}
-  AudioSourceFalsch: {fileID: 0}
 --- !u!1 &1745871313
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,7 +3951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Frage 2
+  m_text: Frage 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2fb6b04c6c72b0f4f8d75fc401d4bbbb, type: 2}
   m_sharedMaterial: {fileID: 5844978592227203238, guid: 2fb6b04c6c72b0f4f8d75fc401d4bbbb, type: 2}
@@ -4494,8 +4277,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1929320201}
-        m_TargetAssemblyTypeName: ButtonSkriptLevel2, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonSkriptLevel3, Assembly-CSharp
         m_MethodName: CheckButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2088282571}
+        m_TargetAssemblyTypeName: SiegNiederlage, Assembly-CSharp
+        m_MethodName: GewonnnenOderVerloren
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4552,7 +4347,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1929320196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47c0be5e95507de4a88ffcd834ddb7e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 668c9bf5420e3c24db694e43f8d88f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Falsch: {fileID: 1145301316}
@@ -4560,10 +4355,6 @@ MonoBehaviour:
   Button2: {fileID: 1656985945}
   Button3: {fileID: 586768370}
   Button4: {fileID: 1929320198}
-  Richtig: {fileID: 0}
-  Falschee: {fileID: 0}
-  AudioSourceRichtig: {fileID: 0}
-  AudioSourceFalsch: {fileID: 0}
 --- !u!1 &2062265430
 GameObject:
   m_ObjectHideFlags: 0
@@ -4646,6 +4437,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2088282570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2088282572}
+  - component: {fileID: 2088282571}
+  m_Layer: 0
+  m_Name: GewonnenOderVerloren
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2088282571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088282570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34af45e44dc099842a61ebad600edb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2088282572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088282570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6704533, y: 1.433552, z: -573.181}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2111357989
 GameObject:
   m_ObjectHideFlags: 0
