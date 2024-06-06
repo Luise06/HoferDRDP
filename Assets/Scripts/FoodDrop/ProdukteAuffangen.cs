@@ -31,6 +31,9 @@ public class ProdukteAuffangen : MonoBehaviour
         }
         if (collision.gameObject.tag == "KeinHoferProdukt")
         {
+            StaticVariablen.gewonnen = "Schade";
+            StaticVariablen.hatHighscore = true;
+            StaticVariablen.whichScene = "FoodDrop";
             verschiedeneSceneScript.Lost();
         }
     }

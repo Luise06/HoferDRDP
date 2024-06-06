@@ -10,11 +10,13 @@ public class StartWinLoseScript : MonoBehaviour
     [SerializeField] GameObject tutorialCanvas;
     [SerializeField] SpriteRenderer bgImage;
     [SerializeField] GameObject tutorialImage;
+    [SerializeField] GameObject pauseCanvas;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pauseCanvas.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -38,8 +40,7 @@ public class StartWinLoseScript : MonoBehaviour
     public void MenuButton()
     {
         mainCanvas.SetActive(false);
-        tutorialCanvas.SetActive(true);
-        tutorialImage.SetActive(false);
+        pauseCanvas.SetActive(true);
         bgImage.color = new Color32(190,190,190,255);
     }
     public void RestartGame()
@@ -50,5 +51,11 @@ public class StartWinLoseScript : MonoBehaviour
     public void HomeButton()
     {
         SceneManager.LoadScene(0);
+    }
+    public void ContinueGame()
+    {
+        mainCanvas.SetActive(true);
+        pauseCanvas.SetActive(false);
+        bgImage.color = Color.white;
     }
 }

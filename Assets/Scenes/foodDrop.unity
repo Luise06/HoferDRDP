@@ -2251,7 +2251,7 @@ RectTransform:
   - {fileID: 1928557309}
   - {fileID: 458480038}
   m_Father: {fileID: 1707233007}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2525,8 +2525,8 @@ RectTransform:
   - {fileID: 1375983286}
   - {fileID: 1708468589}
   - {fileID: 261744337}
-  - {fileID: 1505483327}
   - {fileID: 1630244981}
+  - {fileID: 1505483327}
   - {fileID: 1793550756}
   m_Father: {fileID: 0}
   m_RootOrder: 1
